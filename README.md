@@ -28,8 +28,7 @@ A comprehensive internal documentation site built with Astro Starlight for the R
 3. **Start the development server**
    ```bash
    npm run dev
-   # or
-   pnpm dev
+
    ```
 
 4. **Open your browser**
@@ -105,7 +104,6 @@ npm run build
 ```
 
 #### Tables
-```markdown
 
 | Feature | Admin | COO | Deputies | HOO | Logistics | Ops Manager | Ops Support | Resourcing | Static Manager |
 |---------|-------|-----|----------|-----|-----------|-------------|-------------|------------|----------------|
