@@ -7,8 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check",
-    "astro": "astro"
+    "test": "astro check",
+    "astro": "astro",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -28,5 +29,8 @@
     "starlight-theme-obsidian": "^0.4.1",
     "starlight-theme-rapide": "^0.5.1",
     "tailwindcss": "^4.0.7"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
