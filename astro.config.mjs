@@ -11,6 +11,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [
+        starlightThemeRapide(),
         starlightSidebarTopics([
           {
             label: "Welcome",
