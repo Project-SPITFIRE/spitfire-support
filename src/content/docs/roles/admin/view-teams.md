@@ -3,7 +3,7 @@ title: View Teams
 description: How to see all teams and monitor their structure
 ---
 
-# View Teams
+---
 
 You can see all teams in the system and monitor their structure and membership.
 

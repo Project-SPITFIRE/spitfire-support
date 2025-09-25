@@ -3,8 +3,6 @@ title: Create Teams
 description: How to organize users into functional teams
 ---
 
-# Create Teams
-
 You can organize users into functional teams for better collaboration and access control.
 
 ## How to create a team

@@ -3,7 +3,7 @@ title: Search and Filter Users
 description: How to quickly find users using various criteria
 ---
 
-# Search and Filter Users
+---
 
 You can quickly find users using various search criteria and filters.
 

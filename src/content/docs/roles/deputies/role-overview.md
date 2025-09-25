@@ -3,6 +3,8 @@ title: Deputies Role Overview
 description: Complete overview of Deputies capabilities and responsibilities
 ---
 
+---
+
 As a Deputy, you support operational leadership by managing requests that ensure smooth day-to-day operations. You act as a liaison between operational teams and leadership, helping coordinate resources and activities.
 
 ## Your capabilities
