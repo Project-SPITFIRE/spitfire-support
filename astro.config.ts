@@ -31,6 +31,7 @@ export default defineConfig({
             items: [
               {
                 label: "Admin",
+                badge: {text: "In-Progress", variant: 'caution'},
                 items: [
                   {
                     label: "What is Admin",
@@ -46,20 +47,21 @@ export default defineConfig({
                   },
                   {
                     label: "View Teams",
-                    slug: "roles/admin/view-teams",
+                    slug: "roles/admin/team-management",
                   },
                   {
                     label: "Delete Teams",
                     slug: "roles/admin/delete-teams",
                   },
                   {
-                    label: "Search Filtering Users",
-                    slug: "roles/admin/search-filter-users",
+                    label: "Using the Configuration Centre",
+                    slug: "roles/admin/configuration-centre",
                   },
                 ],
               },
               {
                 label: "COO",
+                badge: {text: "In-Progress", variant: "caution"},
                 items: [
                   {
                     label: "What is COO",
@@ -77,6 +79,7 @@ export default defineConfig({
               },
               {
                 label: "Deputies",
+                badge: {text: "To-Do", variant: "note"},
                 items: [
                   {
                     label: "What are Deputies",
@@ -93,7 +96,36 @@ export default defineConfig({
                 ],
               },
               {
+                label: "HOO",
+                badge: {text: "To-Do", variant: "note"},
+                items: [
+                  {
+                    label: "HOO Overview",
+                    slug: "roles/hoo/role-overview",
+                  },
+                  {
+                    label: "Submit Request",
+                    slug: "roles/hoo/submit-request",
+                  },
+                  {
+                    label: "Update Request",
+                    slug: "roles/hoo/update-request", 
+                  },
+                ],
+              },
+              {
+                label: "Logistics",
+                badge: {text: "To-Do", variant: "note"},
+                items: [
+                  {
+                    label: "Logistics Overview",
+                    slug: "roles/logistics/role-overview",
+                  },
+                ],
+              },
+              {
                 label: "Ops Support",
+                badge: {text: "To-Do", variant: "note"},
                 items: [
                   {
                     label: "What is Ops Support",

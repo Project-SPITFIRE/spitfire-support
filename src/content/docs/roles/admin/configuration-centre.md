@@ -1,5 +1,5 @@
 ---
-title: Search and Filter Users
+title: Configuration Centre
 description: How to quickly find users using various criteria
 ---
 
