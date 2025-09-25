@@ -5,13 +5,19 @@ import starlightThemeRapide from "starlight-theme-rapide";
 import starlightThemeObsidian from "starlight-theme-obsidian";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
+import starlightContextualMenu from 'starlight-contextual-menu';
+import starlightSidebarSwipe from 'starlight-sidebar-swipe'
 
-// https://astro.build/config
+//https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       plugins: [
         starlightThemeRapide(), // change theme here..
+        starlightSidebarSwipe(),
+        starlightContextualMenu({
+          actions: ["copy", "view", "claude","chatgpt"]
+        }),
         starlightSidebarTopics([
           {
             label: "Welcome",
