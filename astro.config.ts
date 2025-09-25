@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [
-        starlightThemeObsidian(),
+        starlightThemeRapide(), // change theme here..
         starlightSidebarTopics([
           {
             label: "Welcome",
