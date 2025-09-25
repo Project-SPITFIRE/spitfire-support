@@ -1,8 +1,8 @@
-// @ts-expect-error
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import starlightThemeRapide from "starlight-theme-rapide";
+import starlightThemeObsidian from "starlight-theme-obsidian";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 
@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [
-        starlightThemeRapide(),
+        starlightThemeObsidian(),
         starlightSidebarTopics([
           {
             label: "Welcome",
@@ -26,7 +26,7 @@ export default defineConfig({
           },
           {
             label: "Roles",
-            link: "/roles/admin/what-is-admin",
+            link: "/roles/admin/create-user-accounts",
             icon: "open-book",
             items: [
               {
@@ -34,7 +34,61 @@ export default defineConfig({
                 items: [
                   {
                     label: "What is Admin",
-                    slug: "roles/admin/what-is-admin",
+                    slug: "roles/admin/role-overview",
+                  },
+                  {
+                    label: "Create User Accounts",
+                    slug: "roles/admin/create-user-accounts",
+                  },
+                  {
+                    label: "Create Teams",
+                    slug: "roles/admin/create-teams",
+                  },
+                  {
+                    label: "View Teams",
+                    slug: "roles/admin/view-teams",
+                  },
+                  {
+                    label: "Delete Teams",
+                    slug: "roles/admin/delete-teams",
+                  },
+                  {
+                    label: "Search Filtering Users",
+                    slug: "roles/admin/search-filter-users",
+                  },
+                ],
+              },
+              {
+                label: "COO",
+                items: [
+                  {
+                    label: "What is COO",
+                    slug: "roles/coo/role-overview",
+                  },
+                  {
+                    label: "Submit Request",
+                    slug: "roles/coo/submit-request",
+                  },
+                  {
+                    label: "Update Request",
+                    slug: "roles/coo/update-request",
+                  },
+                ],
+              },
+              {
+                label: "Deputies",
+                items: [
+                  {
+                    label: "What are Deputies",
+                    slug: "roles/deputies/role-overview",
+                  },
+                  {
+                    label: "Submit Request",
+                    slug: "roles/deputies/submit-request",
+                  },
+                  {
+                    label: "Update Request",
+                    slug: "roles/deputies/update-request",
                   },
                 ],
               },
@@ -81,6 +135,7 @@ export default defineConfig({
     }),
   ],
   vite: {
+    // @ts-expect-error
     plugins: [tailwindcss()],
   },
 });
