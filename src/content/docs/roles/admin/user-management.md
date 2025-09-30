@@ -1,5 +1,5 @@
 ---
-title: Utilizing the Configuration Centre
+title: User Management
 description: How to manage users, roles, and system configuration
 lastUpdated: 2025-09-29
 ---
@@ -56,6 +56,7 @@ You can create new roles with specific permissions to match your organizational 
 **Overview section:**
 - Dashboard
 - Operational Tracker
+- GitHub Integration
 - Lieu & Holidays
 - Logs
 
@@ -151,7 +152,7 @@ Use the **Logs** section to:
 ## Troubleshooting role access
 
 **If a user can't access a feature:**
-1. Verify their assigned role in User Account Management
+1. Verify their assigned role in Account Management
 2. Check the role's page access permissions
 3. Ensure the correct permissions are enabled for that page
 4. Confirm no system-wide restrictions are in place
