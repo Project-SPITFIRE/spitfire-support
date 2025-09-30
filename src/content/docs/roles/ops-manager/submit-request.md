@@ -113,11 +113,40 @@ Use the search and filter tools to find specific requests:
 
 ## Request types guide
 
-**Swap Duty**: Exchange shifts or responsibilities with another manager
-**Resource requests**: Additional staff, equipment, or budget
-**Process improvement**: Workflow optimization or system enhancements
-**Operational support**: Cross-team coordination or assistance
-**Emergency requests**: Critical operational needs requiring urgent attention
+<details>
+<summary>Swap Duty</summary>
+
+Exchange shifts or responsibilities with another manager. Use this when you need to trade assigned time slots or coverage periods with a colleague.
+
+</details>
+
+<details>
+<summary>Resource requests</summary>
+
+Request additional staff, equipment, or budget allocation for operational needs. Include specific quantities and justification for the resources needed.
+
+</details>
+
+<details>
+<summary>Process improvement</summary>
+
+Propose workflow optimization or system enhancements. Describe current process issues and expected improvements from your proposed changes.
+
+</details>
+
+<details>
+<summary>Operational support</summary>
+
+Request cross-team coordination or assistance for complex operational activities. Specify which teams need to collaborate and what support is required.
+
+</details>
+
+<details>
+<summary>Emergency requests</summary>
+
+Submit critical operational needs requiring urgent attention. Clearly indicate urgency and potential impact if not addressed immediately.
+
+</details>
 
 :::note[Request processing time]
 Most requests are reviewed within 24-48 hours. Urgent requests should be marked as high priority and may require direct communication with Ops Support team.
@@ -133,7 +162,38 @@ Most requests are reviewed within 24-48 hours. Urgent requests should be marked 
 
 ## Common request scenarios
 
-**Staffing needs**: "Need additional manager coverage for weekend event"
-**Schedule changes**: "Request shift swap for October 15-17"
-**Resource allocation**: "Additional laptops needed for training session"
-**Process improvement**: "Implement new check-in procedure for events"
+<details>
+<summary>Staffing needs</summary>
+
+**Example**: "Need additional manager coverage for weekend event"
+
+Include the specific event details, dates, number of managers needed, and required skill level or experience.
+
+</details>
+
+<details>
+<summary>Schedule changes</summary>
+
+**Example**: "Request shift swap for October 15-17"
+
+Specify the shifts you need to swap, who you're swapping with (if known), and the reason for the change.
+
+</details>
+
+<details>
+<summary>Resource allocation</summary>
+
+**Example**: "Additional laptops needed for training session"
+
+List the exact resources needed, quantities, when you need them, and how long you'll need them for.
+
+</details>
+
+<details>
+<summary>Process improvement</summary>
+
+**Example**: "Implement new check-in procedure for events"
+
+Describe the current process, proposed improvement, expected benefits, and any resources needed for implementation.
+
+</details>
