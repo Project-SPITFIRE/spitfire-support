@@ -3,10 +3,15 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import starlightThemeRapide from "starlight-theme-rapide";
 import starlightThemeObsidian from "starlight-theme-obsidian";
+import starlightThemeGalaxy from "starlight-theme-galaxy";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
-import starlightContextualMenu from 'starlight-contextual-menu';
-import starlightSidebarSwipe from 'starlight-sidebar-swipe'
+import starlightContextualMenu from "starlight-contextual-menu";
+import starlightSidebarSwipe from "starlight-sidebar-swipe";
+import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
+import starlightImageZoom from "starlight-image-zoom";
+
+import astroD2 from "astro-d2";
 
 //https://astro.build/config
 export default defineConfig({
@@ -14,9 +19,12 @@ export default defineConfig({
     starlight({
       plugins: [
         starlightThemeRapide(), // change theme here..
+        viewTransitions(),
+        starlightImageZoom(),
         starlightSidebarSwipe(),
+
         starlightContextualMenu({
-          actions: ["copy", "view", "claude","chatgpt"]
+          actions: ["copy", "view"],
         }),
         starlightSidebarTopics([
           {
@@ -37,7 +45,7 @@ export default defineConfig({
             items: [
               {
                 label: "Admin",
-                badge: {text: "In-Progress", variant: 'caution'},
+                badge: { text: "In-Progress", variant: "caution" },
                 items: [
                   {
                     label: "What is Admin",
@@ -48,26 +56,45 @@ export default defineConfig({
                     slug: "roles/admin/create-user-accounts",
                   },
                   {
-                    label: "Create Teams",
-                    slug: "roles/admin/create-teams",
-                  },
-                  {
-                    label: "View Teams",
-                    slug: "roles/admin/team-management",
-                  },
-                  {
-                    label: "Delete Teams",
-                    slug: "roles/admin/delete-teams",
+                    label: "User Management",
+                    slug: "roles/admin/user-management",
                   },
                   {
                     label: "Using the Configuration Centre",
                     slug: "roles/admin/configuration-centre",
                   },
+                  {
+                    label: "Team Management",
+                    items: [
+                      {
+                        label: "Create Teams",
+                        slug: "roles/admin/team-management/create-teams",
+                      },
+                      {
+                        label: "Delete Teams",
+                        slug: "roles/admin/team-management/delete-teams",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                label: "Ops-Manager",
+                badge: { text: "In-Progress", variant: "caution" },
+                items: [
+                  {
+                    label: "Ops-Manager Overview",
+                    slug: "roles/ops-manager/role-overview",
+                  },
+                  {
+                    label: "Submit Request",
+                    slug: "roles/ops-manager/submit-request",
+                  },
                 ],
               },
               {
                 label: "COO",
-                badge: {text: "In-Progress", variant: "caution"},
+                badge: { text: "In-Progress", variant: "caution" },
                 items: [
                   {
                     label: "What is COO",
@@ -85,7 +112,7 @@ export default defineConfig({
               },
               {
                 label: "Deputies",
-                badge: {text: "To-Do", variant: "note"},
+                badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
                     label: "What are Deputies",
@@ -103,7 +130,7 @@ export default defineConfig({
               },
               {
                 label: "HOO",
-                badge: {text: "To-Do", variant: "note"},
+                badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
                     label: "HOO Overview",
@@ -115,13 +142,13 @@ export default defineConfig({
                   },
                   {
                     label: "Update Request",
-                    slug: "roles/hoo/update-request", 
+                    slug: "roles/hoo/update-request",
                   },
                 ],
               },
               {
                 label: "Logistics",
-                badge: {text: "To-Do", variant: "note"},
+                badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
                     label: "Logistics Overview",
@@ -131,11 +158,11 @@ export default defineConfig({
               },
               {
                 label: "Ops Support",
-                badge: {text: "To-Do", variant: "note"},
+                badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
                     label: "What is Ops Support",
-                    slug: "roles/ops-support/ops-support",
+                    slug: "roles/ops-support/role-overview",
                   },
                 ],
               },
