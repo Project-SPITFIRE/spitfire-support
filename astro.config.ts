@@ -162,7 +162,7 @@ export default defineConfig({
                 items: [
                   {
                     label: "What is Ops Support",
-                    slug: "roles/ops-support/ops-support",
+                    slug: "roles/ops-support/role-overview",
                   },
                 ],
               },
