@@ -12,18 +12,42 @@
     --sl-font-mono: --font-mono;
     /* Your preferred code font. Starlight uses system monospace fonts by default. */
     --font-mono: "IBM Plex Mono";
-    /* Generated accent color palettes. */
-    --color-accent-200: #b3c7ff;
-    --color-accent-600: #364bff;
-    --color-accent-900: #182775;
-    --color-accent-950: #131e4f;
-    /* Generated gray color palettes. */
-    --color-gray-100: #f6f6f6;
-    --color-gray-200: #eeeeee;
-    --color-gray-300: #c2c2c2;
-    --color-gray-400: #8b8b8b;
-    --color-gray-500: #585858;
-    --color-gray-700: #383838;
-    --color-gray-800: #272727;
-    --color-gray-900: #181818;
+	--sl-color-accent-low: #00283a;
+	--sl-color-accent: #0073a0;
+	--sl-color-accent-high: #9fd0ee;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eeeeee;
+	--sl-color-gray-2: #c8c8c8;
+	--sl-color-gray-3: #a4a4a4;
+	--sl-color-gray-4: #585858;
+	--sl-color-gray-5: #383838;
+	--sl-color-gray-6: #272727;
+	--sl-color-black: #181818;
+
+    --ac-color-100: var(--ac-dark);
+    --ac-color-200: var(--ac-gray-500);
+    --ac-color-300: var(--ac-gray-400);
+    --ac-color-400: var(--ac-gray-300);
+    --ac-color-500: var(--ac-gray-200);
+    --ac-color-600: var(--ac-gray-100);
+    --ac-color-700: var(--ac-white);
 }
+
+
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #b8ddf3;
+	--sl-color-accent: #005578;
+	--sl-color-accent-high: #00374f;
+	--sl-color-white: #181818;
+	--sl-color-gray-1: #272727;
+	--sl-color-gray-2: #383838;
+	--sl-color-gray-3: #585858;
+	--sl-color-gray-4: #8b8b8b;
+	--sl-color-gray-5: #c2c2c2;
+	--sl-color-gray-6: #eeeeee;
+	--sl-color-gray-7: #f6f6f6;
+	--sl-color-black: #ffffff;
+}
+
+
