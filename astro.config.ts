@@ -199,6 +199,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Account Management",
                     slug: "roles/ops-support/ops-support-account-management"
+                  },
+                  {
+                    label: "Ops Support Create User Accounts",
+                    slug: "roles/ops-support/ops-support-create-account"
                   }
                 ],
               },
