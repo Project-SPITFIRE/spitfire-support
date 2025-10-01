@@ -25,14 +25,10 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 
 // assigned events section
 
-//manage request section
-
+- **[Manage Request](/roles/ops-support/ops-support-manage-request)** - Search, filter, update, and track requests; add notes, attach files, and mark requests as complete or missing information
 - **[Account Management](/roles/ops-support/ops-support-account-management)** - View user details, edit user information, resend activation links via email, and deactivate accounts
-
 - **[Create User Account](/roles/ops-support/ops-support-create-account)** - Create new user accounts with required details and assign initial roles or teams
-
 - **[Team Management](/roles/ops-support/ops-support-team-management)** - Create, update, and delete teams, ensuring proper grouping and role allocation
-
 - **[Configuration Center](/roles/ops-support/ops-support-configuration-center)** - Define roles, manage permissions, and configure request and scheduling rules
 
 ## Your dashboard overview

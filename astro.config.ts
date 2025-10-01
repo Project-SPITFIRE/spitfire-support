@@ -197,6 +197,10 @@ export default defineConfig({
                     slug: "roles/ops-support/ops-support-allocated-contracts"
                   },
                   {
+                    label: "Ops Support Manage Request",
+                    slug: "roles/ops-support/ops-support-manage-request"
+                  },
+                  {
                     label: "Ops Support Account Management",
                     slug: "roles/ops-support/ops-support-account-management"
                   },
