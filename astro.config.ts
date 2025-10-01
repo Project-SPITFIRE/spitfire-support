@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import starlightThemeRapide from "starlight-theme-rapide";
 import starlightThemeObsidian from "starlight-theme-obsidian";
 import starlightThemeGalaxy from "starlight-theme-galaxy";
+import { ion } from "starlight-ion-theme";
 import starlightSidebarTopics from "starlight-sidebar-topics";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import starlightContextualMenu from "starlight-contextual-menu";
@@ -19,7 +20,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [
-        //starlightThemeRapide(), // change theme here..
+        starlightThemeGalaxy(), // change theme here..
         viewTransitions(),
         starlightImageZoom(),
         starlightSidebarSwipe(),
@@ -61,89 +62,56 @@ export default defineConfig({
                 label: "Ops-Manager",
                 items: [
                   { label: "Ops-Manager Overview", slug: "roles/ops-manager/role-overview" },
-                  { label: "Submit Request", slug: "roles/ops-manager/submit-request" },
-                  { label: "Update Request", slug: "roles/ops-manager/update-request" },
-                  { label: "View EOS Tasks", slug: "roles/ops-manager/view-eos-tasks" },
-                  { label: "Update EOS Tasks", slug: "roles/ops-manager/update-eos-tasks" },
+                  { label: "Scheduling", 
+                    items: [
+                      { label: "Submit Request", slug: "roles/ops-manager/scheduling/submit-request" },
+                      { label: "Update Request", slug: "roles/ops-manager/scheduling/update-request" },
+                      { label: "Schedules", slug: "roles/ops-manager/scheduling/schedules"},
+                      { label: "Rota Management",
+                        items: [
+                          {label: "Rota Management Overview", slug: "roles/ops-manager/scheduling/rota-management/rota-management-overview"},
+                          {label: "Events Mapping", slug: "roles/ops-manager/scheduling/rota-management/events-mapping" },
+                          {label: "Contract Allocation", slug: "roles/ops-manager/scheduling/rota-management/contract-allocation"},
+                          {label: "Succession Planning", slug: "roles/ops-manager/scheduling/rota-management/succession-planning" },
+                        ],
+                      },
+                    ],
+                  },
+                  {label: "Management", 
+                    items: [
+                      { label: "View EOS Tasks", slug: "roles/ops-manager/management/view-eos-tasks" },
+                      { label: "Update EOS Tasks", slug: "roles/ops-manager/management/update-eos-tasks" },
+                    ],
+                  },
                 ],
               },
               {
                 label: "Ops Support",
-                badge: { text: "To-Do", variant: "note" },
                 items: [
-                  {
-                    label: "Ops Support Overview",
-                    slug: "roles/ops-support/role-overview",
-                  },
-                  {
-                    label: "Ops Support Dashboard",
-                    slug: "roles/ops-support/ops-support-dashboard",
-                  },
-                  {
-                    label: "Ops Support Operational Tracker",
-                    slug: "roles/ops-support/ops-support-operational-tracker"
-                  },
-                  {
-                    label: "Ops Support CIPHR Integration",
-                    slug: "roles/ops-support/ops-support-ciphr-integration"
-                  },
-                  {
-                    label: "Ops Suport Lieu & Holidays",
-                    slug: "roles/ops-support/ops-support-holidays-lieu"
-                  },
-                  {
-                    label: "Ops Support Rota Management",
-                    // slug removed
+                  { label: "Ops Support Overview", slug: "roles/ops-support/role-overview"},
+                  { label: "Dashboard", slug: "roles/ops-support/ops-support-dashboard"},
+                  { label: "Operational Tracker", slug: "roles/ops-support/ops-support-operational-tracker" },
+                  { label: "CIPHR Integration", slug: "roles/ops-support/ops-support-ciphr-integration" },
+                  { label: "Lieu & Holidays", slug: "roles/ops-support/ops-support-holidays-lieu" },
+                  { label: "Submit Requests", slug: "roles/ops-support/ops-support-submit-requests" },
+                  { label: "Submitted Schedules", slug: "roles/ops-support/ops-support-submitted-schedules" },
+                  { label: "Schedules", slug: "roles/ops-support/ops-support-schedules" },
+                  { label: "Allocated Contracts", slug: "roles/ops-support/ops-support-allocated-contracts" },
+                  { label: "Assigned Events", slug: "roles/ops-support/ops-support-assigned-events" },
+                  { label: "EOS Actions", slug: "roles/ops-support/ops-support-eos-action"},
+                  { label: "Manage Request", slug: "roles/ops-support/ops-support-manage-request" },
+                  { label: "Account Management", slug: "roles/ops-support/ops-support-account-management" },
+                  { label: "Create User Accounts", slug: "roles/ops-support/ops-support-create-account" },
+                  { label: "Team Management", slug: "roles/ops-support/ops-support-team-management" },
+                  { label: "Configuration Centre", slug: "roles/ops-support/ops-support-configuration-centre"},
+                  { label: "Rota Management",
                     items: [
                       { label: "Events Mapping", slug: "roles/ops-support/ops-support-events-mapping" },
                       { label: "Contract Allocation", slug: "roles/ops-support/ops-support-contract-allocation" },
                       { label: "Succession Planning", slug: "roles/ops-support/ops-support-succession-planning" },
                     ],
                   },
-                  {
-                    label: "Ops Support Submit Requests",
-                    slug: "roles/ops-support/ops-support-submit-requests"
-                  },
-                  {
-                    label: "Ops Support Submitted Schedules",
-                    slug: "roles/ops-support/ops-support-submitted-schedules"
-                  },
-                  {
-                    label: "Ops Support Schedules",
-                    slug: "roles/ops-support/ops-support-schedules"
-                  },
-                  {
-                    label: "Ops Support Allocated Contracts",
-                    slug: "roles/ops-support/ops-support-allocated-contracts"
-                  },
-                  {
-                    label: "Ops Support Assigned Events",
-                    slug: "roles/ops-support/ops-support-assigned-events"
-                  },
-                  {
-                    label: "Ops Support EOS Actions",
-                    slug: "roles/ops-support/ops-support-eos-action"
-                  },
-                  {
-                    label: "Ops Support Manage Request",
-                    slug: "roles/ops-support/ops-support-manage-request"
-                  },
-                  {
-                    label: "Ops Support Account Management",
-                    slug: "roles/ops-support/ops-support-account-management"
-                  },
-                  {
-                    label: "Ops Support Create User Accounts",
-                    slug: "roles/ops-support/ops-support-create-account"
-                  },
-                  {
-                    label: "Ops Support Team Management",
-                    slug: "roles/ops-support/ops-support-team-management"
-                  },
-                  {
-                    label: "Ops Support Configuration Centre",
-                    slug: "roles/ops-support/ops-support-configuration-centre"
-                  }
+
                 ],
               },
             ],
