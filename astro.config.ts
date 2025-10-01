@@ -187,6 +187,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Submitted Schedules",
                     slug: "roles/ops-support/ops-support-submitted-schedules"
+                  },
+                  {
+                    label: "Ops Support Schedules",
+                    slug: "roles/ops-support/ops-support-schedules"
                   }
                 ],
               },
