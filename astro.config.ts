@@ -167,6 +167,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Dashboard",
                     slug: "roles/ops-support/ops-support-dashboard",
+                  },
+                  {
+                    label: "Ops Support Operational Tracker",
+                    slug: "roles/ops-support/ops-support-operational-tracker"
                   }
                 ],
               },
