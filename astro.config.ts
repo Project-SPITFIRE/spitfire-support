@@ -26,7 +26,8 @@ export default defineConfig({
         starlightContextualMenu({
           actions: ["copy", "view"],
         }),
-        starlightSidebarTopics([
+        starlightSidebarTopics(
+        [
           {
             label: "Welcome",
             link: "/welcome/getting-started",
@@ -45,7 +46,6 @@ export default defineConfig({
             items: [
               {
                 label: "Admin",
-                badge: { text: "In-Progress", variant: "caution" },
                 items: [
                   {
                     label: "What is Admin",
@@ -80,7 +80,6 @@ export default defineConfig({
               },
               {
                 label: "Ops-Manager",
-                badge: { text: "In-Progress", variant: "caution" },
                 items: [
                   {
                     label: "Ops-Manager Overview",
@@ -90,69 +89,17 @@ export default defineConfig({
                     label: "Submit Request",
                     slug: "roles/ops-manager/submit-request",
                   },
-                ],
-              },
-              {
-                label: "COO",
-                badge: { text: "In-Progress", variant: "caution" },
-                items: [
-                  {
-                    label: "What is COO",
-                    slug: "roles/coo/role-overview",
-                  },
-                  {
-                    label: "Submit Request",
-                    slug: "roles/coo/submit-request",
-                  },
                   {
                     label: "Update Request",
-                    slug: "roles/coo/update-request",
-                  },
-                ],
-              },
-              {
-                label: "Deputies",
-                badge: { text: "To-Do", variant: "note" },
-                items: [
-                  {
-                    label: "What are Deputies",
-                    slug: "roles/deputies/role-overview",
+                    slug: "roles/ops-manager/update-request",
                   },
                   {
-                    label: "Submit Request",
-                    slug: "roles/deputies/submit-request",
+                    label: "View EOS Tasks",
+                    slug: "roles/ops-manager/view-eos-tasks",
                   },
                   {
-                    label: "Update Request",
-                    slug: "roles/deputies/update-request",
-                  },
-                ],
-              },
-              {
-                label: "HOO",
-                badge: { text: "To-Do", variant: "note" },
-                items: [
-                  {
-                    label: "HOO Overview",
-                    slug: "roles/hoo/role-overview",
-                  },
-                  {
-                    label: "Submit Request",
-                    slug: "roles/hoo/submit-request",
-                  },
-                  {
-                    label: "Update Request",
-                    slug: "roles/hoo/update-request",
-                  },
-                ],
-              },
-              {
-                label: "Logistics",
-                badge: { text: "To-Do", variant: "note" },
-                items: [
-                  {
-                    label: "Logistics Overview",
-                    slug: "roles/logistics/role-overview",
+                    label: "Update EOS Tasks",
+                    slug: "roles/ops-manager/update-eos-tasks",
                   },
                 ],
               },
@@ -167,24 +114,11 @@ export default defineConfig({
                 ],
               },
             ],
+            
           },
-          {
-            label: "Workflows",
-            link: "/workflows/what-are-workflows",
-            icon: "open-book",
-            items: [
-              {
-                label: "Workflows",
-                items: [
-                  {
-                    label: "What are Workflows",
-                    slug: "workflows/what-are-workflows",
-                  },
-                ],
-              },
-            ],
-          },
-        ]),
+        ],
+      ),
+
       ],
       title: "Spitfire Docs",
       logo: {
@@ -193,7 +127,7 @@ export default defineConfig({
       },
 
       customCss: [
-        "./src/styles/global.css",
+        "@/styles/global.css",
         "@fontsource-variable/atkinson-hyperlegible-next",
         "@fontsource-variable/fira-code",
       ],

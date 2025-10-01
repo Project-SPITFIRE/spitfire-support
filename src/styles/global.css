@@ -27,3 +27,68 @@
     --color-gray-800: #272727;
     --color-gray-900: #181818;
 }
+
+@layer base {
+    /* Restore list styles in Starlight content areas */
+    .sl-markdown-content
+        ul:not(.starwind-accordion):not([class*="not-content"]),
+    .content ul:not(.starwind-accordion):not([class*="not-content"]),
+    article ul:not(.starwind-accordion):not([class*="not-content"]) {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .sl-markdown-content
+        ol:not(.starwind-accordion):not([class*="not-content"]),
+    .content ol:not(.starwind-accordion):not([class*="not-content"]),
+    article ol:not(.starwind-accordion):not([class*="not-content"]) {
+        list-style-type: decimal;
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .sl-markdown-content
+        li:not(.starwind-accordion *):not([class*="not-content"]),
+    .content li:not(.starwind-accordion *):not([class*="not-content"]),
+    article li:not(.starwind-accordion *):not([class*="not-content"]) {
+        margin: 0.25rem 0;
+        line-height: 1.6;
+    }
+
+    /* Nested lists */
+    .sl-markdown-content ul ul,
+    .content ul ul,
+    article ul ul {
+        list-style-type: circle;
+        margin: 0.25rem 0;
+    }
+
+    .sl-markdown-content ul ul ul,
+    .content ul ul ul,
+    article ul ul ul {
+        list-style-type: square;
+    }
+
+    /* Enhanced Starwind component integration */
+    .sl-markdown-content .starwind-accordion,
+    .content .starwind-accordion {
+        margin: 1.5rem 0;
+        font-family: var(--sl-font);
+    }
+
+    /* Ensure Starwind components respect Starlight's typography scale */
+    .starwind-accordion-trigger {
+        font-family: var(--sl-font);
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .starwind-accordion-content {
+        font-family: var(--sl-font);
+        font-size: 0.875rem;
+        line-height: 1.6;
+        color: var(--sl-color-text);
+    }
+}

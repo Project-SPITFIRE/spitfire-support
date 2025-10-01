@@ -22,7 +22,7 @@ Your dashboard provides key operational metrics:
 **Scheduling metrics:**
 - Total scheduled shifts this month
 - Events assigned to you this week
-- Pending CIPH-R (Conflicts in Personal Hours Requests)
+- Pending CIPHR
 
 **Task management:**
 - EOS tasks assigned to you

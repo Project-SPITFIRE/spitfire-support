@@ -2,8 +2,12 @@
 title: Submit Request
 description: How to submit requests for operational improvements and resources
 lastUpdated: 2025-09-30
+
+
 ---
 
+import { Badge, Card, Steps } from '@astrojs/starlight/components';
+import { Accordion, AccordionItem } from 'free-astro-components'
 
 You can submit requests for operational improvements, team resources, and process enhancements.
 
@@ -18,27 +22,27 @@ The **Request Details** form will open with the following fields:
 
 ### Required fields
 
-**Request Title** (required)
+**Request Title** <Badge text="required" variant="success"/>
 - Enter a clear, descriptive title for your request
 - Use specific, actionable language
 - Example: "Additional manager coverage for Event Beta"
 
-**Description** (required)
+**Description** <Badge text="required" variant="success"/>
 - Provide detailed explanation of your request
 - Include background context and rationale
 - Explain the operational need and expected benefits
 
-**Start Date** (required)
+**Start Date** <Badge text="required" variant="success"/>
 - Select when you need this request to begin
 - Format: dd/mm/yyyy
 - Consider lead time needed for implementation
 
-**End Date** (required)
+**End Date** <Badge text="required" variant="success"/>
 - Select when this request should be completed
 - Format: dd/mm/yyyy
 - Allow buffer time for unexpected delays
 
-**Select request type** (required)
+**Select request type** <Badge text="required" variant="success"/>
 - Choose the appropriate category from the dropdown
 - Common types include:
   - Swap Duty
@@ -49,12 +53,12 @@ The **Request Details** form will open with the following fields:
 
 ### Optional fields
 
-**Managers Required** (Optional)
+**Managers Required** <Badge text="optional" variant="caution"/>
 - Enter the number of managers needed
 - Default is 0 if not specified
 - Useful for staffing requests
 
-**Attachments** (Optional)
+**Attachments**  <Badge text="optional" variant="caution"/>
 - Drag and drop files or click to select
 - Supports all file types
 - Include supporting documents, schedules, or references
@@ -62,9 +66,14 @@ The **Request Details** form will open with the following fields:
 
 ## Viewing your submitted requests
 
-After submission, you can track your requests:
+After submission, you can track your requests by doing the following:
+
+<Card>
+<Steps>
 
 1. Go to **Submit Request** from the sidebar
+
+
 2. View the **Submit Requests** table showing:
    - **Request Title**: Your request name
    - **Type**: Category of request
@@ -75,9 +84,15 @@ After submission, you can track your requests:
    - **Submitted By**: Your name and role
    - **Status**: Current state
 
+
+</Steps>
+
+</Card>
+
+
 ## Request status indicators
 
-Requests display colored status badges:
+Requests display are denoted by the following colored status badges:
 
 **Not Yet Started** (Yellow)
 - Request has been received but not yet actioned
@@ -87,11 +102,8 @@ Requests display colored status badges:
 - Additional details needed to process
 - Check for follow-up requests from Ops Support
 
-**In Progress** (Blue/Green)
-- Request is being actively worked on
-- Implementation has begun
 
-**Completed** (Green)
+**Completed** <Badge text="Green" variant="success"/>
 - Request has been fulfilled
 - Check results and provide feedback if needed
 
@@ -102,51 +114,33 @@ Use the search and filter tools to find specific requests:
 **Search**: Enter text to search by title or submitter
 **Status filter**: Filter by request status (All Status, Not Yet Started, Missing Information, etc.)
 
-## Best practices for Operations Managers
-
-- **Be specific**: Clearly describe what you need and why
-- **Provide context**: Explain how this supports operational goals
-- **Include dates**: Set realistic timelines with appropriate buffer
-- **Attach documents**: Include any relevant supporting materials
-- **Follow up**: Check status regularly and respond to information requests
-- **Plan ahead**: Submit requests well in advance of need dates
-
 ## Request types guide
 
-<details>
-<summary>Swap Duty</summary>
+<Accordion >
+  <AccordionItem title="Swap Duty">
+    <p>
+      Exchange shifts or responsibilities with another manager. Use this when you need to trade assigned time slots or coverage periods with a colleague.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Process Improvement">
+    <p>
+    Propose workflow optimization or system enhancements. Describe current process issues and expected improvements from your proposed changes.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Operational Support">
+    <p>
+      Request cross-team coordination or assistance for complex operational activities. Specify which teams need to collaborate and what support is required.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Emergency Requests">
+    <p>
+      Submit critical operational needs requiring urgent attention. Clearly indicate urgency and potential impact if not addressed immediately.
+    </p>
+  </AccordionItem>
+</Accordion>
 
-Exchange shifts or responsibilities with another manager. Use this when you need to trade assigned time slots or coverage periods with a colleague.
 
-</details>
 
-<details>
-<summary>Resource requests</summary>
-
-Request additional staff, equipment, or budget allocation for operational needs. Include specific quantities and justification for the resources needed.
-
-</details>
-
-<details>
-<summary>Process improvement</summary>
-
-Propose workflow optimization or system enhancements. Describe current process issues and expected improvements from your proposed changes.
-
-</details>
-
-<details>
-<summary>Operational support</summary>
-
-Request cross-team coordination or assistance for complex operational activities. Specify which teams need to collaborate and what support is required.
-
-</details>
-
-<details>
-<summary>Emergency requests</summary>
-
-Submit critical operational needs requiring urgent attention. Clearly indicate urgency and potential impact if not addressed immediately.
-
-</details>
 
 :::note[Request processing time]
 Most requests are reviewed within 24-48 hours. Urgent requests should be marked as high priority and may require direct communication with Ops Support team.
@@ -197,3 +191,12 @@ List the exact resources needed, quantities, when you need them, and how long yo
 Describe the current process, proposed improvement, expected benefits, and any resources needed for implementation.
 
 </details>
+
+## Best practices for Operations Managers
+
+- **Be specific**: Clearly describe what you need and why
+- **Provide context**: Explain how this supports operational goals
+- **Include dates**: Set realistic timelines with appropriate buffer
+- **Attach documents**: Include any relevant supporting materials
+- **Follow up**: Check status regularly and respond to information requests
+- **Plan ahead**: Submit requests well in advance of need dates

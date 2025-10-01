@@ -8,11 +8,15 @@ You can modify requests you've submitted to reflect operational changes and new 
 
 ## Accessing your requests
 
+Follow these steps:
+
 1. Navigate to **Scheduling** → **Submit Request**
 2. Your submitted requests appear in the **Submit Requests** table
 3. Click on any request row to view or edit details
 
 ## How to update a request
+
+Follow these steps:
 
 1. Locate your request in the requests table
 2. Click on the request row to open the **Request Details** dialog
