@@ -161,7 +161,7 @@ export default defineConfig({
                 badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
-                    label: "What is Ops Support",
+                    label: "Ops Support Overview",
                     slug: "roles/ops-support/role-overview",
                   },
                   {
@@ -179,6 +179,15 @@ export default defineConfig({
                   {
                     label: "Ops Suport Lieu & Holidays",
                     slug: "roles/ops-support/ops-support-holidays-lieu"
+                  },
+                  {
+                    label: "Ops Support Rota Management",
+                    // slug removed
+                    items: [
+                      { label: "Events Mapping", slug: "roles/ops-support/ops-support-events-mapping" },
+                      { label: "Contract Allocation", slug: "roles/ops-support/ops-support-contract-allocation" },
+                      { label: "Succession Planning", slug: "roles/ops-support/ops-support-succession-planning" },
+                    ],
                   },
                   {
                     label: "Ops Support Submit Requests",

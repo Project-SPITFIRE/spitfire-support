@@ -13,7 +13,7 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 - **[Operational Tracker](/roles/ops-support/ops-support-operational-tracker)** - Monitor ongoing activities and task status
 - **[Upload CIPHR Exports](/roles/ops-support/ops-support-ciphr-integration)** - Import and align employee records with CIPHR data
 - **[Manage Lieu & Holidays](/roles/ops-support/ops-support-holidays-lieu)** - View and edit staff leave and holiday balances
-- **[Rota Management](/roles/ops-support/ops-support-rota-management)** - Oversee scheduling and workforce planning through:
+- **Rota Management** - Oversee scheduling and workforce planning through:
   - [Events Mapping](/roles/ops-support/ops-support-events-mapping) – Manage managers’ schedules, allocate staff, and resolve conflicts
   - [Contract Allocation](/roles/ops-support/ops-support-contract-allocation) – Create, edit, and cancel employee contracts and event assignments
   - [Succession Planning](/roles/ops-support/ops-support-succession-planning) – Manage succession plans by adding, editing, uploading, or deleting plans
