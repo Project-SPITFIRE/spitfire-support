@@ -164,6 +164,10 @@ export default defineConfig({
                     label: "What is Ops Support",
                     slug: "roles/ops-support/role-overview",
                   },
+                  {
+                    label: "Ops Support Dashboard",
+                    slug: "roles/ops-support/ops-support-dashboard",
+                  }
                 ],
               },
             ],
