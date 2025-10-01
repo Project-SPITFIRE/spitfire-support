@@ -32,12 +32,9 @@ export default defineConfig({
           {
             label: "Welcome",
             link: "/welcome/getting-started",
-            icon: "open-book",
+            icon: "rocket",
             items: [
-              {
-                label: "Start Here",
-                slug: "welcome/getting-started",
-              },
+              { label: "Start Here", slug: "welcome/getting-started" },
             ],
           },
           {
@@ -48,60 +45,26 @@ export default defineConfig({
               {
                 label: "Admin",
                 items: [
-                  {
-                    label: "What is Admin",
-                    slug: "roles/admin/role-overview",
-                  },
-                  {
-                    label: "Create User Accounts",
-                    slug: "roles/admin/create-user-accounts",
-                  },
-                  {
-                    label: "User Management",
-                    slug: "roles/admin/user-management",
-                  },
-                  {
-                    label: "Using the Configuration Centre",
-                    slug: "roles/admin/configuration-centre",
-                  },
-                  {
-                    label: "Team Management",
+                  { label: "Admin Overview", slug: "roles/admin/role-overview" },
+                  { label: "Create User Accounts", slug: "roles/admin/create-user-accounts" },
+                  { label: "User Management", slug: "roles/admin/user-management" },
+                  { label: "Using the Configuration Centre", slug: "roles/admin/configuration-centre" },
+                  { label: "Team Management",
                     items: [
-                      {
-                        label: "Create Teams",
-                        slug: "roles/admin/team-management/create-teams",
-                      },
-                      {
-                        label: "Delete Teams",
-                        slug: "roles/admin/team-management/delete-teams",
-                      },
+                      { label: "Create Teams", slug: "roles/admin/team-management/create-teams" },
+                      { label: "Delete Teams", slug: "roles/admin/team-management/delete-teams",},
                     ],
                   },
                 ],
               },
-              {
+             {
                 label: "Ops-Manager",
                 items: [
-                  {
-                    label: "Ops-Manager Overview",
-                    slug: "roles/ops-manager/role-overview",
-                  },
-                  {
-                    label: "Submit Request",
-                    slug: "roles/ops-manager/submit-request",
-                  },
-                  {
-                    label: "Update Request",
-                    slug: "roles/ops-manager/update-request",
-                  },
-                  {
-                    label: "View EOS Tasks",
-                    slug: "roles/ops-manager/view-eos-tasks",
-                  },
-                  {
-                    label: "Update EOS Tasks",
-                    slug: "roles/ops-manager/update-eos-tasks",
-                  },
+                  { label: "Ops-Manager Overview", slug: "roles/ops-manager/role-overview" },
+                  { label: "Submit Request", slug: "roles/ops-manager/submit-request" },
+                  { label: "Update Request", slug: "roles/ops-manager/update-request" },
+                  { label: "View EOS Tasks", slug: "roles/ops-manager/view-eos-tasks" },
+                  { label: "Update EOS Tasks", slug: "roles/ops-manager/update-eos-tasks" },
                 ],
               },
               {
