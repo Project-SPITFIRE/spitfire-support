@@ -1,0 +1,123 @@
+---
+title: Schedules
+description: How to view and manage your operational schedules
+lastUpdated: 2025-09-30
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { Accordion, AccordionItem } from 'free-astro-components'
+
+View and manage your operational schedules, track approval status, and monitor day classifications.
+
+## Accessing Schedules
+
+Navigate to **Scheduling** → **Schedules** from the sidebar.
+
+## Schedule Controls
+
+**My Schedule** (Default): Your personal schedule and assignments
+**Team Schedule**: View team collective schedule and coverage
+
+**Search Name**: Find specific team members (Team Schedule view)
+**Month/Year selectors**: Choose display period
+
+## Day Type Classifications
+
+<Accordion>
+  <AccordionItem title="🟠 Day Off (Orange/Peach)">
+    <p>
+      <strong>Meaning</strong>: Non-working day, personal time off<br/>
+      <strong>Use</strong>: Regular days off, planned leave, personal time
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🔵 Operational Day (Blue)">
+    <p>
+      <strong>Meaning</strong>: Regular working day with scheduled events<br/>
+      <strong>Use</strong>: Standard work days with event coverage
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🟣 Holiday (Purple)">
+    <p>
+      <strong>Meaning</strong>: Public holiday or organizational holiday<br/>
+      <strong>Examples</strong>: Christmas, New Year, national holidays
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🟡 Non-operational Day (Yellow)">
+    <p>
+      <strong>Meaning</strong>: Not scheduled for operational work but available<br/>
+      <strong>Use</strong>: Days without events but not official time off
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Approval Status Indicators
+
+<Accordion>
+  <AccordionItem title="Verified">
+    <p>
+      <Badge text="Verified" variant="success" /> Schedule approved and confirmed - plan confidently around these days
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Submitted">
+    <p>
+      <Badge text="Submitted" variant="note" /> Awaiting review - keep flexible for potential adjustments
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Clarified">
+    <p>
+      <Badge text="Clarified" variant="caution" /> Additional information needed - check notes and respond promptly
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Rejected">
+    <p>
+      <Badge text="Rejected" variant="danger" /> Needs revision and resubmission - review rejection reasons
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Identified Conflict">
+    <p>
+      <Badge text="Conflict Identified" variant="tip" /> Scheduling conflict detected - coordinate with Ops Support
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Pending Conflict">
+    <p>
+      <Badge text="Pending Conflict" variant="caution" /> Potential conflict under investigation - wait for determination
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Pending at CIPHR">
+    <p>
+      <Badge text="Pending CIPHR" variant="note" /> Administrative processing - typically resolves automatically
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Display Modes
+
+**Calendar view**: Traditional layout with color coding and status badges
+**Table view**: List format, sortable and filterable
+
+## Effective Schedule Management
+
+<Accordion>
+  <AccordionItem title="Weekly Planning Approach">
+    <p>
+      Review all current week tasks → Check priorities → Review subtasks → Coordinate with team → Update progress
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Responding to Status Changes">
+    <p>
+      <strong>Verified</strong>: Confirm availability, plan accordingly<br/>
+      <strong>Clarification needed</strong>: Provide requested information promptly<br/>
+      <strong>Conflicts</strong>: Work with Ops Support to resolve<br/>
+      <strong>Rejected</strong>: Review reasons, make changes, resubmit
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Best Practices">
+    <p>
+      Check schedule twice weekly → Submit preferences early → Respond quickly to requests → Maintain flexibility → Coordinate team coverage
+    </p>
+  </AccordionItem>
+</Accordion>
+
+:::note[Schedule visibility]
+You'll only see schedules where you're assigned as owner, responsible for tasks, or listed as a stakeholder.
+:::

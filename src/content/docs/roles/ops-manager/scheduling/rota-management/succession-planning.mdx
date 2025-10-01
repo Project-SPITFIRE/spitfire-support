@@ -1,0 +1,136 @@
+---
+title: Succession Planning
+description: How to identify and prepare backups for critical roles
+lastUpdated: 2025-09-30
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { Accordion, AccordionItem } from 'free-astro-components'
+
+Identify and prepare backup managers for critical roles to ensure operational continuity.
+
+## Accessing Succession Planning
+
+1. Navigate to **Scheduling** → **Rota Management**
+2. Select **Succession Planning** from the submenu
+
+## Page Overview
+
+**Actions available**:
+- **Search succession plans**: Find specific contracts
+- **+ Add Succession Plan**: Create new plans  
+- **Upload File**: Bulk import plans
+
+## Manager Succession Levels
+
+<Accordion>
+  <AccordionItem title="1st Manager (Primary)">
+    <p>
+      <Badge text="Primary" variant="success" /> Main responsibility for contract - day-to-day management, primary contact, decision authority
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2nd Manager (First Backup)">
+    <p>
+      <Badge text="First Backup" variant="caution" /> First line backup - step in when primary unavailable, maintain contract familiarity
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3rd Manager (Second Backup)">
+    <p>
+      <Badge text="Second Backup" variant="note" /> Secondary backup - available when both 1st and 2nd unavailable, training ground for advancement
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4th, 5th, 6th Managers">
+    <p>
+      <Badge text="Extended Backup" variant="tip" /> Additional backup chain for large/complex contracts requiring deep coverage
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Managing Succession Plans
+
+<Accordion>
+  <AccordionItem title="Adding New Plans">
+    <p>
+      Click <strong>+ Add Succession Plan</strong> → Select contract → Assign managers (start with 1st, add 2nd strongly recommended) → Save plan
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Editing Existing Plans">
+    <p>
+      Locate contract → Click <strong>Edit</strong> → Update manager assignments → Fill succession gaps → Save changes
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Searching Plans">
+    <p>
+      Use search field → Enter contract or manager name → Review filtered results → Click to view/edit details
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Bulk Import">
+    <p>
+      Use <strong>Upload File</strong> for CSV/Excel → Include columns: Contract Name, 1st Manager, 2nd Manager, etc. → Validate formatting
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Coverage Scenarios
+
+<Accordion>
+  <AccordionItem title="Primary Manager Unavailable">
+    <p>
+      Check succession plan for 2nd Manager → Contact immediately → Brief on current status → Provide access/resources → Update stakeholders
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Multiple Managers Unavailable">
+    <p>
+      Move to 3rd Manager → If none exists, identify alternative → Consider temporary promotion → Escalate if needed
+    </p>
+  </AccordionItem>
+  <AccordionItem title="New Contract Coverage">
+    <p>
+      Create succession plan immediately → Assign experienced 1st Manager → Designate backup (2nd Manager) → Plan additional backups
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Developing Junior Managers">
+    <p>
+      Start as 5th/6th Manager → Provide training/shadowing → Gradually promote through levels → Increase responsibility under supervision
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+<Accordion>
+  <AccordionItem title="Complete Coverage Strategy">
+    <p>
+      Every contract needs 1st and 2nd Manager minimum → Critical contracts need 3rd Manager → High-value contracts should have full coverage → Review quarterly
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Skills-Based Assignments">
+    <p>
+      Match backups to contract requirements → Ensure necessary training → Consider experience levels → Provide development opportunities
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Regular Testing">
+    <p>
+      Have backups lead events periodically → Update when team changes → Review effectiveness after coverage → Adjust based on performance
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Health Monitoring
+
+<Accordion>
+  <AccordionItem title="Red Flags">
+    <p>
+      <Badge text="Risk" variant="danger" /> Contracts with only 1st Manager → Gaps in succession chain → Same person backing too many contracts → Untrained backups
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Health Indicators">
+    <p>
+      <Badge text="Healthy" variant="success" /> All contracts have 2+ levels → Backups trained and ready → Regular rotation testing → Prompt updates with team changes
+    </p>
+  </AccordionItem>
+</Accordion>
+
+:::note[Minimum Coverage]
+Every contract should have at least a 1st Manager (primary) and 2nd Manager (first backup). Incomplete succession plans create operational risk.
+:::
