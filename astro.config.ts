@@ -171,7 +171,15 @@ export default defineConfig({
                   {
                     label: "Ops Support Operational Tracker",
                     slug: "roles/ops-support/ops-support-operational-tracker"
-                  }
+                  },
+                  {
+                    label: "Ops Support CIPHR Integration",
+                    slug: "roles/ops-support/ops-support-ciphr-integration"
+                  },
+                  {
+                    label: "Ops Suport Lieu & Holidays",
+                    slug: "roles/ops-support/ops-support-holidays-lieu"
+                  },
                 ],
               },
             ],

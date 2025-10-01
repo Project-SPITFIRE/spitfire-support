@@ -11,7 +11,7 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 
 - **[View Dashboard](/roles/ops-support/ops-support-dashboard)** - Access an overview of operations and key metrics
 - **[Operational Tracker](/roles/ops-support-operational-tracker)** - Monitor ongoing activities and task status
-- **[Upload CIPHR Exports](/roles/ops-support-upload-ciphr)** - Import and align employee records with CIPHR data
+- **[Upload CIPHR Exports](/roles/ops-support-ciphr-integration)** - Import and align employee records with CIPHR data
 - **[Manage Lieu & Holidays](/roles/ops-support-holidays-lieu)** - View and edit staff leave and holiday balances
 - **[Rota Management](/roles/ops-support-rota-management)** - Oversee scheduling and workforce planning through:
   - [Events Mapping](/roles/ops-support-events-mapping) – Manage managers’ schedules, allocate staff, and resolve conflicts

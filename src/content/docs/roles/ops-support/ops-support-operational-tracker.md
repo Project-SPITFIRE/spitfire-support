@@ -5,8 +5,7 @@ description: Detailed guide to using the Operational Tracker for contracts and m
 
 ---
 
-The **Operational Tracker** provides detailed visibility into operational performance across contracts and managers.  
-It complements the **Dashboard** by allowing you to drill down into specific contracts or managers and view operational days over time.
+The **Operational Tracker** provides detailed visibility into operational performance across contracts and managers. It complements the **Dashboard** by allowing you to drill down into specific contracts or managers and view operational days over time.
 
 ## Tabs in the Operational Tracker
 
