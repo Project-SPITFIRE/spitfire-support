@@ -17,11 +17,19 @@ As an **Operations Support**, you ensure smooth operational execution by managin
   - [Events Mapping](/roles/ops-support/ops-support-events-mapping) – Manage managers’ schedules, allocate staff, and resolve conflicts
   - [Contract Allocation](/roles/ops-support/ops-support-contract-allocation) – Create, edit, and cancel employee contracts and event assignments
   - [Succession Planning](/roles/ops-support/ops-support-succession-planning) – Manage succession plans by adding, editing, uploading, or deleting plans
-- **[Requests](/roles/ops-support/ops-support-requests)** - Submit new requests, edit existing ones, or track resolution status
-- **[Schedules](/roles/ops-support/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
+- **[Submit Requests](/roles/ops-support/ops-support-submit-requests)** - Submit new requests, edit existing ones, or track resolution status
 - **[Submitted Schedules](/roles/ops-supportops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
+- **[Schedules](/roles/ops-support/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
 - **[EOS Task Management](/roles/ops-support/ops-support-eos-task)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
+
+//manage request section
+
 - **[Account & Team Management](/roles/ops-support/ops-support-account-management)** - Manage user accounts, resend activation links, deactivate accounts, and manage teams
+
+//create user account section
+
+//team management account section
+
 - **[Configuration Center](/roles/ops-support/ops-support-configuration-center)** - Define roles, manage permissions, and configure request and scheduling rules
 
 ## Your dashboard overview

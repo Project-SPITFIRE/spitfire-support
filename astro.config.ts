@@ -180,6 +180,10 @@ export default defineConfig({
                     label: "Ops Suport Lieu & Holidays",
                     slug: "roles/ops-support/ops-support-holidays-lieu"
                   },
+                  {
+                    label: "Ops Support Submit Requests",
+                    slug: "roles/ops-support/ops-support-submit-requests"
+                  }
                 ],
               },
             ],
