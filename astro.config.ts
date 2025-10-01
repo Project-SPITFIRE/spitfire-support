@@ -197,6 +197,10 @@ export default defineConfig({
                     slug: "roles/ops-support/ops-support-allocated-contracts"
                   },
                   {
+                    label: "Ops Support EOS Actions",
+                    slug: "roles/ops-support/ops-support-eos-action"
+                  },
+                  {
                     label: "Ops Support Manage Request",
                     slug: "roles/ops-support/ops-support-manage-request"
                   },
