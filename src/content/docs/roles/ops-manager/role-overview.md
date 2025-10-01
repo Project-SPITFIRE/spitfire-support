@@ -8,7 +8,7 @@ description: Complete overview of Operations Manager capabilities and responsibi
 
 As an Operations Manager, you oversee both request management and EOS (Enterprise Operations Support) task coordination. You balance strategic request submission with hands-on task management and execution.
 
-## Your capabilities
+## Your default capabilities
 
 - **[Submit Request](./submit-request)** - Request operational improvements, team resources, and process enhancements
 - **[Update Request](./update-request)** - Modify requests to reflect operational changes
