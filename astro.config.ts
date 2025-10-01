@@ -183,6 +183,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Submit Requests",
                     slug: "roles/ops-support/ops-support-submit-requests"
+                  },
+                  {
+                    label: "Ops Support Submitted Schedules",
+                    slug: "roles/ops-support/ops-support-submitted-schedules"
                   }
                 ],
               },

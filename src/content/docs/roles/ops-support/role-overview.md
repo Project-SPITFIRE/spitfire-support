@@ -18,7 +18,7 @@ As an **Operations Support**, you ensure smooth operational execution by managin
   - [Contract Allocation](/roles/ops-support/ops-support-contract-allocation) – Create, edit, and cancel employee contracts and event assignments
   - [Succession Planning](/roles/ops-support/ops-support-succession-planning) – Manage succession plans by adding, editing, uploading, or deleting plans
 - **[Submit Requests](/roles/ops-support/ops-support-submit-requests)** - Submit new requests, edit existing ones, or track resolution status
-- **[Submitted Schedules](/roles/ops-supportops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
+- **[Submitted Schedules](/roles/ops-support/ops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
 - **[Schedules](/roles/ops-support/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
 - **[EOS Task Management](/roles/ops-support/ops-support-eos-task)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
 
