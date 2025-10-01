@@ -72,9 +72,78 @@ export default defineConfig({
                 badge: { text: "To-Do", variant: "note" },
                 items: [
                   {
-                    label: "What is Ops Support",
+                    label: "Ops Support Overview",
                     slug: "roles/ops-support/role-overview",
                   },
+                  {
+                    label: "Ops Support Dashboard",
+                    slug: "roles/ops-support/ops-support-dashboard",
+                  },
+                  {
+                    label: "Ops Support Operational Tracker",
+                    slug: "roles/ops-support/ops-support-operational-tracker"
+                  },
+                  {
+                    label: "Ops Support CIPHR Integration",
+                    slug: "roles/ops-support/ops-support-ciphr-integration"
+                  },
+                  {
+                    label: "Ops Suport Lieu & Holidays",
+                    slug: "roles/ops-support/ops-support-holidays-lieu"
+                  },
+                  {
+                    label: "Ops Support Rota Management",
+                    // slug removed
+                    items: [
+                      { label: "Events Mapping", slug: "roles/ops-support/ops-support-events-mapping" },
+                      { label: "Contract Allocation", slug: "roles/ops-support/ops-support-contract-allocation" },
+                      { label: "Succession Planning", slug: "roles/ops-support/ops-support-succession-planning" },
+                    ],
+                  },
+                  {
+                    label: "Ops Support Submit Requests",
+                    slug: "roles/ops-support/ops-support-submit-requests"
+                  },
+                  {
+                    label: "Ops Support Submitted Schedules",
+                    slug: "roles/ops-support/ops-support-submitted-schedules"
+                  },
+                  {
+                    label: "Ops Support Schedules",
+                    slug: "roles/ops-support/ops-support-schedules"
+                  },
+                  {
+                    label: "Ops Support Allocated Contracts",
+                    slug: "roles/ops-support/ops-support-allocated-contracts"
+                  },
+                  {
+                    label: "Ops Support Assigned Events",
+                    slug: "roles/ops-support/ops-support-assigned-events"
+                  },
+                  {
+                    label: "Ops Support EOS Actions",
+                    slug: "roles/ops-support/ops-support-eos-action"
+                  },
+                  {
+                    label: "Ops Support Manage Request",
+                    slug: "roles/ops-support/ops-support-manage-request"
+                  },
+                  {
+                    label: "Ops Support Account Management",
+                    slug: "roles/ops-support/ops-support-account-management"
+                  },
+                  {
+                    label: "Ops Support Create User Accounts",
+                    slug: "roles/ops-support/ops-support-create-account"
+                  },
+                  {
+                    label: "Ops Support Team Management",
+                    slug: "roles/ops-support/ops-support-team-management"
+                  },
+                  {
+                    label: "Ops Support Configuration Centre",
+                    slug: "roles/ops-support/ops-support-configuration-centre"
+                  }
                 ],
               },
             ],
