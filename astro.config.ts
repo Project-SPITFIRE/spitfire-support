@@ -191,6 +191,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Schedules",
                     slug: "roles/ops-support/ops-support-schedules"
+                  },
+                  {
+                    label: "Ops Support Allocated Contracts",
+                    slug: "roles/ops-support/ops-support-allocated-contracts"
                   }
                 ],
               },

@@ -20,9 +20,8 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 - **[Submit Requests](/roles/ops-support/ops-support-submit-requests)** - Submit new requests, edit existing ones, or track resolution status
 - **[Submitted Schedules](/roles/ops-support/ops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
 - **[Schedules](/roles/ops-support/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
-
 - **[EOS Task Management](/roles/ops-support/ops-support-eos-task)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
-  // allocated contracts section
+- **[Allocated Contracts](/roles/ops-support/ops-support-allocated-contracts)** - View assigned contracts, track total and active contracts, search by name, and access detailed information including client codes, operational days, and succession plans
 
 // assigned events section
 
