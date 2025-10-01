@@ -1,0 +1,154 @@
+---
+title: View EOS Tasks Involved
+description: How to see EOS tasks that relate to your operational area
+lastUpdated: 2025-09-30
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { Accordion, AccordionItem } from 'free-astro-components'
+
+You can see EOS tasks that relate to your operational area and responsibilities.
+
+## Accessing EOS tasks
+
+Navigate to **Management** → **EOS Actions** from the sidebar.
+
+## Dashboard overview
+
+The EOS Actions page displays tasks organized by week with filtering options.
+
+<Accordion>
+  <AccordionItem title="Filter Controls">
+    <p>
+      <strong>Month selector</strong>: Choose which month to view<br/>
+      <strong>Week selector</strong>: Filter by specific weeks<br/>
+      <strong>Priority filter</strong>: Filter by priority level<br/>
+      <strong>Status filter</strong>: Filter by task status
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Weekly Organization">
+    <p>
+      Tasks are grouped into weekly periods. Each week shows the date range and you can click to expand and see tasks within that period.
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Task information displayed
+
+Each task shows:
+- **Task title** and description
+- **Priority**: 🔴 High | 🟠 Mid | Low (no indicator)
+- **Status**: <Badge text="Not Started" variant="note" /> <Badge text="In Progress" variant="caution" /> <Badge text="Completed" variant="success" />
+- **Due date** and **Assigned to**
+
+## Priority levels
+
+<Accordion>
+  <AccordionItem title="🔴 High Priority">
+    <p>
+      <strong>Characteristics</strong>: Urgent operational needs, critical deadlines, high impact<br/>
+      <strong>Action</strong>: Address first, dedicate focused time, escalate blockers immediately
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🟠 Mid Priority">
+    <p>
+      <strong>Characteristics</strong>: Important but not urgent, standard timeline, moderate impact<br/>
+      <strong>Action</strong>: Plan into weekly schedule, maintain steady progress
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Low Priority">
+    <p>
+      <strong>Characteristics</strong>: Flexible scheduling, lower impact, can be deferred<br/>
+      <strong>Action</strong>: Work on during downtime or after higher priorities
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Task details
+
+Click any task to open full details showing:
+
+<Accordion>
+  <AccordionItem title="Task Information Panel">
+    <p>
+      Due date, last updated timestamp, assigned person, and task description
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Progress Overview">
+    <p>
+      Subtasks completed percentage and count with visual progress indicator
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Subtasks Section">
+    <p>
+      Individual work items with name, priority, assignee, and status for each subtask
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Activity & Notes">
+    <p>
+      Timeline of updates, changes, and communication about the task
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Effective filtering
+
+<Accordion variant="splitted">
+  <AccordionItem title="View Current Work">
+    <p>
+      Set to current week and <Badge text="In Progress" variant="caution" /> status to see active tasks
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Plan Ahead">
+    <p>
+      View upcoming weeks to anticipate workload and prepare for deadlines
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Focus on Priorities">
+    <p>
+      Filter by 🔴 High Priority to address urgent items first
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Track Completion">
+    <p>
+      Filter by <Badge text="Completed" variant="success" /> status to review accomplishments
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Weekly planning approach
+
+1. **Start of week**: Review all current week tasks
+2. **Check priorities**: Identify 🔴 high-priority items
+3. **Review subtasks**: Understand required work
+4. **Coordinate**: Connect with team on shared tasks
+5. **Update progress**: Keep subtask status current
+
+:::note[Task visibility]
+You'll only see EOS tasks where you're assigned as owner, responsible for subtasks, or listed as a stakeholder.
+:::
+
+## Common task types
+
+<Accordion>
+  <AccordionItem title="Event Preparation">
+    <p>
+      Tasks related to upcoming events you're managing, including setup and coordination activities
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Compliance & Verification">
+    <p>
+      Required checks, audits, and compliance verifications for operational standards
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Process Improvements">
+    <p>
+      Operational enhancements, workflow changes, and system optimizations
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Conflict Resolution">
+    <p>
+      Addressing scheduling conflicts, resource disputes, or operational issues
+    </p>
+  </AccordionItem>
+</Accordion>

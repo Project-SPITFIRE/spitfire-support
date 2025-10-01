@@ -1,0 +1,144 @@
+---
+title: Update Assigned EOS Subtask
+description: How to update the status and details of EOS subtasks assigned to you
+lastUpdated: 2025-09-30
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { Accordion, AccordionItem } from 'free-astro-components'
+
+You can update the status and details of EOS subtasks assigned to you within larger EOS tasks.
+
+## Access your subtasks
+
+1. Navigate to **Management** → **EOS Actions**
+2. Find your task → Click to open **Task Details**
+3. Locate the **Subtasks** section
+
+## Update a subtask
+
+1. Find your assigned subtask in the table
+2. Click the subtask row or edit icon
+3. Update status and add progress notes
+4. Save changes
+
+## Status options
+
+<Badge text="Not Started" variant="note" /> Ready to begin work
+
+<Badge text="In Progress" variant="caution" /> Actively working on this
+
+<Badge text="Completed" variant="success" /> Fully finished and ready for review
+
+## Task sections overview
+
+<Accordion>
+  <AccordionItem title="Task Information Panel">
+    <p>
+      Shows due date, last updated timestamp, and main task owner. Use this to understand overall task context and deadlines.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Progress Overview Panel">
+    <p>
+      Visual progress indicator with subtasks completed count and percentage. Helps you see how your work fits the bigger picture.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Subtasks Section">
+    <p>
+      Table showing subtask name, priority, assigned person, and status. This is where you make your updates.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Activity Log">
+    <p>
+      Automatic tracking of all status changes with timestamps. Provides audit trail of who made updates and when.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Notes Section">
+    <p>
+      Add updates, questions, or comments visible to all task stakeholders. Use for progress updates and coordination.
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Example updates
+
+<Accordion>
+  <AccordionItem title="Starting Work">
+    <p>
+      <strong>Status</strong>: <Badge text="Not Started" variant="note" /> → <Badge text="In Progress" variant="caution" />
+    </p>
+    <p>
+      <strong>Note</strong>: "Beginning work on this subtask, reviewing requirements"
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Progress Update">
+    <p>
+      <strong>Status</strong>: <Badge text="In Progress" variant="caution" />
+    </p>
+    <p>
+      <strong>Note</strong>: "Completed first phase, moving to second phase next"
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Blocked">
+    <p>
+      <strong>Status</strong>: <Badge text="In Progress" variant="caution" />
+    </p>
+    <p>
+      <strong>Note</strong>: "Blocked on X, need input from Y team before proceeding"
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Completing Work">
+    <p>
+      <strong>Status</strong>: <Badge text="In Progress" variant="caution" /> → <Badge text="Completed" variant="success" />
+    </p>
+    <p>
+      <strong>Note</strong>: "Finished all requirements, deliverables ready for review"
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Best practices
+
+- **Update weekly** or when significant progress occurs
+- **Flag blockers immediately** - don't wait to report obstacles
+- **Be specific** about what was accomplished
+- **Coordinate** with other subtask assignees when needed
+
+## What you can access
+
+<Accordion>
+  <AccordionItem title="View Permissions">
+    <p>
+      All subtasks within your assigned tasks, other team members' progress, task description and activity history, notes from other stakeholders.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Edit Permissions">
+    <p>
+      Your assigned subtasks' status only, task notes and comments, progress updates for your work.
+    </p>
+  </AccordionItem>
+</Accordion>
+
+:::note[Permissions]
+You can only update subtasks specifically assigned to you. Contact the task owner or Ops Support for other modifications.
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Can't update subtask">
+    <p>
+      Verify subtask is assigned to you, check if task is closed/archived, contact Ops Support if access issues persist.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Unclear requirements">
+    <p>
+      Review task Description section, check existing notes for clarifications, add note requesting clarification, contact task creator or Ops Support.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Conflicting priorities">
+    <p>
+      Document conflict in task notes, contact Ops Support to prioritize, request timeline adjustment if needed.
+    </p>
+  </AccordionItem>
+</Accordion>
