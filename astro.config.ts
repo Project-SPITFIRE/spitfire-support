@@ -206,6 +206,10 @@ export default defineConfig({
                     slug: "roles/ops-support/ops-support-allocated-contracts"
                   },
                   {
+                    label: "Ops Support Assigned Events",
+                    slug: "roles/ops-support/ops-support-assigned-events"
+                  },
+                  {
                     label: "Ops Support EOS Actions",
                     slug: "roles/ops-support/ops-support-eos-action"
                   },

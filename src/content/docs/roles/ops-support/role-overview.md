@@ -22,9 +22,7 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 - **[Schedules](/roles/ops-support/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
 - **[EOS Task Management](/roles/ops-support/ops-support-eos-action)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
 - **[Allocated Contracts](/roles/ops-support/ops-support-allocated-contracts)** - View assigned contracts, track total and active contracts, search by name, and access detailed information including client codes, operational days, and succession plans
-
-// assigned events section
-
+- **[Assigned Events](/roles/ops-support/ops-support-assigned-events)** - View all events assigned to you, search by event name, and see your role in the succession plan, along with event date and location.
 - **[Manage Request](/roles/ops-support/ops-support-manage-request)** - Search, filter, update, and track requests; add notes, attach files, and mark requests as complete or missing information
 - **[Account Management](/roles/ops-support/ops-support-account-management)** - View user details, edit user information, resend activation links via email, and deactivate accounts
 - **[Create User Account](/roles/ops-support/ops-support-create-account)** - Create new user accounts with required details and assign initial roles or teams
