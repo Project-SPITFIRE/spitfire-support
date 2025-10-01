@@ -10,7 +10,7 @@ You can update the status and details of EOS subtasks assigned to you within lar
 
 ## Accessing your subtasks
 
-1. Navigate to **Management** → **EOS Actions**
+1. On your sidebar, Navigate to **Management** → **EOS Actions**
 2. Find the task containing your subtask
 3. Click on the task to open **Task Details**
 4. Locate the **Subtasks** section

@@ -15,6 +15,7 @@ import astroD2 from "astro-d2";
 
 //https://astro.build/config
 export default defineConfig({
+
   integrations: [
     starlight({
       plugins: [
@@ -126,8 +127,10 @@ export default defineConfig({
         alt: "Spitfire Logo",
       },
 
+
+      
       customCss: [
-        "@/styles/global.css",
+        "./src/styles/global.css",
         "@fontsource-variable/atkinson-hyperlegible-next",
         "@fontsource-variable/fira-code",
       ],
