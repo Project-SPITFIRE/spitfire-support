@@ -27,11 +27,11 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 
 //manage request section
 
-- **[Account & Team Management](/roles/ops-support/ops-support-account-management)** - Manage user accounts, resend activation links, deactivate accounts, and manage teams
+- **[Account Management](/roles/ops-support/ops-support-account-management)** - View user details, edit user information, resend activation links via email, and deactivate accounts
 
-//create user account section
+- **[Create User Account](/roles/ops-support/ops-support-create-account)** - Create new user accounts with required details and assign initial roles or teams
 
-//team management account section
+- **[Team Management](/roles/ops-support/ops-support-team-management)** - Create, update, and delete teams, ensuring proper grouping and role allocation
 
 - **[Configuration Center](/roles/ops-support/ops-support-configuration-center)** - Define roles, manage permissions, and configure request and scheduling rules
 
