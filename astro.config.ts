@@ -215,6 +215,10 @@ export default defineConfig({
                   {
                     label: "Ops Support Team Management",
                     slug: "roles/ops-support/ops-support-team-management"
+                  },
+                  {
+                    label: "Ops Support Configuration Centre",
+                    slug: "roles/ops-support/ops-support-configuration-centre"
                   }
                 ],
               },
