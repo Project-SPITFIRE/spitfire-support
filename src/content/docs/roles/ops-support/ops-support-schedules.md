@@ -1,11 +1,13 @@
 ---
 title: Operations Support Schedules Guide
-description: Comprehensive guide to managing schedules, including calendar view, filters, multi-select, and multiple schedules per day
+description: Comprehensive guide to managing schedules, including calendar view, filters, multi-select, multiple schedules per day, and status indicators
 ---
 
 ---
 
-The **Schedules** feature is the central hub for managing and viewing work schedules. It allows operations support to add, update, or delete schedules while providing powerful filtering, search, and multiple viewing modes for precise schedule management. A single user can also have **multiple schedules assigned in a single day** to reflect varied tasks or shifts.
+The **Schedules** feature is the central hub for managing and viewing work schedules.  
+It allows operations support to add, update, or delete schedules while providing powerful filtering, search, and multiple viewing modes for precise schedule management.  
+A single user can also have **multiple schedules assigned in a single day** to reflect varied tasks or shifts.
 
 ## Key Features of Schedules
 
@@ -48,6 +50,15 @@ The **Schedules** feature is the central hub for managing and viewing work sched
    – The specific activities assigned for that day.  
    – Multiple schedules if applicable.
 
+- **Calendar Color Indicators**  
+  • **Blue highlight** → Operational schedule  
+  • **Yellow highlight** → Non-operational schedule  
+  • Each highlighted block also shows the **status of the schedule**:  
+   – **Submitted** – schedule created but pending verification  
+   – **Verified by CIPHR** – officially confirmed  
+   – **Conflict Identified** – overlaps or issues flagged  
+   – **Verified** – schedule checked and confirmed internally
+
 ---
 
 ## How to Use the Schedules Module
@@ -68,14 +79,17 @@ The **Schedules** feature is the central hub for managing and viewing work sched
 6. To view a user’s schedule:
    - Click on their name in the calendar or table.
    - Review whether their day is operational or non-operational.
-   - Check if multiple schedules exist for the same day and view their details.
+   - Check the **color-coded highlights** for type + status.
+   - If multiple schedules exist for the same day, view each one’s details.
 
 ---
 
 ## Quick Tips
 
 - **Schedules can only be added in Calendar View** — Table View is for reviewing and editing only.
+- **Blue = operational**, **Yellow = non-operational** → use these to scan the calendar quickly.
 - Use **multiple schedules per day** to represent split shifts or complex task structures.
+- **Status tags (submitted, verified, conflict, etc.)** appear directly in calendar highlights.
 - Use **Calendar View** for quick navigation, and **Table View** when reviewing multiple entries per day.
 - Remember: **multi-select works only on future dates** — current and past dates are restricted.
 - Always check **role + team filters** to ensure proper workload distribution.
