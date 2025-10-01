@@ -5,8 +5,6 @@ description: Detailed guide to understanding and using the Operations Support Da
 
 ---
 
-# Operations Support Dashboard
-
 The **Dashboard** is your operational control center. It provides a high-level overview of key scheduling, task, and compliance metrics, helping you track performance and quickly identify issues that need action.
 
 ## What you can see
