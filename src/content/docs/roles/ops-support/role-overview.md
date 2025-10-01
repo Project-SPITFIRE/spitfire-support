@@ -9,20 +9,20 @@ As an **Operations Support**, you ensure smooth operational execution by managin
 
 ## Your capabilities
 
-- **[View Dashboard](./ops-support-dashboard)** - Access an overview of operations and key metrics
-- **[Operational Tracker](./ops-support-operational-tracker)** - Monitor ongoing activities and task status
-- **[Upload CIPHR Exports](./ops-support-upload-ciphr)** - Import and align employee records with CIPHR data
-- **[Manage Lieu & Holidays](./ops-support-holidays-lieu)** - View and edit staff leave and holiday balances
-- **[Rota Management](./ops-support-rota-management)** - Oversee scheduling and workforce planning through:
-  - [Events Mapping](./ops-support-events-mapping) – Manage managers’ schedules, allocate staff, and resolve conflicts
-  - [Contract Allocation](./ops-support-contract-allocation) – Create, edit, and cancel employee contracts and event assignments
-  - [Succession Planning](./ops-support-succession-planning) – Manage succession plans by adding, editing, uploading, or deleting plans
+- **[View Dashboard](/roles/ops-support/ops-support-dashboard)** - Access an overview of operations and key metrics
+- **[Operational Tracker](/roles/ops-support-operational-tracker)** - Monitor ongoing activities and task status
+- **[Upload CIPHR Exports](/roles/ops-support-upload-ciphr)** - Import and align employee records with CIPHR data
+- **[Manage Lieu & Holidays](/roles/ops-support-holidays-lieu)** - View and edit staff leave and holiday balances
+- **[Rota Management](/roles/ops-support-rota-management)** - Oversee scheduling and workforce planning through:
+  - [Events Mapping](/roles/ops-support-events-mapping) – Manage managers’ schedules, allocate staff, and resolve conflicts
+  - [Contract Allocation](/roles/ops-support-contract-allocation) – Create, edit, and cancel employee contracts and event assignments
+  - [Succession Planning](/roles/ops-support-succession-planning) – Manage succession plans by adding, editing, uploading, or deleting plans
 - **[Requests](./ops-support-requests)** - Submit new requests, edit existing ones, or track resolution status
-- **[Schedules](./ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
-- **[Submitted Schedules](./ops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
-- **[EOS Task Management](./ops-support-eos-task)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
-- **[Account & Team Management](./ops-support-account-management)** - Manage user accounts, resend activation links, deactivate accounts, and manage teams
-- **[Configuration Center](./ops-support-configuration-center)** - Define roles, manage permissions, and configure request and scheduling rules
+- **[Schedules](/roles/ops-support-schedules)** - Add, update, or delete schedules; view own, team, or all schedules
+- **[Submitted Schedules](/roles/ops-support-submitted-schedules)** - Update, clarify, verify, or add notes to submitted schedules
+- **[EOS Task Management](/roles/ops-support-eos-task)** - Create, assign, edit, and update EOS tasks and subtasks, with notes for visibility
+- **[Account & Team Management](/roles/ops-support-account-management)** - Manage user accounts, resend activation links, deactivate accounts, and manage teams
+- **[Configuration Center](/roles/ops-support-configuration-center)** - Define roles, manage permissions, and configure request and scheduling rules
 
 ## Your dashboard overview
 
