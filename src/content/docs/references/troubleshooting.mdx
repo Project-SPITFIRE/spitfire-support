@@ -1,0 +1,206 @@
+---
+title: Troubleshooting
+description: Common issues and solutions for the Spitfire Rota Management System
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+## Authentication & Access Issues
+
+<Accordion>
+  <AccordionItem title="Can't remember password" icon="tabler:lock">
+    <p><strong>Solution:</strong> Use the "Forgot Password" link on the login screen</p>
+    <ul>
+      <li>Click the "Forgot Password" link on the login page</li>
+      <li>Enter your email address</li>
+      <li>Check your email for reset instructions</li>
+      <li>If no email arrives, contact your administrator</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Account locked or disabled" icon="tabler:user-off">
+    <p><strong>Solution:</strong> Contact your system administrator</p>
+    <ul>
+      <li>Accounts may be locked after multiple failed login attempts</li>
+      <li>Inactive accounts need administrator reactivation</li>
+      <li>Provide your username/email when contacting support</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Page won't load after login" icon="tabler:refresh">
+    <p><strong>Solution:</strong> Clear browser cache and try again</p>
+    <ul>
+      <li>Clear your browser cache and cookies</li>
+      <li>Close and reopen your browser</li>
+      <li>Try logging in again</li>
+      <li>If problem persists, try a different browser</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Features missing from menu" icon="tabler:menu-2">
+    <p><strong>Check:</strong> Your user role permissions</p>
+    <ul>
+      <li>Some features are role-specific</li>
+      <li>Contact administrator if you need additional access</li>
+      <li>Refresh the page to ensure latest permissions are loaded</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Request & Task Problems
+
+<Accordion>
+  <AccordionItem title="Can't submit request" icon="tabler:send">
+    <p><strong>Check:</strong> All required fields are completed</p>
+    <ul>
+      <li>Look for highlighted missing fields</li>
+      <li>Ensure all required information is provided</li>
+      <li>Check that file attachments (if any) are properly uploaded</li>
+      <li>Try saving as draft first, then submitting</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Request disappeared" icon="tabler:search">
+    <p><strong>Check:</strong> Your drafts folder first</p>
+    <ul>
+      <li>Check the "Drafts" section - requests auto-save</li>
+      <li>Use the search function to locate by keywords</li>
+      <li>Check different status filters</li>
+      <li>Contact Operations Support if still missing</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Wrong information submitted" icon="tabler:edit">
+    <p><strong>Solution:</strong> Contact Operations Support immediately</p>
+    <ul>
+      <li>Email or call Operations Support as soon as possible</li>
+      <li>Provide the request ID number</li>
+      <li>Specify what needs to be corrected</li>
+      <li>They may be able to update before processing begins</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Can't see assigned EOS tasks" icon="tabler:list">
+    <p><strong>Check:</strong> Date range and filters</p>
+    <ul>
+      <li>Verify you're looking in the correct date range</li>
+      <li>Check task status filters</li>
+      <li>Refresh the page to load latest assignments</li>
+      <li>Contact task creator if tasks are still missing</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Can't update task status" icon="tabler:edit-off">
+    <p><strong>Check:</strong> Task assignment permissions</p>
+    <ul>
+      <li>Only assigned users can update specific subtasks</li>
+      <li>Verify you're assigned to the correct subtask</li>
+      <li>Check if the task deadline has passed</li>
+      <li>Contact the task owner if access is needed</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Schedule & Data Issues
+
+<Accordion>
+  <AccordionItem title="Schedule changes not showing" icon="tabler:calendar-off">
+    <p><strong>Solution:</strong> Refresh and check status</p>
+    <ul>
+      <li>Refresh the page to see latest updates</li>
+      <li>Check if changes are still in "Draft" status</li>
+      <li>Verify the effective date of changes</li>
+      <li>Contact Operations Support if changes are approved but not visible</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Can't see team schedules" icon="tabler:users">
+    <p><strong>Check:</strong> Role permissions and team assignments</p>
+    <ul>
+      <li>Verify you have permission to view team schedules</li>
+      <li>Check you're assigned to the correct team</li>
+      <li>Ensure you're looking at the right date range</li>
+      <li>Contact administrator if access should be granted</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="CIPHR sync failed" icon="tabler:database-off">
+    <p><strong>Solution:</strong> Contact Operations Support</p>
+    <ul>
+      <li>This requires technical intervention</li>
+      <li>Operations Support will retry the synchronization</li>
+      <li>Provide the specific schedule or date affected</li>
+      <li>Check back in 30 minutes for sync completion</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Data not saving" icon="tabler:device-floppy">
+    <p><strong>Solution:</strong> Check connection and retry</p>
+    <ul>
+      <li>Verify your internet connection is stable</li>
+      <li>Try saving again</li>
+      <li>Copy your work before refreshing if possible</li>
+      <li>Contact support if problem continues</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Technical Issues
+
+<Accordion>
+  <AccordionItem title="Page loading slowly" icon="tabler:loader">
+    <p><strong>Solution:</strong> Check connection and browser</p>
+    <ul>
+      <li>Test your internet connection speed</li>
+      <li>Close other browser tabs and applications</li>
+      <li>Try refreshing the page</li>
+      <li>Clear browser cache if problem persists</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Browser compatibility" icon="tabler:browser">
+    <p><strong>Supported browsers:</strong> Latest versions recommended</p>
+    <ul>
+      <li><strong>Supported:</strong> Chrome, Firefox, Safari, Edge</li>
+      <li><strong>Action:</strong> Update to the latest browser version</li>
+      <li><strong>Alternative:</strong> Try a different supported browser</li>
+      <li>Internet Explorer is not supported</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Help
+
+<Accordion>
+  <AccordionItem title="Contact Operations Support" icon="tabler:headset">
+    <p><strong>For:</strong> Request, task, schedule, and workflow issues</p>
+    <ul>
+      <li>Request processing and status questions</li>
+      <li>EOS task assignments and updates</li>
+      <li>Schedule conflicts and changes</li>
+      <li>General system usage questions</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contact System Administrator" icon="tabler:shield">
+    <p><strong>For:</strong> Access, accounts, and permissions</p>
+    <ul>
+      <li>Login and authentication problems</li>
+      <li>User account creation or modifications</li>
+      <li>Role and permission changes</li>
+      <li>System configuration issues</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Emergency Support" icon="tabler:urgent">
+    <p><strong>For urgent issues affecting operations</strong></p>
+    <ul>
+      <li>Contact Operations Support immediately</li>
+      <li>Provide specific error messages if any</li>
+      <li>Include the steps that led to the problem</li>
+      <li>Mention if the issue affects multiple users</li>
+    </ul>
+  </AccordionItem>
+</Accordion>

@@ -1,0 +1,186 @@
+---
+title: EOS Tasks
+description: Complete guide to managing EOS tasks and subtasks for operational coordination
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+
+Manage operational tasks with subtask assignments, progress tracking, and team coordination.
+
+## Who can use this feature
+
+| Role | Create Tasks | Assign Subtasks | Update Own | Update Others | View All |
+|------|--------------|----------------|------------|---------------|----------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Operations Manager | ✗ | ✗ | ✓ | ✗ | Assigned only |
+| Operations Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+{/* | COO | ✗ | ✗ | ✓ | ✗ | Assigned only |
+| Deputies | ✗ | ✗ | ✓ | ✗ | Assigned only |
+| HOO | ✗ | ✗ | ✓ | ✗ | Assigned only |
+| Logistics | ✗ | ✗ | ✓ | ✗ | Assigned only | */}
+
+## What is an EOS task?
+
+EOS (Event Operations Support) tasks are structured work items that break down complex operational activities into manageable subtasks. They ensure coordinated execution across multiple team members.
+
+## Task structure
+
+<Accordion>
+  <AccordionItem title="Main Task">
+    <p>
+      <strong>Contains</strong>: Overall objective, deadline, priority, and description<br/>
+      <strong>Assigned to</strong>: Task owner responsible for coordination<br/>
+      <strong>Status</strong>: Reflects overall completion progress
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Subtasks">
+    <p>
+      <strong>Contains</strong>: Specific actions, individual deadlines, assigned person<br/>
+      <strong>Assigned to</strong>: Individual team members<br/>
+      <strong>Status</strong>: Independent progress tracking
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Task statuses
+
+### Task-Level Statuses
+- <Badge text="Not Started" variant="note" /> **Not Started**: Newly created, planning phase
+- <Badge text="In Progress" variant="caution" /> **In Progress**: Active work on subtasks
+- <Badge text="Completed" variant="success" /> **Completed**: All subtasks finished
+- <Badge text="On Hold" variant="note" /> **On Hold**: Temporarily paused
+- <Badge text="Cancelled" variant="danger" /> **Cancelled**: No longer required
+
+### Subtask Statuses
+- <Badge text="Not Started" variant="note" /> **Not Started**: Ready to begin
+- <Badge text="In Progress" variant="caution" /> **In Progress**: Actively working
+- <Badge text="Completed" variant="success" /> **Completed**: Finished and verified
+- <Badge text="Blocked" variant="danger" /> **Blocked**: Cannot proceed due to dependency
+
+## Priority levels
+
+<Accordion>
+  <AccordionItem title="🔴 High Priority">
+    <p>
+      <strong>Urgency</strong>: Critical operational needs, immediate attention required<br/>
+      <strong>Timeline</strong>: Same day or next business day<br/>
+      <strong>Examples</strong>: Emergency event preparation, critical system issues
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🟠 Medium Priority">
+    <p>
+      <strong>Urgency</strong>: Important but not critical, standard processing<br/>
+      <strong>Timeline</strong>: 2-5 business days<br/>
+      <strong>Examples</strong>: Routine event setup, regular compliance checks
+    </p>
+  </AccordionItem>
+  <AccordionItem title="🟢 Low Priority">
+    <p>
+      <strong>Urgency</strong>: Can be scheduled flexibly, no immediate impact<br/>
+      <strong>Timeline</strong>: 1-2 weeks<br/>
+      <strong>Examples</strong>: Process improvements, training activities
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Task lifecycle
+
+<Accordion>
+  <AccordionItem title="1. Creation & Planning">
+    <p>
+      Operations Support creates task with objectives, breaks down into subtasks, assigns team members
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2. Assignment & Notification">
+    <p>
+      Subtasks assigned to specific individuals, notifications sent, deadlines established
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3. Execution & Tracking">
+    <p>
+      Team members update subtask progress, coordination through task notes, regular status monitoring
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4. Completion & Review">
+    <p>
+      All subtasks completed, overall task marked complete, lessons learned documented
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Common task types
+
+<Accordion>
+  <AccordionItem title="Event Preparation">
+    <p>
+      <strong>Purpose</strong>: Coordinate all aspects of upcoming events<br/>
+      <strong>Subtasks</strong>: Venue setup, staff assignments, equipment checks, briefings<br/>
+      <strong>Timeline</strong>: 1-2 weeks before event
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Compliance Verification">
+    <p>
+      <strong>Purpose</strong>: Ensure operational standards are met<br/>
+      <strong>Subtasks</strong>: Document reviews, training verification, audit preparations<br/>
+      <strong>Timeline</strong>: Monthly or quarterly cycles
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Process Implementation">
+    <p>
+      <strong>Purpose</strong>: Roll out new procedures or system changes<br/>
+      <strong>Subtasks</strong>: Training delivery, system updates, testing, communication<br/>
+      <strong>Timeline</strong>: 2-4 weeks for major changes
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Issue Resolution">
+    <p>
+      <strong>Purpose</strong>: Address operational problems or conflicts<br/>
+      <strong>Subtasks</strong>: Investigation, stakeholder consultation, solution implementation<br/>
+      <strong>Timeline</strong>: 1-5 days depending on complexity
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Best practices
+
+**For Task Owners**:
+- Break down complex work into clear, actionable subtasks
+- Set realistic deadlines with buffer time
+- Monitor progress regularly and update stakeholders
+- Document important decisions and changes
+
+**For Subtask Assignees**:
+- Update status promptly when starting or completing work
+- Communicate blockers immediately
+- Ask questions rather than making assumptions
+- Coordinate with other subtask owners when needed
+
+## Related guides
+
+- [Create EOS Tasks →](../how-to-guides/create-eos-tasks)
+- [Assign Subtasks →](../how-to-guides/assign-subtasks)
+- [Update Task Progress →](../how-to-guides/update-task-progress)
+- [Monitor Task Completion →](../how-to-guides/monitor-tasks)
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Can't see my assigned tasks">
+    <p>
+      Check Management → EOS Actions. Verify your role has task access. Contact Operations Support if tasks are missing.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Subtask appears blocked">
+    <p>
+      Review task notes for blocker details. Contact task owner or Operations Support for resolution guidance.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Task deadline unrealistic">
+    <p>
+      Communicate with task owner immediately. Document concerns in task notes and propose alternative timeline.
+    </p>
+  </AccordionItem>
+</Accordion>

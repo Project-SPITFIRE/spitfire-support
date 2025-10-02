@@ -1,0 +1,13 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props as Props;
+---
+
+<div
+  class={`accordion-group rounded-xl border border-zinc-200/30 bg-transparent shadow-none transition-all duration-300 dark:border-zinc-800/30 mb-4 ${className}`}
+>
+  <slot />
+</div>

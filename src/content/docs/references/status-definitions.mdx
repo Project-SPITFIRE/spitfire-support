@@ -1,0 +1,153 @@
+---
+title: Status Definitions
+description: Complete list of status values used throughout the Spitfire system
+---
+
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+## Request Statuses
+
+<Accordion>
+  <AccordionItem title="Draft" icon="tabler:edit">
+    <p><strong>Meaning:</strong> Request created but not yet submitted</p>
+    <ul>
+      <li><strong>Action:</strong> Continue editing or submit for review</li>
+      <li><strong>Who sees it:</strong> Request creator only</li>
+      <li><strong>Next step:</strong> Complete required fields and submit</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Submitted" icon="tabler:send">
+    <p><strong>Meaning:</strong> Request sent for review by Operations Support</p>
+    <ul>
+      <li><strong>Action:</strong> Awaiting initial review and validation</li>
+      <li><strong>Who sees it:</strong> Creator and Operations Support</li>
+      <li><strong>Timeline:</strong> Typically reviewed within 1-2 business days</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Under Review" icon="tabler:eye">
+    <p><strong>Meaning:</strong> Operations Support is evaluating the request</p>
+    <ul>
+      <li><strong>Action:</strong> May request additional information from submitter</li>
+      <li><strong>Who sees it:</strong> Creator and Operations Support</li>
+      <li><strong>Duration:</strong> Varies based on request complexity</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="In Progress" icon="tabler:progress">
+    <p><strong>Meaning:</strong> Request approved and work has begun</p>
+    <ul>
+      <li><strong>Action:</strong> Implementation underway</li>
+      <li><strong>Who sees it:</strong> All relevant stakeholders</li>
+      <li><strong>Updates:</strong> Progress tracked and communicated</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Completed" icon="tabler:check">
+    <p><strong>Meaning:</strong> Request fulfilled successfully</p>
+    <ul>
+      <li><strong>Action:</strong> No further action required</li>
+      <li><strong>Who sees it:</strong> All relevant stakeholders</li>
+      <li><strong>Documentation:</strong> Outcomes recorded for reference</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Rejected" icon="tabler:x">
+    <p><strong>Meaning:</strong> Request not approved</p>
+    <ul>
+      <li><strong>Action:</strong> Review rejection reasons provided</li>
+      <li><strong>Who sees it:</strong> Creator and Operations Support</li>
+      <li><strong>Options:</strong> Revise and resubmit or discuss alternatives</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## EOS Task Statuses
+
+<Accordion>
+  <AccordionItem title="Not Started" icon="tabler:circle">
+    <p><strong>Meaning:</strong> Task created but work not yet begun</p>
+    <ul>
+      <li><strong>Action:</strong> Begin working on assigned subtasks</li>
+      <li><strong>Visibility:</strong> All assigned team members</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="In Progress" icon="tabler:loader">
+    <p><strong>Meaning:</strong> One or more subtasks are being worked on</p>
+    <ul>
+      <li><strong>Action:</strong> Continue completing subtasks</li>
+      <li><strong>Tracking:</strong> Progress updated regularly</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Completed" icon="tabler:circle-check">
+    <p><strong>Meaning:</strong> All subtasks finished successfully</p>
+    <ul>
+      <li><strong>Action:</strong> Task closed, no further action needed</li>
+      <li><strong>Review:</strong> Outcomes documented</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Overdue" icon="tabler:alert-triangle">
+    <p><strong>Meaning:</strong> Task deadline has passed</p>
+    <ul>
+      <li><strong>Action:</strong> Urgent attention required to complete</li>
+      <li><strong>Escalation:</strong> May require management intervention</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Schedule & User Statuses
+
+<Accordion>
+  <AccordionItem title="Schedule: Draft" icon="tabler:calendar-minus">
+    <p><strong>Meaning:</strong> Schedule preferences submitted but not finalized</p>
+    <ul>
+      <li><strong>Action:</strong> Awaiting review and approval</li>
+      <li><strong>Editable:</strong> Can still be modified by submitter</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Schedule: Approved" icon="tabler:calendar-check">
+    <p><strong>Meaning:</strong> Schedule confirmed and active</p>
+    <ul>
+      <li><strong>Action:</strong> Ready for CIPHR synchronization</li>
+      <li><strong>Changes:</strong> Require approval process</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Schedule: Synchronized" icon="tabler:refresh">
+    <p><strong>Meaning:</strong> Schedule data sent to payroll system</p>
+    <ul>
+      <li><strong>Action:</strong> Schedule is live and operational</li>
+      <li><strong>Integration:</strong> Data available in CIPHR</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="User: Active" icon="tabler:user-check">
+    <p><strong>Meaning:</strong> User can log in and access assigned features</p>
+    <ul>
+      <li><strong>Access:</strong> Normal system access</li>
+      <li><strong>Permissions:</strong> Based on assigned role</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="User: Inactive" icon="tabler:user-off">
+    <p><strong>Meaning:</strong> Account temporarily disabled</p>
+    <ul>
+      <li><strong>Action:</strong> Contact administrator to reactivate</li>
+      <li><strong>Reason:</strong> May be temporary or pending updates</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="User: Pending Setup" icon="tabler:user-plus">
+    <p><strong>Meaning:</strong> Account created but user hasn't completed setup</p>
+    <ul>
+      <li><strong>Action:</strong> User must complete initial login and profile setup</li>
+      <li><strong>Timeline:</strong> Typically completed within first login</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
