@@ -1,0 +1,305 @@
+---
+title: Lieu & Holidays
+description: Monthly leave and attendance tracking system for managing staff time off and lieu time balances
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Track and manage staff leave balances, holiday entitlements, and attendance data through the comprehensive Monthly Leave & Attendance Tracker.
+
+## Who can use this feature
+
+| Role | View All Staff | View Own Data | Manage Balances | Export Data | Add Leave Records |
+|------|----------------|---------------|-----------------|-------------|-------------------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Head Of Operations | ✓ | ✓ | View only | ✓ | ✗ |
+| Operations Manager | Team only | ✓ | View only | ✓ | ✗ |
+| All Others | ✗ | ✓ | View only | ✗ | ✗ |
+
+## What is Lieu & Holidays?
+
+The Lieu & Holidays system provides comprehensive tracking of:
+- **Lieu Time** - Time off in lieu of overtime worked
+- **Holiday Entitlements** - Annual leave and vacation days
+- **Days Off Taken** - Actual time off used by staff
+- **Balance Management** - Real-time tracking of available leave
+- **Attendance Monitoring** - Monthly overview of staff attendance patterns
+
+## Monthly Leave & Attendance Tracker
+
+<Accordion>
+  <AccordionItem title="Tracker Overview" icon="tabler:calendar-stats">
+    <p>Comprehensive overview of all staff leave and attendance data.</p>
+    <ul>
+      <li><strong>Monthly Focus:</strong> Track leave and attendance by specific months</li>
+      <li><strong>Staff Overview:</strong> View all team members in a single interface</li>
+      <li><strong>Balance Tracking:</strong> Monitor lieu time and holiday balances</li>
+      <li><strong>Usage Monitoring:</strong> Track actual days off taken by staff</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search and Filter Controls" icon="tabler:filter">
+    <p>Find and filter staff records efficiently.</p>
+    <ul>
+      <li><strong>Employee Search:</strong> "Search employee" function to find specific staff members</li>
+      <li><strong>Month Selection:</strong> Dropdown to select specific month (September shown)</li>
+      <li><strong>Year Selection:</strong> Year dropdown for historical data (2025 shown)</li>
+      <li><strong>Real-time Filtering:</strong> Instant results as you type or select filters</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Data Columns" icon="tabler:table">
+    <p>Structured view of leave and attendance information.</p>
+    <ul>
+      <li><strong>Name:</strong> Staff member identification with initials and full name</li>
+      <li><strong>Lieu B/Fwd:</strong> Lieu time balance brought forward from previous period</li>
+      <li><strong>Holidays B/Fwd:</strong> Holiday entitlement brought forward</li>
+      <li><strong>Days Off Taken:</strong> Actual days off used in the current period</li>
+      <li><strong>Holidays Taken:</strong> Specific holiday days taken from entitlement</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Understanding Leave Types
+
+<Accordion>
+  <AccordionItem title="Lieu Time (Time Off In Lieu)" icon="tabler:clock-hour-9">
+    <p>Compensatory time off earned through overtime or additional work.</p>
+    <ul>
+      <li><strong>Lieu B/Fwd:</strong> Balance of lieu time available (typically 20 days shown)</li>
+      <li><strong>Earning Lieu Time:</strong> Accumulated through working overtime or extra shifts</li>
+      <li><strong>Usage:</strong> Can be used for time off at employee's discretion</li>
+      <li><strong>Balance Management:</strong> Tracks available lieu time throughout the year</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Holiday Entitlement" icon="tabler:beach">
+    <p>Annual leave and vacation days allocated to staff.</p>
+    <ul>
+      <li><strong>Holidays B/Fwd:</strong> Annual holiday entitlement (typically 20 days shown)</li>
+      <li><strong>Standard Allocation:</strong> Usually 20-25 days per year depending on contract</li>
+      <li><strong>Rollover Policy:</strong> Some unused holidays may carry forward to next year</li>
+      <li><strong>Usage Tracking:</strong> Monitor how much holiday time has been used</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Days Off Taken" icon="tabler:calendar-off">
+    <p>Actual time off used by staff members during the tracking period.</p>
+    <ul>
+      <li><strong>Total Days Off:</strong> All types of leave taken (sick, personal, etc.)</li>
+      <li><strong>Current Usage:</strong> Most staff showing 0 days off taken in current period</li>
+      <li><strong>Tracking Method:</strong> Includes all approved time off regardless of type</li>
+      <li><strong>Balance Impact:</strong> May or may not affect lieu/holiday balances depending on type</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Holidays Taken" icon="tabler:calendar-minus">
+    <p>Specific holiday/vacation days used from annual entitlement.</p>
+    <ul>
+      <li><strong>Holiday Usage:</strong> Specific days taken from holiday entitlement</li>
+      <li><strong>Example Usage:</strong> Zar Vilof showing 1 holiday day taken</li>
+      <li><strong>Balance Reduction:</strong> Directly reduces available holiday entitlement</li>
+      <li><strong>Approval Required:</strong> Usually requires management approval before taking</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Staff Leave Overview
+
+<Accordion>
+  <AccordionItem title="Current Staff Balances" icon="tabler:users">
+    <p>Overview of staff members and their current leave balances.</p>
+    <ul>
+      <li><strong>Mike Hernandez (MH):</strong> 20 lieu, 20 holidays, 0 days off, 0 holidays taken</li>
+      <li><strong>Alonzo Luis Pamintuan (AL):</strong> 20 lieu, 20 holidays, 0 days off, 0 holidays taken</li>
+      <li><strong>Zar Vilof (ZV):</strong> 20 lieu, 20 holidays, 0 days off, 1 holiday taken</li>
+      <li><strong>Royce Rio (RR):</strong> 20 lieu, 20 holidays, 0 days off, 0 holidays taken</li>
+      <li><strong>Additional Staff:</strong> Multiple other team members with similar balance patterns</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Balance Patterns" icon="tabler:chart-line">
+    <p>Common patterns in staff leave balances and usage.</p>
+    <ul>
+      <li><strong>Standard Entitlement:</strong> Most staff have 20 days lieu and 20 days holiday</li>
+      <li><strong>Low Usage:</strong> Most staff showing 0 days off taken in current period</li>
+      <li><strong>Minimal Holiday Usage:</strong> Only one staff member (Zar Vilof) has taken holidays</li>
+      <li><strong>Consistent Balances:</strong> Uniform entitlement across team members</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Using the Leave Tracker
+
+<Accordion>
+  <AccordionItem title="Viewing Staff Data" icon="tabler:eye">
+    <p>Navigate and view leave information effectively.</p>
+    <ul>
+      <li><strong>Search Function:</strong> Use employee search to find specific staff members</li>
+      <li><strong>Month Navigation:</strong> Select different months to view historical data</li>
+      <li><strong>Year Selection:</strong> Access data from different years</li>
+      <li><strong>Full Team View:</strong> See all staff members in a single comprehensive table</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Monitoring Leave Usage" icon="tabler:chart-bar">
+    <p>Track and analyze leave patterns and usage.</p>
+    <ul>
+      <li><strong>Balance Monitoring:</strong> Check available lieu time and holidays</li>
+      <li><strong>Usage Tracking:</strong> Monitor actual days off taken by team</li>
+      <li><strong>Trend Analysis:</strong> Compare usage across different months</li>
+      <li><strong>Planning Support:</strong> Use data for operational planning and coverage</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Leave Management Tasks" icon="tabler:tasks">
+    <p>Administrative tasks for managing leave and attendance.</p>
+    <ul>
+      <li><strong>Balance Updates:</strong> Update lieu time and holiday entitlements</li>
+      <li><strong>Leave Recording:</strong> Record approved time off and holidays</li>
+      <li><strong>Balance Adjustments:</strong> Make corrections to leave balances</li>
+      <li><strong>Period Rollovers:</strong> Manage year-end and period transitions</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Leave Balance Management
+
+<Accordion>
+  <AccordionItem title="Lieu Time Management" icon="tabler:clock-plus">
+    <p>Managing compensatory time off balances.</p>
+    <ul>
+      <li><strong>Earning Lieu Time:</strong> Time accrued through overtime or additional work</li>
+      <li><strong>Usage Rules:</strong> Policies for when and how lieu time can be used</li>
+      <li><strong>Balance Tracking:</strong> Real-time monitoring of available lieu time</li>
+      <li><strong>Expiration Policies:</strong> Rules about lieu time expiration or rollover</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Holiday Entitlement" icon="tabler:calendar-event">
+    <p>Managing annual leave and vacation entitlements.</p>
+    <ul>
+      <li><strong>Annual Allocation:</strong> Standard holiday entitlement for each staff member</li>
+      <li><strong>Accrual Patterns:</strong> How holidays are earned throughout the year</li>
+      <li><strong>Usage Approval:</strong> Process for requesting and approving holiday time</li>
+      <li><strong>Year-end Management:</strong> Handling unused holidays at year end</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Balance Adjustments" icon="tabler:edit">
+    <p>Making corrections and adjustments to leave balances.</p>
+    <ul>
+      <li><strong>Manual Corrections:</strong> Adjusting balances for errors or special circumstances</li>
+      <li><strong>Carried Forward Balances:</strong> Managing balances brought forward from previous periods</li>
+      <li><strong>Bonus Allocations:</strong> Adding extra time off for special achievements</li>
+      <li><strong>System Corrections:</strong> Fixing discrepancies in automated calculations</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Reporting and Analytics
+
+<Accordion>
+  <AccordionItem title="Monthly Reports" icon="tabler:report">
+    <p>Generate monthly leave and attendance reports.</p>
+    <ul>
+      <li><strong>Staff Utilization:</strong> Overview of leave usage across the team</li>
+      <li><strong>Balance Summary:</strong> Current leave balances for all staff</li>
+      <li><strong>Trend Analysis:</strong> Month-over-month usage patterns</li>
+      <li><strong>Planning Data:</strong> Information for operational planning</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Individual Tracking" icon="tabler:user-check">
+    <p>Monitor individual staff leave patterns and balances.</p>
+    <ul>
+      <li><strong>Personal Balances:</strong> Individual lieu time and holiday entitlements</li>
+      <li><strong>Usage History:</strong> Historical pattern of leave usage</li>
+      <li><strong>Balance Projections:</strong> Estimated future leave availability</li>
+      <li><strong>Compliance Monitoring:</strong> Ensure appropriate leave usage</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Integration Points
+
+:::note[System Integration]
+Lieu & Holidays integrates with:
+- **CIPHR Integration:** HR system for leave balance synchronization
+- **Rota Management:** Schedule planning considering leave availability
+- **Request Management:** Leave requests and approval workflows
+- **User Management:** Staff information and employment details
+:::
+
+## Best Practices
+
+:::tip[Leave Management Best Practices]
+- **Regular Monitoring:** Check leave balances monthly to ensure accuracy
+- **Early Planning:** Use leave data for operational planning and coverage
+- **Clear Policies:** Maintain clear policies for lieu time earning and usage
+- **Balance Accuracy:** Ensure leave balances are updated promptly and accurately
+- **Staff Communication:** Keep staff informed about their leave balances and entitlements
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Incorrect Leave Balances" icon="tabler:alert-triangle">
+    <p>Resolve discrepancies in leave balance calculations.</p>
+    <ul>
+      <li>Check for recent leave requests that may not be reflected</li>
+      <li>Verify lieu time calculations for recent overtime work</li>
+      <li>Contact Ops Support for balance corrections</li>
+      <li>Review CIPHR integration for synchronization issues</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Cannot Find Staff Member" icon="tabler:user-question">
+    <p>Troubleshoot staff search and visibility issues.</p>
+    <ul>
+      <li>Check spelling in employee search function</li>
+      <li>Verify staff member is active in the system</li>
+      <li>Try searching by initials or partial name</li>
+      <li>Ensure you have permission to view the staff member's data</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Month/Year Data Not Showing" icon="tabler:calendar-off">
+    <p>Resolve issues with historical data access.</p>
+    <ul>
+      <li>Verify the selected month and year combination</li>
+      <li>Check if data exists for the selected period</li>
+      <li>Ensure you have access to historical data</li>
+      <li>Contact admin if specific periods are missing</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Leave Data Not Updating" icon="tabler:refresh">
+    <p>Fix issues with leave data synchronization.</p>
+    <ul>
+      <li>Check CIPHR integration status for synchronization</li>
+      <li>Verify recent leave requests have been processed</li>
+      <li>Refresh the page to get latest data</li>
+      <li>Contact Ops Support if data remains outdated</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Started
+
+To use the Lieu & Holidays tracker effectively:
+
+1. **Access the feature** via Overview → Lieu & Holidays
+2. **Select time period** using month and year dropdowns
+3. **Search for staff** using the employee search function
+4. **Review balances** across lieu time and holiday entitlements
+5. **Monitor usage** through days off and holidays taken columns
+6. **Track trends** by comparing different months and periods
+7. **Report issues** if balances appear incorrect or outdated
+
+:::warning[Data Accuracy]
+Leave balance data should be reviewed regularly for accuracy. Report any discrepancies to Ops Support immediately to ensure staff have correct leave information for planning purposes.
+:::

@@ -22,7 +22,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: Find Your Role
-      link: /roles/admin/role-overview
+      link: /roles/admin
       icon: open-book
       variant: secondary
 ---
@@ -47,9 +47,9 @@ import { Badge } from '@astrojs/starlight/components';
     Find documentation specific to your role and responsibilities.
     
     <div class="grid grid-cols-1 gap-2 mt-4">
-      <LinkCard title="Admin" href="/roles/admin/role-overview" />
-      <LinkCard title="Operations Manager" href="/roles/ops-manager/role-overview" />
-      <LinkCard title="Operations Support" href="/roles/ops-support/role-overview" />
+      <LinkCard title="Admin" href="/roles/admin" />
+      <LinkCard title="Operations Manager" href="/roles/ops-manager" />
+      <LinkCard title="Operations Support" href="/roles/ops-support" />
     </div>
   </Card>
 
@@ -94,9 +94,9 @@ import { Badge } from '@astrojs/starlight/components';
       Manage users, teams, and system configuration
     </p>
     <div class="space-y-1">
-      <LinkCard title="Create User Accounts" href="/roles/admin/create-user-accounts" />
-      <LinkCard title="Team Management" href="/roles/admin/team-management/create-teams" />
-      <LinkCard title="Configuration Centre" href="/roles/admin/configuration-centre" />
+      <LinkCard title="Create User Accounts" href="/features/create-user" />
+      <LinkCard title="User & Team Management" href="/features/user-team-management" />
+      <LinkCard title="Configuration Centre" href="/features/configuration-centre" />
     </div>
   </Card>
 
@@ -109,9 +109,9 @@ import { Badge } from '@astrojs/starlight/components';
       Submit requests, manage EOS tasks, and coordinate teams
     </p>
     <div class="space-y-1">
-      <LinkCard title="Submit Requests" href="/roles/ops-manager/scheduling/submit-request" />
-      <LinkCard title="View EOS Tasks" href="/roles/ops-manager/management/view-eos-tasks" />
-      <LinkCard title="Rota Management" href="/roles/ops-manager/scheduling/rota-management/rota-management-overview" />
+      <LinkCard title="Request Management" href="/features/request-management" />
+      <LinkCard title="EOS Tasks" href="/features/eos-tasks" />
+      <LinkCard title="Rota Management" href="/features/rota-management" />
     </div>
   </Card>
 
@@ -124,9 +124,9 @@ import { Badge } from '@astrojs/starlight/components';
       Process requests, manage workflows, and provide operational support
     </p>
     <div class="space-y-1">
-      <LinkCard title="Dashboard Overview" href="/roles/ops-support/ops-support-dashboard" />
-      <LinkCard title="Manage Requests" href="/roles/ops-support/ops-support-manage-request" />
-      <LinkCard title="EOS Actions" href="/roles/ops-support/ops-support-eos-action" />
+      <LinkCard title="Request Management" href="/features/request-management" />
+      <LinkCard title="EOS Tasks" href="/features/eos-tasks" />
+      <LinkCard title="Schedules" href="/features/schedules" />
     </div>
   </Card>
 </CardGrid>
@@ -136,32 +136,32 @@ import { Badge } from '@astrojs/starlight/components';
 <CardGrid>
   <LinkCard 
     title="Submit a Request" 
-    href="/roles/ops-manager/scheduling/submit-request"
+    href="/features/request-management"
     description="Start here to request resources, support, or operational changes"
     icon="document"
   />
   <LinkCard 
     title="Manage EOS Tasks" 
-    href="/roles/ops-manager/management/view-eos-tasks"
+    href="/features/eos-tasks"
     description="View and update operational tasks assigned to you"
     icon="list-format"
   />
   <LinkCard 
     title="Create User Account" 
-    href="/roles/admin/create-user-accounts"
+    href="/features/create-user"
     description="Add new team members to the system (Admin only)"
     icon="add-document"
   />
   <LinkCard 
-    title="Process Requests" 
-    href="/roles/ops-support/ops-support-manage-request"
-    description="Review and manage submitted requests (Ops Support)"
+    title="Manage Teams" 
+    href="/features/user-team-management"
+    description="Organize teams and manage user access"
     icon="setting"
   />
 </CardGrid>
 
 :::tip[New User?]
-Start with the [**Introduction**](/getting-started/introduction) to understand the system, then find your [**Role Overview**](/roles/admin/role-overview) for personalized guidance.
+Start with the [**Introduction**](/getting-started/introduction) to understand the system, then find your role guide for personalized guidance.
 :::
 
 :::note[Need Help?]

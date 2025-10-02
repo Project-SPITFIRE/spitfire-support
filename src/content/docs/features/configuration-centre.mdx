@@ -1,0 +1,314 @@
+---
+title: Configuration Centre
+description: Admin interface for managing system roles, permissions, and access controls
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+The Configuration Centre provides administrators with comprehensive control over system roles, permissions, and access management. Create custom roles, manage existing permissions, and configure system-wide access controls.
+
+## Who can access Configuration Centre
+
+<Badge text="Admin" variant="danger" /> Full access to all configuration features and role management
+
+<Badge text="Ops Support" variant="caution" /> Limited access to view configurations and assist with role-related issues
+
+<Badge text="All Others" variant="note" /> No access to Configuration Centre features
+
+## What is Configuration Centre?
+
+The Configuration Centre is the central hub for:
+- **Role Management** - Creating and modifying system roles
+- **Permission Control** - Defining what each role can access
+- **Access Configuration** - Setting up page and feature-level permissions
+- **System Security** - Managing overall access controls and restrictions
+
+## Configuration Centre Overview
+
+<Accordion>
+  <AccordionItem title="Role Management Interface" icon="tabler:settings">
+    <p>Central interface for all role and permission management.</p>
+    <ul>
+      <li><strong>Add New Role:</strong> Create custom roles with specific permissions</li>
+      <li><strong>Existing Roles:</strong> Manage and modify current system roles</li>
+      <li><strong>Permission Matrix:</strong> Visual overview of role capabilities</li>
+      <li><strong>Access Control:</strong> Fine-grained permission management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Navigation Structure" icon="tabler:menu-2">
+    <p>Organized sections for efficient role management.</p>
+    <ul>
+      <li><strong>Overview Section:</strong> Dashboard, Operational Tracker, Compliance Tracker, etc.</li>
+      <li><strong>Scheduling Section:</strong> Rota Management, Submit Request, Submitted Schedules, Schedules</li>
+      <li><strong>Management Section:</strong> Advanced Contracts, Assigned Events, EOS Actions, etc.</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Creating New Roles
+
+<Accordion>
+  <AccordionItem title="Role Creation Wizard" icon="tabler:user-plus">
+    <p>Step-by-step process for creating new system roles.</p>
+    <ul>
+      <li><strong>Role Name:</strong> Enter descriptive role identifier</li>
+      <li><strong>Role Description:</strong> Add detailed role purpose and scope</li>
+      <li><strong>Page Access Control:</strong> Select which pages role can access</li>
+      <li><strong>Permission Assignment:</strong> Configure specific feature permissions</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Permission Categories" icon="tabler:category">
+    <p>Three main categories for organizing role permissions.</p>
+    <ul>
+      <li><strong>Overview:</strong> Dashboard access, tracking views, integration permissions</li>
+      <li><strong>Scheduling:</strong> Rota management, schedule submission, calendar access</li>
+      <li><strong>Management:</strong> Advanced features, contract management, administrative tools</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Specific Permission Options" icon="tabler:checkbox">
+    <p>Granular permission controls for each system area.</p>
+    <ul>
+      <li><strong>Overview Permissions:</strong> Dashboard, Operational Tracker, Compliance Tracker, CIPHR Integration, Lieu & Holidays, Logs</li>
+      <li><strong>Scheduling Permissions:</strong> Rota Management, Submit Request, Submitted Schedules, Schedules</li>
+      <li><strong>Management Permissions:</strong> Advanced Contracts, Assigned Events, EOS Actions, Manage Request, Account Management, Create User Accounts</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Existing Roles Management
+
+<Accordion>
+  <AccordionItem title="Current System Roles" icon="tabler:users">
+    <p>Overview of all existing roles and their permission structures.</p>
+    <ul>
+      <li><strong>Static Manager:</strong> Dashboard, Submit Request, Schedules, EOS Actions</li>
+      <li><strong>Resourcing:</strong> Dashboard, Submit Request, Schedules, EOS Actions</li>
+      <li><strong>Logistics:</strong> Dashboard, Submit Request, Schedules, EOS Actions</li>
+      <li><strong>Deputy Head of Operations:</strong> Dashboard, Operational Tracker, CIPHR Integration, Rota Management, Submit Request, Schedules, EOS Actions</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Administrative Roles" icon="tabler:shield">
+    <p>High-level administrative and management roles.</p>
+    <ul>
+      <li><strong>Head of Operations:</strong> Dashboard, Operational Tracker, Lieu & Holidays, Rota Management, Submit Request, Schedules, Advanced Contracts, Manage Events, EOS Actions</li>
+      <li><strong>Ops Manager:</strong> Dashboard, Rota Management, Submit Request, Schedules, Advanced Contracts, Allocated Contracts, Assigned Events, EOS Actions</li>
+      <li><strong>Ops Support:</strong> Comprehensive access including CIPHR Integration, Lieu & Holidays, EOS Actions, Manage Request, Manager Accounts, Logs, Account Management, Create User Accounts, Team Management, Configuration Centre</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Specialized Access Roles" icon="tabler:tool">
+    <p>Roles with specific system access and capabilities.</p>
+    <ul>
+      <li><strong>Finance:</strong> Dashboard, Rota Management, Submit Request, Schedules, EOS Actions</li>
+      <li><strong>Admin:</strong> Account Management, Logs, Configuration Centre, Team Management, Create User Accounts</li>
+      <li><strong>Assistant Ops Manager:</strong> Dashboard, Schedules, EOS Actions, Submit Request, Allocated Contracts, Assigned Events, Rota Management, CIPHR Integration</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Permission Structure and Access Levels
+
+<Accordion>
+  <AccordionItem title="Overview Permissions" icon="tabler:dashboard">
+    <p>Dashboard and monitoring access permissions.</p>
+    <ul>
+      <li><strong>Dashboard:</strong> Main system overview and key metrics</li>
+      <li><strong>Operational Tracker:</strong> Real-time operational monitoring</li>
+      <li><strong>Compliance Tracker:</strong> Regulatory and compliance oversight</li>
+      <li><strong>CIPHR Integration:</strong> HR system integration access</li>
+      <li><strong>Lieu & Holidays:</strong> Time off and holiday management</li>
+      <li><strong>Logs:</strong> System activity and audit logging</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Scheduling Permissions" icon="tabler:calendar">
+    <p>Schedule management and planning permissions.</p>
+    <ul>
+      <li><strong>Rota Management:</strong> Create and manage operational schedules</li>
+      <li><strong>Submit Request:</strong> Submit scheduling requests and changes</li>
+      <li><strong>Submitted Schedules:</strong> View and manage submitted schedules</li>
+      <li><strong>Schedules:</strong> Access to schedule viewing and basic management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Permissions" icon="tabler:settings">
+    <p>Advanced management and administrative permissions.</p>
+    <ul>
+      <li><strong>Advanced Contracts:</strong> Comprehensive contract management</li>
+      <li><strong>Assigned Events:</strong> Event assignment and coordination</li>
+      <li><strong>EOS Actions:</strong> End-of-shift and operational actions</li>
+      <li><strong>Manage Request:</strong> Request processing and approval</li>
+      <li><strong>Account Management:</strong> User account administration</li>
+      <li><strong>Create User Accounts:</strong> New user creation capabilities</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Role Modification and Updates
+
+<Accordion>
+  <AccordionItem title="Editing Existing Roles" icon="tabler:edit">
+    <p>Modify permissions and access for current roles.</p>
+    <ul>
+      <li><strong>Permission Updates:</strong> Add or remove specific permissions</li>
+      <li><strong>Access Level Changes:</strong> Modify role capabilities</li>
+      <li><strong>Role Restructuring:</strong> Reorganize role hierarchies</li>
+      <li><strong>Security Reviews:</strong> Regular permission audits and updates</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Role Actions" icon="tabler:dots">
+    <p>Management actions available for each role.</p>
+    <ul>
+      <li><strong>View Details:</strong> See complete permission breakdown</li>
+      <li><strong>Edit Permissions:</strong> Modify role capabilities</li>
+      <li><strong>Duplicate Role:</strong> Create similar roles with variations</li>
+      <li><strong>Delete Role:</strong> Remove unused or obsolete roles</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Permission Dependencies" icon="tabler:link">
+    <p>Understanding how permissions interact and depend on each other.</p>
+    <ul>
+      <li>Some permissions require base access to function properly</li>
+      <li>Management roles typically include scheduling permissions</li>
+      <li>Administrative roles may require multiple permission categories</li>
+      <li>Consider workflow dependencies when assigning permissions</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Security and Access Control
+
+<Accordion>
+  <AccordionItem title="Permission Hierarchy" icon="tabler:hierarchy">
+    <p>Understanding the system's permission structure.</p>
+    <ul>
+      <li><strong>Admin Level:</strong> Full system access and configuration</li>
+      <li><strong>Management Level:</strong> Operational control and oversight</li>
+      <li><strong>Operational Level:</strong> Day-to-day operational access</li>
+      <li><strong>Specialist Level:</strong> Function-specific permissions</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Access Control Best Practices" icon="tabler:shield-check">
+    <p>Guidelines for secure and effective permission management.</p>
+    <ul>
+      <li><strong>Principle of Least Privilege:</strong> Grant minimum necessary permissions</li>
+      <li><strong>Role-Based Access:</strong> Assign permissions based on job functions</li>
+      <li><strong>Regular Reviews:</strong> Periodically audit and update permissions</li>
+      <li><strong>Documentation:</strong> Maintain clear records of role purposes</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="System Integration" icon="tabler:plug">
+    <p>How Configuration Centre integrates with system security.</p>
+    <ul>
+      <li>Permissions immediately affect user access</li>
+      <li>Role changes are reflected across all system areas</li>
+      <li>Integration with user management systems</li>
+      <li>Audit trails for all permission changes</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Common Role Templates
+
+<Accordion>
+  <AccordionItem title="Entry-Level Operational Roles" icon="tabler:user">
+    <p>Basic operational roles for new team members.</p>
+    <ul>
+      <li><strong>Typical Permissions:</strong> Dashboard, Submit Request, Schedules, EOS Actions</li>
+      <li><strong>Use Cases:</strong> Static Manager, Resourcing, Logistics, Finance</li>
+      <li><strong>Access Level:</strong> Basic operational functions</li>
+      <li><strong>Growth Path:</strong> Can be promoted to management roles</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Roles" icon="tabler:crown">
+    <p>Leadership roles with expanded permissions.</p>
+    <ul>
+      <li><strong>Typical Permissions:</strong> Operational Tracker, Rota Management, Advanced Contracts</li>
+      <li><strong>Use Cases:</strong> Ops Manager, Deputy Head of Operations, Head of Operations</li>
+      <li><strong>Access Level:</strong> Team management and operational oversight</li>
+      <li><strong>Responsibilities:</strong> Team coordination and strategic planning</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Administrative Roles" icon="tabler:settings">
+    <p>System administration and configuration roles.</p>
+    <ul>
+      <li><strong>Typical Permissions:</strong> Account Management, Configuration Centre, Team Management</li>
+      <li><strong>Use Cases:</strong> Admin, Ops Support</li>
+      <li><strong>Access Level:</strong> System configuration and user management</li>
+      <li><strong>Responsibilities:</strong> System maintenance and user support</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Configuration Centre Best Practices]
+- **Document Role Purposes:** Clearly define what each role is intended for
+- **Regular Permission Reviews:** Audit roles quarterly to ensure they remain appropriate
+- **Test New Roles:** Verify permissions work as expected before assigning to users
+- **Minimal Permissions:** Start with basic permissions and add more as needed
+- **Backup Configurations:** Keep records of role configurations for reference
+:::
+
+:::warning[Security Considerations]
+- Never grant more permissions than necessary for a role
+- Regularly review high-privilege roles like Admin and Ops Support
+- Monitor permission changes through system logs
+- Ensure role changes are properly documented and approved
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="User Cannot Access Expected Features" icon="tabler:alert-triangle">
+    <p>Check role permissions and assignments.</p>
+    <ul>
+      <li>Verify user's role assignment in Account Management</li>
+      <li>Check role permissions in Configuration Centre</li>
+      <li>Confirm required permissions are enabled for the role</li>
+      <li>Test permissions with a test account if needed</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Role Permissions Not Working" icon="tabler:bug">
+    <p>Troubleshoot permission configuration issues.</p>
+    <ul>
+      <li>Verify permission changes have been saved</li>
+      <li>Check for permission dependencies and prerequisites</li>
+      <li>Ensure user has logged out and back in after changes</li>
+      <li>Review system logs for permission-related errors</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Cannot Modify Existing Roles" icon="tabler:lock">
+    <p>Resolve role editing and modification issues.</p>
+    <ul>
+      <li>Confirm you have Admin access to Configuration Centre</li>
+      <li>Check if role is currently in use by active users</li>
+      <li>Verify no system-level restrictions on the role</li>
+      <li>Ensure proper admin permissions for role modification</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Integration Points
+
+:::note[System Integration]
+Configuration Centre integrates with:
+- **Account Management:** Role assignments affect user permissions
+- **All System Features:** Permissions control access throughout the platform
+- **Security Systems:** Audit trails and access logging
+- **User Interface:** Menu items and features appear based on permissions
+:::

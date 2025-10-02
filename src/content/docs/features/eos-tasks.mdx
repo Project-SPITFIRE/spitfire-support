@@ -7,8 +7,7 @@ import { Badge } from '@astrojs/starlight/components';
 import Accordion from '../../../components/Accordion.astro';
 import AccordionItem from '../../../components/AccordionItem.astro';
 
-
-Manage operational tasks with subtask assignments, progress tracking, and team coordination.
+Manage operational tasks with subtask assignments, progress tracking, and team coordination through the EOS Actions interface.
 
 ## Who can use this feature
 
@@ -17,14 +16,116 @@ Manage operational tasks with subtask assignments, progress tracking, and team c
 | Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Operations Manager | ✗ | ✗ | ✓ | ✗ | Assigned only |
 | Operations Support | ✓ | ✓ | ✓ | ✓ | ✓ |
-{/* | COO | ✗ | ✗ | ✓ | ✗ | Assigned only |
-| Deputies | ✗ | ✗ | ✓ | ✗ | Assigned only |
-| HOO | ✗ | ✗ | ✓ | ✗ | Assigned only |
-| Logistics | ✗ | ✗ | ✓ | ✗ | Assigned only | */}
 
 ## What is an EOS task?
 
-EOS (Event Operations Support) tasks are structured work items that break down complex operational activities into manageable subtasks. They ensure coordinated execution across multiple team members.
+EOS (Event Operations Support) tasks are structured work items that break down complex operational activities into manageable subtasks. They ensure coordinated execution across multiple team members with comprehensive tracking and progress monitoring.
+
+## EOS Actions Interface
+
+<Accordion>
+  <AccordionItem title="Task Overview Dashboard" icon="tabler:dashboard">
+    <p>Central hub for viewing and managing all EOS-related tasks and updates.</p>
+    <ul>
+      <li><strong>Task Tracking:</strong> Track all EOS-related tasks and updates from weekly meetings</li>
+      <li><strong>Weekly Organization:</strong> Tasks organized by week periods (e.g., September 29, 2025 - October 05, 2025)</li>
+      <li><strong>Collapsible Weeks:</strong> Expand/collapse weekly sections for better organization</li>
+      <li><strong>Add Task Button:</strong> Quick access to create new tasks</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search and Filter Controls" icon="tabler:filter">
+    <p>Comprehensive filtering system for finding specific tasks quickly.</p>
+    <ul>
+      <li><strong>Search Task Title:</strong> Text search across all task names</li>
+      <li><strong>Month Filter:</strong> Filter tasks by specific months (October dropdown)</li>
+      <li><strong>Week Filter:</strong> "All Weeks" dropdown for week-specific filtering</li>
+      <li><strong>Assignee Filter:</strong> "All" dropdown to filter by assigned person</li>
+      <li><strong>Status Filter:</strong> "All Status" dropdown for status-based filtering</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Task Cards Display" icon="tabler:cards">
+    <p>Individual task cards showing key information at a glance.</p>
+    <ul>
+      <li><strong>Task Title:</strong> Clear task identification (e.g., "Task for Oliver Bennett")</li>
+      <li><strong>Priority Indicator:</strong> Color-coded priority levels (Mid Priority badge)</li>
+      <li><strong>Status Badge:</strong> Current task status (Not Started, In Progress, etc.)</li>
+      <li><strong>Due Date:</strong> Calendar icon with due date (October 02, 2025)</li>
+      <li><strong>Assigned User:</strong> User icon with assignee name</li>
+      <li><strong>Clickable Interface:</strong> Tasks are clickable for detailed view</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Task Detail Interface
+
+<Accordion>
+  <AccordionItem title="Task Information Panel" icon="tabler:info-circle">
+    <p>Comprehensive task details and management options.</p>
+    <ul>
+      <li><strong>Status Management:</strong> Dropdown with Not Started, In Progress, Completed options</li>
+      <li><strong>Priority Level:</strong> Visual priority indicator (Mid Priority with orange badge)</li>
+      <li><strong>Due Date:</strong> Calendar display of task deadline</li>
+      <li><strong>Last Updated:</strong> Timestamp of most recent changes</li>
+      <li><strong>Assigned To:</strong> Clear assignee identification</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Progress Overview" icon="tabler:progress">
+    <p>Visual progress tracking for task completion.</p>
+    <ul>
+      <li><strong>Subtasks Completed:</strong> Shows completion ratio (e.g., "0/0")</li>
+      <li><strong>Progress Bar:</strong> Visual representation of completion percentage</li>
+      <li><strong>Real-time Updates:</strong> Progress updates as subtasks are completed</li>
+      <li><strong>Completion Tracking:</strong> Clear indication of overall task progress</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Task Description" icon="tabler:file-text">
+    <p>Detailed task objectives and coordination requirements.</p>
+    <ul>
+      <li><strong>Comprehensive Description:</strong> Full task objectives and scope</li>
+      <li><strong>Coordination Details:</strong> Information about team coordination needs</li>
+      <li><strong>EOS Item Connection:</strong> Links to assigned EOS items and responsibilities</li>
+      <li><strong>Timeline Clarity:</strong> Clear timelines for each step of the task</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Subtasks Management" icon="tabler:subtask">
+    <p>Create and manage individual subtasks within the main task.</p>
+    <ul>
+      <li><strong>Subtask Counter:</strong> Shows current number of subtasks (0)</li>
+      <li><strong>Add Subtask Button:</strong> Easy creation of new subtasks</li>
+      <li><strong>Subtask Table:</strong> Organized view with Name, Priority, Assigned To, Status columns</li>
+      <li><strong>Individual Tracking:</strong> Each subtask has independent status and assignment</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Activity and Communication
+
+<Accordion>
+  <AccordionItem title="Activity Tracking" icon="tabler:activity">
+    <p>Monitor all task-related activities and changes.</p>
+    <ul>
+      <li><strong>Activity Log:</strong> Chronological list of all task activities</li>
+      <li><strong>Status Changes:</strong> Record of status updates and modifications</li>
+      <li><strong>Assignment Changes:</strong> Track reassignments and updates</li>
+      <li><strong>No Recent Activity:</strong> Clear indication when no recent changes</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Notes and Communication" icon="tabler:message">
+    <p>Collaborative communication within task context.</p>
+    <ul>
+      <li><strong>Task Notes:</strong> Dedicated notes section for task-related communication</li>
+      <li><strong>Add Note Interface:</strong> Text input for adding new notes</li>
+      <li><strong>Collaboration:</strong> Team members can add updates and comments</li>
+      <li><strong>Historical Record:</strong> Maintains history of all task communications</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
 
 ## Task structure
 
@@ -86,6 +187,40 @@ EOS (Event Operations Support) tasks are structured work items that break down c
   </AccordionItem>
 </Accordion>
 
+## Using the EOS Actions Interface
+
+<Accordion>
+  <AccordionItem title="Viewing Tasks" icon="tabler:eye">
+    <p>Navigate and view tasks effectively using the interface.</p>
+    <ul>
+      <li><strong>Weekly View:</strong> Tasks organized by weekly periods</li>
+      <li><strong>Click to Open:</strong> Click any task card to open detailed view</li>
+      <li><strong>Filter Options:</strong> Use month, week, assignee, and status filters</li>
+      <li><strong>Search Functionality:</strong> Search by task title or keywords</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Managing Task Progress" icon="tabler:progress">
+    <p>Update and track task progress through the interface.</p>
+    <ul>
+      <li><strong>Status Updates:</strong> Change task status using dropdown</li>
+      <li><strong>Subtask Progress:</strong> Monitor subtask completion ratios</li>
+      <li><strong>Add Notes:</strong> Document progress and communications</li>
+      <li><strong>Activity Monitoring:</strong> Review activity log for changes</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Creating and Assigning Subtasks" icon="tabler:plus">
+    <p>Break down tasks into manageable subtasks.</p>
+    <ul>
+      <li><strong>Add Subtask Button:</strong> Create new subtasks within main tasks</li>
+      <li><strong>Individual Assignment:</strong> Assign subtasks to specific team members</li>
+      <li><strong>Priority Setting:</strong> Set individual subtask priorities</li>
+      <li><strong>Status Tracking:</strong> Monitor each subtask independently</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
 ## Task lifecycle
 
 <Accordion>
@@ -111,76 +246,57 @@ EOS (Event Operations Support) tasks are structured work items that break down c
   </AccordionItem>
 </Accordion>
 
-## Common task types
-
-<Accordion>
-  <AccordionItem title="Event Preparation">
-    <p>
-      <strong>Purpose</strong>: Coordinate all aspects of upcoming events<br/>
-      <strong>Subtasks</strong>: Venue setup, staff assignments, equipment checks, briefings<br/>
-      <strong>Timeline</strong>: 1-2 weeks before event
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Compliance Verification">
-    <p>
-      <strong>Purpose</strong>: Ensure operational standards are met<br/>
-      <strong>Subtasks</strong>: Document reviews, training verification, audit preparations<br/>
-      <strong>Timeline</strong>: Monthly or quarterly cycles
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Process Implementation">
-    <p>
-      <strong>Purpose</strong>: Roll out new procedures or system changes<br/>
-      <strong>Subtasks</strong>: Training delivery, system updates, testing, communication<br/>
-      <strong>Timeline</strong>: 2-4 weeks for major changes
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Issue Resolution">
-    <p>
-      <strong>Purpose</strong>: Address operational problems or conflicts<br/>
-      <strong>Subtasks</strong>: Investigation, stakeholder consultation, solution implementation<br/>
-      <strong>Timeline</strong>: 1-5 days depending on complexity
-    </p>
-  </AccordionItem>
-</Accordion>
-
 ## Best practices
 
 **For Task Owners**:
 - Break down complex work into clear, actionable subtasks
 - Set realistic deadlines with buffer time
 - Monitor progress regularly and update stakeholders
-- Document important decisions and changes
+- Document important decisions and changes in task notes
 
 **For Subtask Assignees**:
 - Update status promptly when starting or completing work
-- Communicate blockers immediately
+- Communicate blockers immediately through task notes
 - Ask questions rather than making assumptions
 - Coordinate with other subtask owners when needed
 
-## Related guides
+**For Interface Usage**:
+- Use filters to focus on relevant tasks
+- Click tasks to access detailed information
+- Regularly check activity logs for updates
+- Utilize the notes feature for team communication
 
-- [Create EOS Tasks →](../how-to-guides/create-eos-tasks)
-- [Assign Subtasks →](../how-to-guides/assign-subtasks)
-- [Update Task Progress →](../how-to-guides/update-task-progress)
-- [Monitor Task Completion →](../how-to-guides/monitor-tasks)
+## Integration Points
+
+:::note[EOS Actions Integration]
+EOS Actions integrates with:
+- **Weekly Meetings:** Tasks created from weekly meeting action items
+- **Team Management:** Assignee information from user management
+- **Calendar System:** Due dates and scheduling coordination
+- **Progress Tracking:** Visual progress indicators and completion tracking
+:::
 
 ## Troubleshooting
 
 <Accordion>
   <AccordionItem title="Can't see my assigned tasks">
     <p>
-      Check Management → EOS Actions. Verify your role has task access. Contact Operations Support if tasks are missing.
+      Check Management → EOS Actions. Use the assignee filter to show only your tasks. Verify your role has task access. Contact Operations Support if tasks are missing.
     </p>
   </AccordionItem>
-  <AccordionItem title="Subtask appears blocked">
+  <AccordionItem title="Task not appearing in correct week">
     <p>
-      Review task notes for blocker details. Contact task owner or Operations Support for resolution guidance.
+      Check the due date of the task. Tasks appear in weeks based on their due dates. Use the week filter to find tasks in different time periods.
     </p>
   </AccordionItem>
-  <AccordionItem title="Task deadline unrealistic">
+  <AccordionItem title="Cannot update task status">
     <p>
-      Communicate with task owner immediately. Document concerns in task notes and propose alternative timeline.
+      Verify you have permission to update the task. Check if you're the assigned user or have admin/ops support permissions. Contact task owner if status seems incorrect.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Subtask progress not updating">
+    <p>
+      Ensure subtasks are being marked as completed individually. The overall progress bar updates based on subtask completion ratios. Check subtask statuses in the detailed view.
     </p>
   </AccordionItem>
 </Accordion>

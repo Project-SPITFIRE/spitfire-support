@@ -7,209 +7,283 @@ import { Badge } from '@astrojs/starlight/components';
 import Accordion from '../../../components/Accordion.astro';
 import AccordionItem from '../../../components/AccordionItem.astro';
 
-
-Manage user accounts, team organization, role assignments, and access controls across the operational system.
+Manage user accounts, team organization, role assignments, and access controls across the operational system through the comprehensive Account Management interface.
 
 ## Who can use this feature
 
 | Role | Create Users | Edit Users | Delete Users | Manage Teams | Assign Roles | View All |
 |------|--------------|------------|--------------|--------------|--------------|----------|
 | Admin | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Operations Support | View only | Profile only | ✗ | View only | ✗ | ✓ |
+| Ops Support | View only | Profile only | ✗ | View only | ✗ | ✓ |
 | Operations Manager | ✗ | Profile only | ✗ | View team | ✗ | Team only |
-{/* | COO | ✗ | Profile only | ✗ | View team | ✗ | Team only |
+{/* | Head Of Operations | ✗ | Profile only | ✗ | View team | ✗ | Team only |
 | All Others | ✗ | Profile only | ✗ | View own | ✗ | Own only | */}
 
-## What is user & team management?
+## What is User & Team Management?
 
 User and team management encompasses:
-- Creating and maintaining user accounts
-- Organizing users into functional teams
-- Assigning appropriate roles and permissions
-- Managing access to system features and data
-- Coordinating team structure with operational needs
+- **User Account Management** - Creating, editing, and tracking all user accounts
+- **Role Assignment** - Assigning appropriate roles and permissions
+- **Team Organization** - Organizing users into functional teams
+- **Access Control** - Managing system access and feature permissions
+- **Account Lifecycle** - Managing accounts from creation to deactivation
 
-## User account lifecycle
+## User Account Management Interface
 
 <Accordion>
-  <AccordionItem title="1. Account Creation">
-    <p>
-      Admin creates user account → Basic profile setup → Initial role assignment → Welcome email sent
-    </p>
+  <AccordionItem title="Account Overview Table" icon="tabler:table">
+    <p>Comprehensive view of all user accounts in the system.</p>
+    <ul>
+      <li><strong>Full Name:</strong> Complete user identification</li>
+      <li><strong>Email Address:</strong> Contact information and login credential</li>
+      <li><strong>Role:</strong> Assigned system role and permissions</li>
+      <li><strong>Status:</strong> Account status with color-coded indicators</li>
+      <li><strong>Date Created:</strong> Account creation timestamp</li>
+      <li><strong>Actions:</strong> Management options for each account</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="2. Role Assignment & Training">
-    <p>
-      Appropriate role selected → Team assignment → Access permissions configured → Training materials provided
-    </p>
+
+  <AccordionItem title="Search and Filter" icon="tabler:search">
+    <p>Find specific users quickly using search and filter options.</p>
+    <ul>
+      <li><strong>Search Users:</strong> Search by name, email, or other criteria</li>
+      <li><strong>Role Filter:</strong> Filter by specific roles (All Roles dropdown)</li>
+      <li><strong>Status Filter:</strong> View active, inactive, or specific status users</li>
+      <li><strong>Real-time Results:</strong> Instant filtering as you type</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="3. Active Management">
-    <p>
-      Regular profile updates → Role adjustments as needed → Team changes → Access reviews
-    </p>
-  </AccordionItem>
-  <AccordionItem title="4. Deactivation">
-    <p>
-      Account suspension or deletion → Access revocation → Data handover → Account archive
-    </p>
+
+  <AccordionItem title="Pagination and Navigation" icon="tabler:arrow-right">
+    <p>Navigate through large user lists efficiently.</p>
+    <ul>
+      <li><strong>Results Display:</strong> Shows "Showing 1 to 7 of 61 results"</li>
+      <li><strong>Page Navigation:</strong> Previous and Next buttons</li>
+      <li><strong>Bulk Management:</strong> Handle large numbers of user accounts</li>
+      <li><strong>Result Counting:</strong> Clear indication of total users</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Available roles
+## System Roles and Permissions
 
 <Accordion>
-  <AccordionItem title="Administrative Roles">
-    <p>
-      <Badge text="Admin" variant="danger" /> Full system access and control<br/>
-      <Badge text="Operations Support" variant="caution" /> Operational coordination and support<br/>
-      <strong>Capabilities</strong>: User management, system configuration, full data access
-    </p>
+  <AccordionItem title="Administrative Roles" icon="tabler:shield-star">
+    <p>High-level system access and control roles.</p>
+    <ul>
+      <li><strong>Ops Support:</strong> Operational coordination and system support</li>
+      <li><strong>Admin:</strong> Full system access and user management (like Evie Parker)</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Management Roles">
-    <p>
-      <Badge text="COO" variant="success" /> Chief Operations Officer<br/>
-      <Badge text="HOO" variant="success" /> Head of Operations<br/>
-      <Badge text="Operations Manager" variant="caution" /> Operational team management<br/>
-      <strong>Capabilities</strong>: Team oversight, request submission, schedule management
-    </p>
+
+  <AccordionItem title="Management Roles" icon="tabler:users">
+    <p>Operational leadership and team management roles.</p>
+    <ul>
+      <li><strong>Head Of Operations:</strong> Senior operational leadership (like Poppy Reed)</li>
+      <li><strong>Deputy Head Of Operations:</strong> Senior operational support (like Freya Turner)</li>
+      <li><strong>Ops Manager:</strong> Team and operational management (like George Davies)</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Operational Roles">
-    <p>
-      <Badge text="Deputies" variant="note" /> Operational deputies<br/>
-      <Badge text="Logistics" variant="note" /> Logistics coordination<br/>
-      <Badge text="Static Manager" variant="note" /> Static position management<br/>
-      <Badge text="Resourcing" variant="note" /> Resource allocation<br/>
-      <strong>Capabilities</strong>: Specialized operational functions, limited system access
-    </p>
+
+  <AccordionItem title="Specialized Roles" icon="tabler:tool">
+    <p>Function-specific operational roles.</p>
+    <ul>
+      <li><strong>Static Manager:</strong> Static position management (like Isla Morgan)</li>
+      <li><strong>Logistics:</strong> Logistics coordination and management (like Harry Thompson)</li>
+      <li><strong>Resourcing:</strong> Resource allocation and planning (like Amelia Clarke)</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Team structure
+## User Account Statuses
 
 <Accordion>
-  <AccordionItem title="Functional Teams">
-    <p>
-      <strong>Purpose</strong>: Organized by operational function (Security, Traffic, Logistics)<br/>
-      <strong>Management</strong>: Led by Operations Managers or HOO<br/>
-      <strong>Coordination</strong>: Regular team meetings, shared responsibilities
-    </p>
+  <AccordionItem title="Active Status" icon="tabler:check">
+    <p>All users in the system currently show as Active status.</p>
+    <ul>
+      <li><strong>Active Badge:</strong> Green "Active" indicator for all operational users</li>
+      <li><strong>Full Access:</strong> Complete access to assigned role permissions</li>
+      <li><strong>Normal Operations:</strong> All system features available</li>
+      <li><strong>Regular Monitoring:</strong> Ongoing access and activity tracking</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Project Teams">
-    <p>
-      <strong>Purpose</strong>: Temporary teams for specific events or initiatives<br/>
-      <strong>Management</strong>: Project-specific leadership<br/>
-      <strong>Duration</strong>: Dissolved after project completion
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Cross-Functional Groups">
-    <p>
-      <strong>Purpose</strong>: Coordinate across multiple operational areas<br/>
-      <strong>Management</strong>: Shared leadership or rotating responsibility<br/>
-      <strong>Scope</strong>: System-wide initiatives and improvements
-    </p>
+
+  <AccordionItem title="Other Status Types" icon="tabler:info-circle">
+    <p>Additional status options for account management.</p>
+    <ul>
+      <li><strong>Pending Setup:</strong> Account created, awaiting configuration</li>
+      <li><strong>Training:</strong> Limited access during onboarding period</li>
+      <li><strong>Suspended:</strong> Temporarily disabled access</li>
+      <li><strong>Deactivated:</strong> Permanently disabled, data retained</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Permission management
+## Account Management Features
 
 <Accordion>
-  <AccordionItem title="Role-Based Permissions">
-    <p>
-      <strong>Concept</strong>: Permissions assigned through roles, not individuals<br/>
-      <strong>Benefits</strong>: Consistent access, easier management, clear boundaries<br/>
-      <strong>Implementation</strong>: Users inherit all permissions from assigned role
-    </p>
+  <AccordionItem title="User Account Creation" icon="tabler:user-plus">
+    <p>Create new user accounts through the system interface.</p>
+    <ul>
+      <li>Access via "Create User Accounts" in the management menu</li>
+      <li>Set up basic profile information and contact details</li>
+      <li>Assign appropriate role based on job function</li>
+      <li>Configure initial team assignments</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Data Access Controls">
-    <p>
-      <strong>Own Data</strong>: Users can view/edit their personal information<br/>
-      <strong>Team Data</strong>: Managers can view their team's information<br/>
-      <strong>System Data</strong>: Admins and Operations Support have broader access
-    </p>
+
+  <AccordionItem title="Team Management" icon="tabler:users-group">
+    <p>Organize users into functional teams.</p>
+    <ul>
+      <li>Available through "Team Management" menu option</li>
+      <li>Create and modify team structures</li>
+      <li>Assign team leaders and members</li>
+      <li>Coordinate cross-functional groups</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Feature Access">
-    <p>
-      <strong>Core Features</strong>: Available to all authenticated users<br/>
-      <strong>Management Features</strong>: Restricted to management roles<br/>
-      <strong>Administrative Features</strong>: Admin and Operations Support only
-    </p>
+
+  <AccordionItem title="Account Actions" icon="tabler:dots">
+    <p>Management actions available for each user account.</p>
+    <ul>
+      <li><strong>View Details:</strong> Access complete user profile</li>
+      <li><strong>Edit Account:</strong> Modify user information and settings</li>
+      <li><strong>Change Role:</strong> Update role assignments</li>
+      <li><strong>Manage Status:</strong> Activate, suspend, or deactivate accounts</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## User account statuses
-
-### Active Statuses
-- <Badge text="Active" variant="success" /> **Active**: Full access, normal operations
-- <Badge text="Training" variant="caution" /> **Training**: Limited access during onboarding
-- <Badge text="Pending Setup" variant="note" /> **Pending Setup**: Account created, awaiting configuration
-
-### Inactive Statuses
-- <Badge text="Suspended" variant="danger" /> **Suspended**: Temporarily disabled access
-- <Badge text="Deactivated" variant="note" /> **Deactivated**: Permanently disabled, data retained
-- <Badge text="Archived" variant="note" /> **Archived**: Historical record, no active access
-
-## Common workflows
+## Current System Users (Example Data)
 
 <Accordion>
-  <AccordionItem title="New User Onboarding">
-    <p>
-      Create account → Assign initial role → Add to appropriate teams → Send welcome materials → Schedule training → Monitor initial access
-    </p>
+  <AccordionItem title="Administrative Team" icon="tabler:shield">
+    <p>System administrators and operational support.</p>
+    <ul>
+      <li><strong>Evie Parker:</strong> Admin - Full system administration</li>
+      <li><strong>Oliver Bennett:</strong> Ops Support - Operational coordination</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Role Change Process">
-    <p>
-      Assess new requirements → Update role assignment → Adjust team memberships → Communicate changes → Provide additional training if needed
-    </p>
+
+  <AccordionItem title="Operations Leadership" icon="tabler:crown">
+    <p>Senior operational management and leadership.</p>
+    <ul>
+      <li><strong>Poppy Reed:</strong> Head Of Operations - Senior leadership</li>
+      <li><strong>Freya Turner:</strong> Deputy Head Of Operations - Leadership support</li>
+      <li><strong>George Davies:</strong> Ops Manager - Team management</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Team Restructuring">
-    <p>
-      Plan new structure → Communicate changes → Update team assignments → Adjust reporting relationships → Monitor transition
-    </p>
-  </AccordionItem>
-  <AccordionItem title="User Offboarding">
-    <p>
-      Plan transition → Backup user data → Transfer responsibilities → Revoke access → Archive account → Document handover
-    </p>
+
+  <AccordionItem title="Functional Specialists" icon="tabler:settings">
+    <p>Specialized operational roles and responsibilities.</p>
+    <ul>
+      <li><strong>Isla Morgan:</strong> Static Manager - Position management</li>
+      <li><strong>Harry Thompson:</strong> Logistics - Resource coordination</li>
+      <li><strong>Amelia Clarke:</strong> Resourcing - Resource allocation</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Best practices
+## User Account Lifecycle
 
-**For Admins**:
-- Follow principle of least privilege
-- Regularly review user access and roles
-- Document role changes and justifications
-- Maintain up-to-date team structures
-- Monitor for unused or orphaned accounts
+<Accordion>
+  <AccordionItem title="1. Account Creation" icon="tabler:user-plus">
+    <p>New user account setup and initial configuration.</p>
+    <ul>
+      <li>Admin creates user account with basic information</li>
+      <li>Initial role assignment based on job function</li>
+      <li>Email configuration and system access setup</li>
+      <li>Account appears in management table with "Active" status</li>
+    </ul>
+  </AccordionItem>
 
-**For Team Managers**:
-- Keep team member information current
-- Communicate access needs clearly
-- Report role change requirements promptly
-- Participate in regular access reviews
+  <AccordionItem title="2. Role Assignment & Team Setup" icon="tabler:users">
+    <p>Configure user permissions and team assignments.</p>
+    <ul>
+      <li>Assign appropriate role from available system roles</li>
+      <li>Add user to relevant teams and groups</li>
+      <li>Configure access permissions based on role</li>
+      <li>Provide initial training and system orientation</li>
+    </ul>
+  </AccordionItem>
 
-## Related guides
+  <AccordionItem title="3. Active Management" icon="tabler:settings">
+    <p>Ongoing account maintenance and updates.</p>
+    <ul>
+      <li>Regular profile updates and role adjustments</li>
+      <li>Team reassignments as organizational needs change</li>
+      <li>Access reviews and permission updates</li>
+      <li>Performance monitoring and account optimization</li>
+    </ul>
+  </AccordionItem>
 
-- [Create User Accounts →](../how-to-guides/create-user-accounts)
-- [Manage Team Structure →](../how-to-guides/manage-teams)
-- [Assign User Roles →](../how-to-guides/assign-roles)
-- [Handle Access Issues →](../how-to-guides/handle-access-issues)
+  <AccordionItem title="4. Account Lifecycle End" icon="tabler:user-minus">
+    <p>Account deactivation and data management.</p>
+    <ul>
+      <li>Status change from "Active" to "Deactivated"</li>
+      <li>Access revocation and security cleanup</li>
+      <li>Data handover and responsibility transfer</li>
+      <li>Account archival for historical reference</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Account Management Best Practices]
+- **Regular Review:** Periodically review all user accounts and their roles
+- **Principle of Least Privilege:** Assign minimum necessary permissions
+- **Status Monitoring:** Keep account statuses current and accurate
+- **Role Accuracy:** Ensure roles match actual job responsibilities
+- **Team Organization:** Maintain clear and logical team structures
+:::
+
+:::note[Integration Points]
+User & Team Management integrates with:
+- **Access Control:** Role-based permissions throughout the system
+- **Operational Assignments:** Manager assignments in succession planning
+- **Event Management:** User assignments to events and contracts
+- **Reporting:** User activity and access tracking
+:::
+
+## Access Requirements
+
+<Badge text="Admin" variant="danger" /> Full access to all user management features
+
+<Badge text="Ops Support" variant="caution" /> View-only access to user accounts and basic information
+
+<Badge text="Operations Manager" variant="success" /> Can view team members and manage own profile
+
+<Badge text="All Others" variant="note" /> Can view and edit own profile only
 
 ## Troubleshooting
 
 <Accordion>
-  <AccordionItem title="User cannot access required feature">
-    <p>
-      Check user's role assignment. Verify role includes necessary permissions. Contact Admin if role adjustment needed.
-    </p>
+  <AccordionItem title="User Cannot Access System Features" icon="tabler:alert-triangle">
+    <p>Check role assignment and permissions for the affected user.</p>
+    <ul>
+      <li>Verify user role in the Account Management table</li>
+      <li>Confirm role includes necessary permissions</li>
+      <li>Check account status is "Active"</li>
+      <li>Contact Admin for role adjustments if needed</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Team member not showing in team view">
-    <p>
-      Verify user is assigned to correct team. Check if team assignment is active. Update team membership if necessary.
-    </p>
+
+  <AccordionItem title="User Not Appearing in Team Lists" icon="tabler:users">
+    <p>Verify team assignments and user status.</p>
+    <ul>
+      <li>Check user's team assignment in Team Management</li>
+      <li>Verify account status is "Active"</li>
+      <li>Confirm team membership is current</li>
+      <li>Update assignments through Admin interface</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Cannot create new user account">
-    <p>
-      Verify Admin privileges. Check if username/email already exists. Ensure all required fields are completed.
-    </p>
+
+  <AccordionItem title="Cannot Find Specific User" icon="tabler:search">
+    <p>Use search and filter options effectively.</p>
+    <ul>
+      <li>Try searching by name, email, or role</li>
+      <li>Use "All Roles" filter to see all users</li>
+      <li>Check pagination - user may be on another page</li>
+      <li>Verify user account still exists and is active</li>
+    </ul>
   </AccordionItem>
 </Accordion>
