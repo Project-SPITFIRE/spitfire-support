@@ -1,0 +1,344 @@
+---
+title: Allocated Contracts
+description: Manage and view operational contracts assigned to your team with comprehensive tracking and details
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+View and manage operational contracts allocated to your management area with detailed tracking, client information, and contract duration monitoring.
+
+## Who can use this feature
+
+| Role | View Assigned | View Details | Manage Contracts | Search All | Export Data |
+|------|---------------|--------------|------------------|------------|-------------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Manager | ✓ | ✓ | Limited | ✓ | ✓ |
+| Assistant Ops Manager | ✓ | ✓ | View only | ✓ | ✗ |
+| All Others | ✗ | ✗ | ✗ | ✗ | ✗ |
+
+## What are Allocated Contracts?
+
+Allocated Contracts are operational agreements and service contracts assigned to specific managers or teams for execution and oversight. These include:
+- **Security & Stewarding contracts** for event safety
+- **Traffic Management contracts** for transportation coordination
+- **Client-specific contracts** with defined scopes and durations
+- **Departmental assignments** with specific client codes
+
+## Contract Management Interface
+
+<Accordion>
+  <AccordionItem title="Contract Overview Dashboard" icon="tabler:dashboard">
+    <p>High-level view of contract portfolio and status.</p>
+    <ul>
+      <li><strong>Total Contracts:</strong> Shows total number of allocated contracts (4 in example)</li>
+      <li><strong>Active Contracts:</strong> Number of currently active contracts (4 active)</li>
+      <li><strong>Contract Portfolio:</strong> Complete overview of assigned responsibilities</li>
+      <li><strong>Real-time Tracking:</strong> Current status and active contract monitoring</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Management Section" icon="tabler:settings">
+    <p>Central management interface for viewing and managing contracts.</p>
+    <ul>
+      <li><strong>View and Manage:</strong> "View and manage all your allocated contracts"</li>
+      <li><strong>Search Functionality:</strong> "Search Contracts" to find specific agreements</li>
+      <li><strong>Contract Organization:</strong> Structured display of contract information</li>
+      <li><strong>Detailed Access:</strong> "View Details" buttons for comprehensive contract information</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Cards Display" icon="tabler:cards">
+    <p>Individual contract cards showing key information.</p>
+    <ul>
+      <li><strong>Contract Title:</strong> Clear identification (e.g., "Sample Contract 1", "Chelsea - Traffic Management")</li>
+      <li><strong>Client Information:</strong> Client/Department Code for organizational tracking</li>
+      <li><strong>Duration Display:</strong> Contract length (5 days, 100 days, 20 days, 35 days)</li>
+      <li><strong>Service Type:</strong> Contract category (Security & Stewarding, Traffic Management)</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Current Contract Examples
+
+<Accordion>
+  <AccordionItem title="Sample Contract 1" icon="tabler:file">
+    <p>Example operational contract with basic structure.</p>
+    <ul>
+      <li><strong>Client:</strong> Sample Client</li>
+      <li><strong>Duration:</strong> 5 days</li>
+      <li><strong>Type:</strong> General operational contract</li>
+      <li><strong>Status:</strong> Active and allocated</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Chelsea - Traffic Management" icon="tabler:car">
+    <p>Traffic management contract for Chelsea operations.</p>
+    <ul>
+      <li><strong>Duration:</strong> 100 days (long-term contract)</li>
+      <li><strong>Service Type:</strong> Traffic Management</li>
+      <li><strong>Scope:</strong> Transportation coordination and traffic control</li>
+      <li><strong>Client Focus:</strong> Chelsea-specific operations</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Arsenal FC - Security & Stewarding" icon="tabler:shield">
+    <p>Security services contract for Arsenal Football Club.</p>
+    <ul>
+      <li><strong>Client Code:</strong> F04</li>
+      <li><strong>Duration:</strong> 20 days</li>
+      <li><strong>Service Type:</strong> Security & Stewarding</li>
+      <li><strong>Scope:</strong> Event security and crowd management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Arsenal FC - Traffic Management" icon="tabler:traffic-lights">
+    <p>Traffic management contract for Arsenal Football Club.</p>
+    <ul>
+      <li><strong>Client Code:</strong> F21</li>
+      <li><strong>Duration:</strong> 35 days</li>
+      <li><strong>Service Type:</strong> Traffic Management</li>
+      <li><strong>Scope:</strong> Match day traffic coordination</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Types and Services
+
+<Accordion>
+  <AccordionItem title="Security & Stewarding Contracts" icon="tabler:shield-check">
+    <p>Event security and crowd management services.</p>
+    <ul>
+      <li><strong>Event Security:</strong> Match day and event security services</li>
+      <li><strong>Crowd Management:</strong> Stewarding and crowd control</li>
+      <li><strong>Access Control:</strong> Entry and exit management</li>
+      <li><strong>Safety Oversight:</strong> General safety and security coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Traffic Management Contracts" icon="tabler:route">
+    <p>Transportation and traffic coordination services.</p>
+    <ul>
+      <li><strong>Traffic Control:</strong> Road traffic management and coordination</li>
+      <li><strong>Transport Planning:</strong> Event day transportation planning</li>
+      <li><strong>Route Management:</strong> Optimal route coordination</li>
+      <li><strong>Emergency Access:</strong> Emergency service route maintenance</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Client-Specific Contracts" icon="tabler:building">
+    <p>Contracts tailored to specific client requirements.</p>
+    <ul>
+      <li><strong>Football Clubs:</strong> Arsenal FC, Chelsea, and other sports venues</li>
+      <li><strong>Event Venues:</strong> Various event and entertainment locations</li>
+      <li><strong>Corporate Clients:</strong> Business and corporate event support</li>
+      <li><strong>Public Events:</strong> Municipal and public event services</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Information Structure
+
+<Accordion>
+  <AccordionItem title="Basic Contract Details" icon="tabler:info-circle">
+    <p>Essential information displayed for each contract.</p>
+    <ul>
+      <li><strong>Contract Title:</strong> Descriptive name identifying the contract</li>
+      <li><strong>Client/Department Code:</strong> Organizational identifier (F04, F21, etc.)</li>
+      <li><strong>Duration:</strong> Contract length in days or other time units</li>
+      <li><strong>Service Category:</strong> Type of service being provided</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Client Identification" icon="tabler:id">
+    <p>Client and organizational information tracking.</p>
+    <ul>
+      <li><strong>Client Codes:</strong> Standardized codes for client identification</li>
+      <li><strong>Department Codes:</strong> Internal departmental organization</li>
+      <li><strong>Service Classification:</strong> Category of service being delivered</li>
+      <li><strong>Location Information:</strong> Where services are being provided</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Duration and Timing" icon="tabler:clock">
+    <p>Contract timing and duration management.</p>
+    <ul>
+      <li><strong>Contract Length:</strong> Total duration of the service agreement</li>
+      <li><strong>Active Period:</strong> Current active status and remaining time</li>
+      <li><strong>Renewal Tracking:</strong> Information about contract renewals</li>
+      <li><strong>Milestone Management:</strong> Key dates and deadlines</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Using Allocated Contracts
+
+<Accordion>
+  <AccordionItem title="Viewing Contract Portfolio" icon="tabler:eye">
+    <p>Navigate and view your assigned contracts effectively.</p>
+    <ul>
+      <li><strong>Dashboard Overview:</strong> Quick view of total and active contracts</li>
+      <li><strong>Contract Cards:</strong> Individual contract information at a glance</li>
+      <li><strong>Search Function:</strong> Find specific contracts quickly</li>
+      <li><strong>Detail Access:</strong> Click "View Details" for comprehensive information</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Search and Filtering" icon="tabler:search">
+    <p>Find specific contracts using search functionality.</p>
+    <ul>
+      <li><strong>Contract Search:</strong> Search by contract name or keywords</li>
+      <li><strong>Client Search:</strong> Find contracts by client name or code</li>
+      <li><strong>Service Type Filter:</strong> Filter by Security, Traffic Management, etc.</li>
+      <li><strong>Duration Filter:</strong> Search by contract length or timing</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Monitoring" icon="tabler:chart-line">
+    <p>Monitor contract status and performance.</p>
+    <ul>
+      <li><strong>Active Status:</strong> Track which contracts are currently active</li>
+      <li><strong>Duration Tracking:</strong> Monitor remaining contract time</li>
+      <li><strong>Performance Monitoring:</strong> Track contract execution and delivery</li>
+      <li><strong>Renewal Planning:</strong> Plan for contract renewals and extensions</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Management Workflow
+
+<Accordion>
+  <AccordionItem title="Contract Assignment" icon="tabler:user-plus">
+    <p>How contracts are allocated to managers and teams.</p>
+    <ul>
+      <li>Contracts assigned based on expertise and capacity</li>
+      <li>Manager receives notification of new contract allocation</li>
+      <li>Contract details and requirements are reviewed</li>
+      <li>Resource planning and team assignment begins</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Execution" icon="tabler:play">
+    <p>Managing active contract delivery and execution.</p>
+    <ul>
+      <li>Deploy appropriate teams and resources</li>
+      <li>Monitor service delivery against contract requirements</li>
+      <li>Coordinate with clients and stakeholders</li>
+      <li>Document progress and any issues</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Completion" icon="tabler:check">
+    <p>Finalizing contracts and preparing for renewal or closure.</p>
+    <ul>
+      <li>Complete final service delivery requirements</li>
+      <li>Document contract performance and outcomes</li>
+      <li>Conduct client feedback and evaluation</li>
+      <li>Plan for contract renewal or transition</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Performance Tracking
+
+<Accordion>
+  <AccordionItem title="Service Delivery Monitoring" icon="tabler:activity">
+    <p>Track how well contracts are being executed.</p>
+    <ul>
+      <li><strong>Quality Metrics:</strong> Service quality and client satisfaction</li>
+      <li><strong>Timeline Adherence:</strong> Meeting contract deadlines and milestones</li>
+      <li><strong>Resource Utilization:</strong> Efficient use of allocated resources</li>
+      <li><strong>Issue Resolution:</strong> How quickly problems are addressed</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Client Relationship Management">
+    <p>Maintain strong relationships with contract clients.</p>
+    <ul>
+      <li><strong>Regular Communication:</strong> Ongoing client updates and feedback</li>
+      <li><strong>Issue Escalation:</strong> Prompt resolution of client concerns</li>
+      <li><strong>Performance Reviews:</strong> Regular contract performance discussions</li>
+      <li><strong>Renewal Discussions:</strong> Planning for contract continuations</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Contract Management Best Practices]
+- **Regular Review:** Check contract details and requirements regularly
+- **Team Coordination:** Ensure teams understand contract obligations
+- **Client Communication:** Maintain regular contact with contract clients
+- **Documentation:** Keep detailed records of contract execution and issues
+- **Resource Planning:** Allocate appropriate resources for contract delivery
+:::
+
+:::note[Integration Points]
+Allocated Contracts integrates with:
+- **Team Management:** Assigning teams to specific contracts
+- **Rota Management:** Scheduling staff for contract delivery
+- **EOS Actions:** Contract-related tasks and coordination
+- **Advanced Contracts:** Higher-level contract management features
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Cannot see expected contracts" icon="tabler:alert-triangle">
+    <p>Resolve issues with contract visibility and access.</p>
+    <ul>
+      <li>Verify your role has access to Allocated Contracts</li>
+      <li>Check if contracts have been properly assigned to you</li>
+      <li>Use search function to find specific contracts</li>
+      <li>Contact admin if contracts are missing from your allocation</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract details not loading">
+    <p>Fix issues with accessing detailed contract information.</p>
+    <ul>
+      <li>Check internet connection and page refresh</li>
+      <li>Verify you have permission to view contract details</li>
+      <li>Try accessing the contract again after a few minutes</li>
+      <li>Contact Ops Support if details consistently fail to load</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search not returning results" icon="tabler:search-off">
+    <p>Troubleshoot contract search functionality.</p>
+    <ul>
+      <li>Check spelling and try different search terms</li>
+      <li>Search by client code or partial contract names</li>
+      <li>Clear search filters and try again</li>
+      <li>Verify contracts exist and are assigned to you</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract count discrepancies" icon="tabler:numbers">
+    <p>Resolve issues with contract counting and display.</p>
+    <ul>
+      <li>Refresh the page to get current contract counts</li>
+      <li>Check if contracts have recently been reassigned</li>
+      <li>Verify active vs. total contract definitions</li>
+      <li>Contact admin if significant discrepancies persist</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Started
+
+To effectively use Allocated Contracts:
+
+1. **Access the feature** via Management → Allocated Contracts
+2. **Review your portfolio** using the Total and Active contract overview
+3. **Browse contract cards** to see your assigned contracts
+4. **Use search function** to find specific contracts quickly
+5. **Click "View Details"** for comprehensive contract information
+6. **Monitor contract status** and duration regularly
+7. **Coordinate with teams** to ensure successful contract delivery
+
+:::warning[Contract Responsibilities]
+As a contract holder, you are responsible for ensuring successful delivery of services according to contract terms. Monitor progress regularly and escalate issues promptly to maintain client satisfaction and contract compliance.
+:::

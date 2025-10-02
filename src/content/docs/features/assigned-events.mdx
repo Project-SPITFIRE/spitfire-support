@@ -1,0 +1,349 @@
+---
+title: Assigned Events
+description: View and manage events assigned to your operational management with comprehensive history and succession planning
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Track and manage operational events assigned to your management oversight with detailed history, succession planning, and location coordination.
+
+## Who can use this feature
+
+| Role | View Assigned | View History | Manage Events | Search All | Succession Planning |
+|------|---------------|--------------|---------------|------------|---------------------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Manager | ✓ | ✓ | Limited | ✓ | ✓ |
+{/* | Assistant Ops Manager | ✓ | ✓ | View only | ✓ | View only |
+| Head Of Operations | ✓ | ✓ | ✓ | ✓ | ✓ |
+| All Others | ✗ | ✗ | ✗ | ✗ | ✗ | */}
+
+## What are Assigned Events?
+
+Assigned Events are operational events allocated to specific managers for planning, coordination, and execution. These include:
+- **Sports Events** (Women's Super League, Pre-Season Friendlies)
+- **Traffic Management Events** (TM 2 series)
+- **Location-specific Events** across various venues
+- **Succession-planned Events** with management coverage
+
+## Events Overview Dashboard
+
+<Accordion>
+  <AccordionItem title="Total Events Summary" icon="tabler:calendar-stats">
+    <p>High-level overview of your event portfolio.</p>
+    <ul>
+      <li><strong>Total Events:</strong> Complete count of assigned events (34 events shown)</li>
+      <li><strong>Event Portfolio:</strong> Comprehensive view of all events under your management</li>
+      <li><strong>Management Scope:</strong> Full range of operational responsibility</li>
+      <li><strong>Historical Tracking:</strong> Complete record of event assignments</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Events History Interface" icon="tabler:history">
+    <p>Comprehensive historical view of event participation and management.</p>
+    <ul>
+      <li><strong>Past Participation:</strong> "View all past events you've participated in"</li>
+      <li><strong>Historical Records:</strong> Complete event history and involvement</li>
+      <li><strong>Search Functionality:</strong> "Search Event Title" to find specific events</li>
+      <li><strong>Chronological Display:</strong> Events organized by date and sequence</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Information Table" icon="tabler:table">
+    <p>Structured display of key event information and details.</p>
+    <ul>
+      <li><strong>Event Name:</strong> Clear event identification and titles</li>
+      <li><strong>Date:</strong> Event dates and duration periods</li>
+      <li><strong>Succession Plan:</strong> Management succession and coverage plans</li>
+      <li><strong>Location:</strong> Event venues and geographic locations</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Current Event Portfolio
+
+<Accordion>
+  <AccordionItem title="Sports Events" icon="tabler:ball-football">
+    <p>Sports-related events and competitions under management.</p>
+    <ul>
+      <li><strong>Women's Super League:</strong> Sep 13, 2025 - Sep 13, 2025 | Liverpool | Manager 1</li>
+      <li><strong>Pre-Season Friendly:</strong> Sep 13, 2025 - Sep 13, 2025 | Emirates Stadium | Manager 1</li>
+      <li><strong>Event Type:</strong> Football and sports venue operations</li>
+      <li><strong>Management Role:</strong> Full operational oversight and coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Traffic Management Events (TM 2)" icon="tabler:traffic-lights">
+    <p>Series of traffic management operations across London.</p>
+    <ul>
+      <li><strong>TM 2 Series:</strong> Multiple events from Oct 24-31, 2025</li>
+      <li><strong>Location:</strong> All London-based operations</li>
+      <li><strong>Succession Plan:</strong> Manager 1 assigned to all TM 2 events</li>
+      <li><strong>Duration:</strong> Single-day events with consistent management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Locations" icon="tabler:map-pin">
+    <p>Geographic distribution of assigned events.</p>
+    <ul>
+      <li><strong>Liverpool:</strong> Women's Super League operations</li>
+      <li><strong>Emirates Stadium:</strong> Pre-Season Friendly event</li>
+      <li><strong>London:</strong> Multiple TM 2 traffic management events</li>
+      <li><strong>Multi-location Management:</strong> Cross-venue coordination requirements</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Event Types and Categories
+
+<Accordion>
+  <AccordionItem title="Women's Super League" icon="tabler:trophy">
+    <p>Professional women's football league operations.</p>
+    <ul>
+      <li><strong>Event Type:</strong> Professional sports league match</li>
+      <li><strong>Operational Scope:</strong> Security, stewarding, and crowd management</li>
+      <li><strong>Location Coordination:</strong> Liverpool venue operations</li>
+      <li><strong>Management Requirements:</strong> Full event oversight and coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Pre-Season Friendly" icon="tabler:users-group">
+    <p>Football pre-season match operations.</p>
+    <ul>
+      <li><strong>Event Type:</strong> Pre-season football match</li>
+      <li><strong>Venue:</strong> Emirates Stadium operations</li>
+      <li><strong>Operational Focus:</strong> Event setup and crowd management</li>
+      <li><strong>Preparation Phase:</strong> Pre-season operational readiness</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="TM 2 Traffic Management" icon="tabler:route">
+    <p>Specialized traffic management operations series.</p>
+    <ul>
+      <li><strong>Event Series:</strong> TM 2 designation for traffic operations</li>
+      <li><strong>Location Focus:</strong> London-based traffic coordination</li>
+      <li><strong>Duration Pattern:</strong> Single-day operations with regular scheduling</li>
+      <li><strong>Management Consistency:</strong> Same manager (Manager 1) across all TM 2 events</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Succession Planning
+
+<Accordion>
+  <AccordionItem title="Manager 1 Assignments" icon="tabler:user-star">
+    <p>Primary management assignments and succession planning.</p>
+    <ul>
+      <li><strong>Consistent Assignment:</strong> Manager 1 assigned to all visible events</li>
+      <li><strong>Succession Planning:</strong> Clear management succession for all events</li>
+      <li><strong>Coverage Assurance:</strong> Ensures management coverage for all operations</li>
+      <li><strong>Responsibility Chain:</strong> Clear line of management responsibility</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Coverage" icon="tabler:shield-check">
+    <p>Ensuring continuous management oversight for all events.</p>
+    <ul>
+      <li><strong>Primary Manager:</strong> Designated manager for each event</li>
+      <li><strong>Backup Planning:</strong> Succession plans for management coverage</li>
+      <li><strong>Continuity Assurance:</strong> Ensures no event lacks management oversight</li>
+      <li><strong>Coordination Chain:</strong> Clear management hierarchy and communication</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Event Timeline and Scheduling
+
+<Accordion>
+  <AccordionItem title="September 2025 Events" icon="tabler:calendar">
+    <p>Events scheduled for September 2025.</p>
+    <ul>
+      <li><strong>September 13:</strong> Women's Super League (Liverpool) and Pre-Season Friendly (Emirates)</li>
+      <li><strong>Event Coordination:</strong> Multiple events on same date requiring coordination</li>
+      <li><strong>Resource Planning:</strong> Multi-venue resource allocation</li>
+      <li><strong>Management Oversight:</strong> Ensuring adequate management coverage</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="October 2025 Events" icon="tabler:calendar-month">
+    <p>Extensive October scheduling with TM 2 series.</p>
+    <ul>
+      <li><strong>October 24-31:</strong> Concentrated TM 2 series across 8 days</li>
+      <li><strong>Daily Operations:</strong> Single-day events requiring daily management</li>
+      <li><strong>London Focus:</strong> All October events located in London</li>
+      <li><strong>Series Management:</strong> Coordinated series of related events</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Duration Patterns" icon="tabler:clock">
+    <p>Understanding event timing and duration patterns.</p>
+    <ul>
+      <li><strong>Single-Day Events:</strong> Most events are single-day operations</li>
+      <li><strong>Same-Day Start/End:</strong> Events typically start and end on the same date</li>
+      <li><strong>Consistent Scheduling:</strong> Regular patterns in event scheduling</li>
+      <li><strong>Planning Efficiency:</strong> Predictable scheduling aids in resource planning</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Using Assigned Events
+
+<Accordion>
+  <AccordionItem title="Viewing Event History" icon="tabler:eye">
+    <p>Navigate and review your assigned events effectively.</p>
+    <ul>
+      <li><strong>Total Overview:</strong> See complete count of assigned events</li>
+      <li><strong>Historical View:</strong> Browse through all past and upcoming events</li>
+      <li><strong>Search Function:</strong> Use "Search Event Title" to find specific events</li>
+      <li><strong>Chronological Order:</strong> Events displayed in date order for easy navigation</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Information Review" icon="tabler:info-circle">
+    <p>Understanding key event information and details.</p>
+    <ul>
+      <li><strong>Event Names:</strong> Clear identification of event types and purposes</li>
+      <li><strong>Date Ranges:</strong> Understand event timing and duration</li>
+      <li><strong>Location Data:</strong> Know where events are taking place</li>
+      <li><strong>Succession Plans:</strong> Understand management assignments and coverage</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Planning and Coordination" icon="tabler:timeline">
+    <p>Use event information for operational planning and coordination.</p>
+    <ul>
+      <li><strong>Resource Planning:</strong> Plan staffing and resources based on event schedule</li>
+      <li><strong>Multi-venue Coordination:</strong> Coordinate across different locations</li>
+      <li><strong>Succession Coordination:</strong> Work with designated managers for event coverage</li>
+      <li><strong>Schedule Management:</strong> Avoid conflicts and ensure adequate coverage</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Event Management Workflow
+
+<Accordion>
+  <AccordionItem title="Pre-Event Planning" icon="tabler:calendar-plus">
+    <p>Preparation and planning phases for assigned events.</p>
+    <ul>
+      <li>Review event details and requirements</li>
+      <li>Coordinate with designated succession managers</li>
+      <li>Plan resource allocation and staffing</li>
+      <li>Establish communication channels and protocols</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Execution" icon="tabler:play">
+    <p>Managing events during active operation phases.</p>
+    <ul>
+      <li>Oversee operational execution according to plans</li>
+      <li>Coordinate with on-site teams and managers</li>
+      <li>Monitor event progress and address issues</li>
+      <li>Maintain communication with stakeholders</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Post-Event Review" icon="tabler:report">
+    <p>Completion and evaluation of event operations.</p>
+    <ul>
+      <li>Conduct post-event debriefing and evaluation</li>
+      <li>Document lessons learned and improvements</li>
+      <li>Update succession plans based on experience</li>
+      <li>Prepare for future similar events</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Pagination and Navigation
+
+<Accordion>
+  <AccordionItem title="Event List Navigation" icon="tabler:arrow-right">
+    <p>Navigate through large numbers of assigned events.</p>
+    <ul>
+      <li><strong>Results Display:</strong> Shows "1 to 10 of 34 results" for clear context</li>
+      <li><strong>Previous/Next:</strong> Easy navigation between pages of events</li>
+      <li><strong>Page Management:</strong> Handle large event portfolios efficiently</li>
+      <li><strong>Search Integration:</strong> Search works across all pages of results</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Event Management Best Practices]
+- **Regular Review:** Check assigned events regularly for updates and changes
+- **Succession Coordination:** Maintain good communication with designated succession managers
+- **Resource Planning:** Use event schedules for proactive resource planning
+- **Multi-venue Management:** Plan carefully for events occurring on the same dates
+- **Documentation:** Keep records of event execution and lessons learned
+:::
+
+:::note[Integration Points]
+Assigned Events integrates with:
+- **Team Management:** Assigning teams to specific events
+- **Rota Management:** Scheduling staff for event operations
+- **Allocated Contracts:** Events may be tied to specific contracts
+- **EOS Actions:** Event-related tasks and coordination activities
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Cannot see expected events" icon="tabler:alert-triangle">
+    <p>Resolve issues with event visibility and assignment.</p>
+    <ul>
+      <li>Verify your role has access to Assigned Events feature</li>
+      <li>Check if events have been properly assigned to your management</li>
+      <li>Use search function to find specific events by title</li>
+      <li>Contact admin if events are missing from your assignments</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search not finding events" icon="tabler:search-off">
+    <p>Fix issues with event search functionality.</p>
+    <ul>
+      <li>Check spelling and try different search terms</li>
+      <li>Search by partial event names or keywords</li>
+      <li>Clear search and browse through event pages</li>
+      <li>Verify events exist within your assigned portfolio</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Succession plan information unclear" icon="tabler:user-question">
+    <p>Resolve issues with succession planning information.</p>
+    <ul>
+      <li>Contact the designated succession manager directly</li>
+      <li>Check Team Management for manager contact information</li>
+      <li>Verify succession plans are up to date</li>
+      <li>Escalate to Ops Support if succession plans are unclear</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event count discrepancies" icon="tabler:numbers">
+    <p>Resolve issues with event counting and totals.</p>
+    <ul>
+      <li>Refresh the page to get current event counts</li>
+      <li>Check if events have been recently reassigned</li>
+      <li>Verify active vs. historical event definitions</li>
+      <li>Contact admin if significant count discrepancies persist</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Started
+
+To effectively use Assigned Events:
+
+1. **Access the feature** via Management → Assigned Events
+2. **Review your portfolio** using the Total Events overview
+3. **Browse event history** to understand your assigned events
+4. **Use search function** to find specific events quickly
+5. **Review succession plans** to understand management coverage
+6. **Check event locations** for coordination planning
+7. **Plan resources** based on event schedules and requirements
+
+:::warning[Event Management Responsibility]
+As an assigned event manager, you are responsible for ensuring successful event execution. Coordinate with succession managers and teams to deliver high-quality operational support for all assigned events.
+:::

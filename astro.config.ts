@@ -53,6 +53,7 @@ export default defineConfig({
         {
           label: "Roles",
           items: [
+            { label: "Role Overview", slug: "roles/overview"},
             { label: "Admin", slug: "roles/admin" },
             { label: "Operations Manager", slug: "roles/ops-manager" },
             { label: "Operations Support", slug: "roles/ops-support" },
@@ -65,7 +66,14 @@ export default defineConfig({
             { label: "EOS Tasks", slug: "features/eos-tasks" },
             { label: "Schedules", slug: "features/schedules" },
             { label: "Rota Management", slug: "features/rota-management" },
+            { label: "Contract Allocation", slug: "features/contract-allocation" },
+            { label: "Allocated Contracts", slug: "features/allocated-contracts"},
+            { label: "Assigned Events", slug: "features/assigned-events" },
+            { label: "Event Mapping", slug: "features/event-mapping" },
+            { label: "Succession Planning", slug: "features/succession-planning"},
+            { label: "Create User Accounts", slug: "features/create-user"},
             { label: "User & Team Management", slug: "features/user-team-management" },
+            { label: "Configuration Centre", slug: "features/configuration-centre" },
           ],
         },
         {

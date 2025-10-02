@@ -7,187 +7,337 @@ import { Badge } from '@astrojs/starlight/components';
 import Accordion from '../../../components/Accordion.astro';
 import AccordionItem from '../../../components/AccordionItem.astro';
 
-Submit and track requests for resources, changes, or approvals needed for operational activities.
+Submit and track requests for resources, changes, or approvals needed for operational activities through the comprehensive Manage Request interface.
 
 ## Who can use this feature
 
 | Role | Submit | Update Own | Update Others | View All | Add Notes |
 |------|--------|------------|---------------|----------|-----------|
 | Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Operations Manager | ✓ | ✓ | ✗ | Own only | ✗ |
+| Operations Manager | ✓ | ✓ | ✗ | Own only | ✓ |
 | Operations Support | ✓ | ✓ | ✓ | ✓ | ✓ |
-{/* | COO | ✓ | ✓ | ✗ | Own only | ✗ |
-| Deputies | ✓ | ✓ | ✗ | Own only | ✗ |
-| HOO | ✓ | ✓ | ✗ | Own only | ✗ |
-| Logistics | ✓ | ✓ | ✗ | Own only | ✗ |
-| Resourcing | ✓ | ✓ | ✗ | Own only | ✗ |
-| Static Manager | ✓ | ✓ | ✗ | Own only | ✗ |  */}
+{/* | Head of Operations | ✓ | ✓ | ✗ | Own only | ✓ | */}
 
 ## What is a request?
 
 A request is a formal submission for operational needs such as:
-- Resource allocation (staff, equipment, budget)
-- Process improvements or changes
-- Schedule modifications
-- Cross-team coordination
-- Emergency operational needs
+- **Leave requests** (Swap Duty, time off, schedule changes)
+- **Resource allocation** (staff, equipment, budget)
+- **Process improvements** or operational changes
+- **Schedule modifications** and manager assignments
+- **Cross-team coordination** needs
 
-## Request lifecycle
+## Manage Request Interface
 
 <Accordion>
-  <AccordionItem title="1. Submission">
-    <p>
-      <Badge text="Draft" variant="note" /> → <Badge text="Submitted" variant="caution" /><br/>
-      User creates request with required details and submits for review
-    </p>
+  <AccordionItem title="Filters & Search System" icon="tabler:filter">
+    <p>Comprehensive filtering and search capabilities for managing requests.</p>
+    <ul>
+      <li><strong>Search Function:</strong> "Search by title or submitter" - find specific requests quickly</li>
+      <li><strong>Status Filter:</strong> "All Status" dropdown to filter by request status</li>
+      <li><strong>Advanced Filtering:</strong> Multiple filter options for precise request management</li>
+      <li><strong>Real-time Results:</strong> Instant filtering as you type or select filters</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="2. Initial Review">
-    <p>
-      <Badge text="Submitted" variant="caution" /> → <Badge text="Under Review" variant="tip" /> or <Badge text="Missing Information" variant="danger" /><br/>
-      Operations Support reviews for completeness and clarity
-    </p>
+
+  <AccordionItem title="Request Table Overview" icon="tabler:table">
+    <p>Comprehensive table view of all requests with key information.</p>
+    <ul>
+      <li><strong>Request Title:</strong> Clear identification of each request</li>
+      <li><strong>Type:</strong> Request category (Swap Duty, Quotation, etc.)</li>
+      <li><strong>Description:</strong> Brief summary of request details</li>
+      <li><strong>Start Date:</strong> Request effective start date</li>
+      <li><strong>End Date:</strong> Request completion or end date</li>
+      <li><strong>Managers:</strong> Number of managers involved (e.g., "0")</li>
+      <li><strong>Submitted by:</strong> User who created the request with role</li>
+      <li><strong>Status:</strong> Color-coded status badges</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="3. Processing">
-    <p>
-      <Badge text="Under Review" variant="tip" /> → <Badge text="In Progress" variant="caution" /><br/>
-      Approved requests move into active processing phase
-    </p>
-  </AccordionItem>
-  <AccordionItem title="4. Completion">
-    <p>
-      <Badge text="In Progress" variant="caution" /> → <Badge text="Completed" variant="success" /> or <Badge text="Rejected" variant="danger" /><br/>
-      Final outcome based on processing results
-    </p>
+
+  <AccordionItem title="Clickable Request Details" icon="tabler:click">
+    <p>Click any request to open detailed view and management panel.</p>
+    <ul>
+      <li><strong>Request Panel:</strong> Right-side panel opens with full request details</li>
+      <li><strong>Request Information:</strong> Complete request specifications and metadata</li>
+      <li><strong>Status Management:</strong> Update request status and progress</li>
+      <li><strong>Activity Tracking:</strong> View all request-related activities</li>
+      <li><strong>Notes System:</strong> Add and view request notes and communications</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Request statuses
-
-### Active Statuses
-- <Badge text="Draft" variant="note" /> **Draft**: Work in progress, not yet submitted
-- <Badge text="Submitted" variant="caution" /> **Submitted**: Awaiting initial review
-- <Badge text="Under Review" variant="tip" /> **Under Review**: Being evaluated by Operations Support
-- <Badge text="Missing Information" variant="danger" /> **Missing Information**: Requires additional details
-- <Badge text="In Progress" variant="caution" /> **In Progress**: Actively being processed
-- <Badge text="On Hold" variant="note" /> **On Hold**: Temporarily paused pending external factors
-
-### Final Statuses
-- <Badge text="Completed" variant="success" /> **Completed**: Successfully fulfilled
-- <Badge text="Rejected" variant="danger" /> **Rejected**: Declined with reasons provided
-- <Badge text="Cancelled" variant="note" /> **Cancelled**: Withdrawn by submitter
-
-## Request types
+## Request Types and Examples
 
 <Accordion>
-  <AccordionItem title="Resource Requests">
-    <p>
-      <strong>Purpose</strong>: Additional staff, equipment, or budget allocation<br/>
-      <strong>Examples</strong>: Extra managers for events, equipment purchases, budget approvals<br/>
-      <strong>Processing time</strong>: 3-5 business days
-    </p>
+  <AccordionItem title="Swap Duty Requests" icon="tabler:repeat">
+    <p>Schedule change and duty swap coordination.</p>
+    <ul>
+      <li><strong>Purpose:</strong> Manager schedule changes and duty swaps</li>
+      <li><strong>Example:</strong> "Leave na me" - requesting time off or schedule adjustment</li>
+      <li><strong>Typical Duration:</strong> Single day to multi-day periods</li>
+      <li><strong>Processing:</strong> Requires manager availability verification</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Schedule Changes">
-    <p>
-      <strong>Purpose</strong>: Modifications to existing schedules or events<br/>
-      <strong>Examples</strong>: Event time changes, manager reassignments, schedule conflicts<br/>
-      <strong>Processing time</strong>: 1-2 business days
-    </p>
+
+  <AccordionItem title="Quotation Requests" icon="tabler:file-invoice">
+    <p>Resource and service quotation requests.</p>
+    <ul>
+      <li><strong>Purpose:</strong> Obtain quotes for services, equipment, or resources</li>
+      <li><strong>Example:</strong> "Test Request 005" - quotation for operational needs</li>
+      <li><strong>Processing:</strong> Vendor coordination and price comparison</li>
+      <li><strong>Documentation:</strong> Requires detailed specifications</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Process Improvements">
-    <p>
-      <strong>Purpose</strong>: Changes to operational procedures or workflows<br/>
-      <strong>Examples</strong>: New approval processes, system enhancements, training needs<br/>
-      <strong>Processing time</strong>: 5-10 business days
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Emergency Requests">
-    <p>
-      <strong>Purpose</strong>: Urgent operational needs requiring immediate attention<br/>
-      <strong>Examples</strong>: Last-minute staffing, emergency equipment, critical deadlines<br/>
-      <strong>Processing time</strong>: Same day or next business day
-    </p>
+
+  <AccordionItem title="General Operational Requests" icon="tabler:settings">
+    <p>Miscellaneous operational support and coordination.</p>
+    <ul>
+      <li><strong>Purpose:</strong> Various operational needs and support requests</li>
+      <li><strong>Example:</strong> "Test Request 0007" - operational support requirements</li>
+      <li><strong>Flexible Processing:</strong> Varies based on request complexity</li>
+      <li><strong>Cross-functional:</strong> May involve multiple departments</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Required information
-
-All requests must include:
-
-**Basic Details**:
-- Clear, descriptive title
-- Detailed description of need
-- Business justification
-- Requested timeline
-
-**Specifics**:
-- Related contracts or events (if applicable)
-- Resource requirements
-- Impact if not fulfilled
-- Alternative solutions considered
-
-**Additional for Complex Requests**:
-- Budget implications
-- Cross-team dependencies
-- Risk assessment
-- Success criteria
-
-## Common workflows
+## Request Status System
 
 <Accordion>
-  <AccordionItem title="Standard Request Flow">
-    <p>
-      Submit → Operations Support reviews → Clarifications if needed → Processing → Completion
-    </p>
+  <AccordionItem title="Active Status Indicators" icon="tabler:activity">
+    <p>Current request statuses visible in the system.</p>
+    <ul>
+      <li><Badge text="Not Yet Started" variant="note" /> **Not Yet Started:** Request submitted but processing not begun</li>
+      <li><Badge text="Missing Information" variant="danger" /> **Missing Information:** Additional details required from submitter</li>
+      <li><strong>In Progress:</strong> Actively being processed and worked on</li>
+      <li><strong>Under Review:</strong> Being evaluated by appropriate personnel</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Emergency Request Flow">
-    <p>
-      Submit with "Emergency" flag → Immediate Operations Support review → Fast-track processing → Rapid completion
-    </p>
-  </AccordionItem>
-  <AccordionItem title="Complex Request Flow">
-    <p>
-      Submit → Initial review → Stakeholder consultation → Detailed planning → Phased implementation → Final review
-    </p>
+
+  <AccordionItem title="Completion Status Options" icon="tabler:check">
+    <p>Final status options for request completion.</p>
+    <ul>
+      <li><strong>Mark as Complete:</strong> Request successfully fulfilled</li>
+      <li><strong>Mark as Missing Information:</strong> Requires additional details</li>
+      <li><strong>Rejected:</strong> Request declined with reasoning</li>
+      <li><strong>Cancelled:</strong> Request withdrawn by submitter</li>
+    </ul>
   </AccordionItem>
 </Accordion>
 
-## Best practices
+## Request Detail Panel
 
-**For Submitters**:
-- Be specific and detailed in descriptions
-- Include all relevant context and background
-- Respond quickly to clarification requests
-- Update timeline if priorities change
+<Accordion>
+  <AccordionItem title="Request Information Section" icon="tabler:info-circle">
+    <p>Comprehensive request details and specifications.</p>
+    <ul>
+      <li><strong>Leave Name:</strong> Specific request identifier</li>
+      <li><strong>Start Date:</strong> Request effective date (e.g., 2025-09-27 00:00)</li>
+      <li><strong>End Date:</strong> Request completion date</li>
+      <li><strong>Type:</strong> Request category and classification</li>
+      <li><strong>Submitted By:</strong> User and role information</li>
+      <li><strong>Managers Required:</strong> Number of managers needed</li>
+      <li><strong>Status:</strong> Current request status with action buttons</li>
+      <li><strong>Files:</strong> Attached documents and resources</li>
+    </ul>
+  </AccordionItem>
 
-**For Reviewers**:
-- Review requests within 24 hours
-- Ask clarifying questions promptly
-- Provide clear status updates
-- Document decision rationale
+  <AccordionItem title="Activity Tracking" icon="tabler:timeline">
+    <p>Monitor all request-related activities and changes.</p>
+    <ul>
+      <li><strong>Activity Log:</strong> Chronological record of all request activities</li>
+      <li><strong>Status Changes:</strong> Track progression through request lifecycle</li>
+      <li><strong>User Actions:</strong> Record of who made changes and when</li>
+      <li><strong>No Recent Activity:</strong> Clear indication when no updates available</li>
+    </ul>
+  </AccordionItem>
 
-## Related guides
+  <AccordionItem title="Notes and Communication" icon="tabler:message">
+    <p>Collaborative communication within request context.</p>
+    <ul>
+      <li><strong>Notes Section:</strong> Add and view request-related communications</li>
+      <li><strong>Add Note Button:</strong> Easy note creation for updates and comments</li>
+      <li><strong>Team Collaboration:</strong> Multiple users can add notes and updates</li>
+      <li><strong>Historical Record:</strong> Maintains complete communication history</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
 
-- [Submit a Request →](../how-to-guides/submit-request)
-- [Update Request Information →](../how-to-guides/update-request)
-- [Handle Missing Information →](../how-to-guides/handle-missing-information)
-- [Process Incoming Requests →](../how-to-guides/process-requests)
+## Request Management Actions
+
+<Accordion>
+  <AccordionItem title="Status Update Actions" icon="tabler:edit">
+    <p>Change request status based on processing progress.</p>
+    <ul>
+      <li><strong>Mark as Complete:</strong> Blue button for successful completion</li>
+      <li><strong>Mark as Missing Information:</strong> White button when details needed</li>
+      <li><strong>Status Dropdown:</strong> Select appropriate status for current situation</li>
+      <li><strong>Progress Tracking:</strong> Visual indicators of request advancement</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Information Management" icon="tabler:database">
+    <p>Update and manage request information and attachments.</p>
+    <ul>
+      <li><strong>Edit Details:</strong> Modify request information as needed</li>
+      <li><strong>File Management:</strong> Attach or remove supporting documents</li>
+      <li><strong>Manager Assignment:</strong> Update manager requirements and assignments</li>
+      <li><strong>Date Adjustments:</strong> Modify start and end dates if necessary</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Request Processing Workflow
+
+<Accordion>
+  <AccordionItem title="1. Submission & Initial Review" icon="tabler:send">
+    <p>Request creation and initial processing steps.</p>
+    <ul>
+      <li>User submits request with required details</li>
+      <li>Request appears in Manage Request table</li>
+      <li>Initial status set to "Not Yet Started"</li>
+      <li>Operations Support receives notification</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="2. Processing & Updates" icon="tabler:progress">
+    <p>Active processing and status management.</p>
+    <ul>
+      <li>Operations Support reviews request details</li>
+      <li>Status updated to reflect processing stage</li>
+      <li>Additional information requested if needed</li>
+      <li>Regular updates provided through notes system</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="3. Resolution & Completion" icon="tabler:check">
+    <p>Final processing and request closure.</p>
+    <ul>
+      <li>Request fulfilled or resolution provided</li>
+      <li>Status marked as "Complete" with final notes</li>
+      <li>Submitter notified of resolution</li>
+      <li>Request archived for historical reference</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Search and Filter Usage
+
+<Accordion>
+  <AccordionItem title="Search Functionality" icon="tabler:search">
+    <p>Find specific requests quickly using search capabilities.</p>
+    <ul>
+      <li><strong>Title Search:</strong> Search by request title or keywords</li>
+      <li><strong>Submitter Search:</strong> Find requests by user who submitted them</li>
+      <li><strong>Real-time Results:</strong> Instant filtering as you type</li>
+      <li><strong>Case Insensitive:</strong> Search works regardless of capitalization</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Status Filtering" icon="tabler:filter">
+    <p>Filter requests by current status for focused management.</p>
+    <ul>
+      <li><strong>All Status:</strong> View all requests regardless of status</li>
+      <li><strong>Not Yet Started:</strong> Focus on new, unprocessed requests</li>
+      <li><strong>Missing Information:</strong> View requests needing additional details</li>
+      <li><strong>In Progress:</strong> Monitor actively processed requests</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Combined Filtering" icon="tabler:filter">
+    <p>Use multiple filters together for precise request management.</p>
+    <ul>
+      <li>Combine search terms with status filters</li>
+      <li>Filter by date ranges and request types</li>
+      <li>Focus on specific submitters and their requests</li>
+      <li>Create custom views for different management needs</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Pagination and Navigation
+
+<Accordion>
+  <AccordionItem title="Request List Navigation" icon="tabler:arrow-right">
+    <p>Navigate through large numbers of requests efficiently.</p>
+    <ul>
+      <li><strong>Results Display:</strong> Shows "1 to 5 of 12 results" for clear context</li>
+      <li><strong>Previous/Next:</strong> Easy navigation between pages</li>
+      <li><strong>Page Management:</strong> Handle large volumes of requests</li>
+      <li><strong>Bulk Operations:</strong> Manage multiple requests efficiently</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Request Management Best Practices]
+- **Regular Review:** Check requests daily to ensure timely processing
+- **Clear Communication:** Use notes section for transparent communication
+- **Status Updates:** Keep status current to inform all stakeholders
+- **Documentation:** Maintain clear records of decisions and actions
+- **Quick Response:** Address "Missing Information" requests promptly
+:::
+
+:::note[Integration Points]
+Request Management integrates with:
+- **User Management:** Submitter information from user accounts
+- **Team Management:** Manager assignments and team coordination
+- **Calendar System:** Date management and scheduling coordination
+- **File System:** Document attachments and supporting materials
+:::
 
 ## Troubleshooting
 
 <Accordion>
-  <AccordionItem title="Request stuck in 'Submitted' status">
-    <p>
-      Check with Operations Support for review status. May need additional information or be in review queue.
-    </p>
+  <AccordionItem title="Cannot see my submitted requests" icon="tabler:alert-triangle">
+    <p>Verify you have access to view your own requests.</p>
+    <ul>
+      <li>Check if you're logged in with the correct account</li>
+      <li>Use search function to find specific request titles</li>
+      <li>Contact Operations Support if requests are missing</li>
+      <li>Verify request was successfully submitted initially</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Can't update my request">
-    <p>
-      Verify request is in editable status (Draft, Missing Information). Contact Operations Support if status is unclear.
-    </p>
+
+  <AccordionItem title="Request detail panel not opening" icon="tabler:click">
+    <p>Troubleshoot clickable request interface issues.</p>
+    <ul>
+      <li>Ensure you're clicking directly on the request row</li>
+      <li>Check browser compatibility and refresh if needed</li>
+      <li>Verify you have permission to view request details</li>
+      <li>Try using different browser or clearing cache</li>
+    </ul>
   </AccordionItem>
-  <AccordionItem title="Urgent request not being processed quickly">
-    <p>
-      Ensure request is marked as emergency priority. Contact Operations Support directly if truly urgent.
-    </p>
+
+  <AccordionItem title="Status update not working" icon="tabler:edit-off">
+    <p>Resolve issues with updating request status.</p>
+    <ul>
+      <li>Confirm you have permission to update request status</li>
+      <li>Check if request is in an editable state</li>
+      <li>Verify all required information is provided</li>
+      <li>Contact admin if permission issues persist</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Filter results not showing expected requests" icon="tabler:filter-off">
+    <p>Fix filtering and search result issues.</p>
+    <ul>
+      <li>Clear all filters and try searching again</li>
+      <li>Check spelling and try different search terms</li>
+      <li>Verify date ranges include expected request dates</li>
+      <li>Reset filters to "All Status" to see all requests</li>
+    </ul>
   </AccordionItem>
 </Accordion>
+
+## Getting Started with Request Management
+
+To effectively use the Request Management system:
+
+1. **Access the interface** via Management → Manage Request
+2. **Use filters and search** to find specific requests or focus on priorities
+3. **Click any request** to open the detailed view panel
+4. **Review request information** including dates, type, and submitter details
+5. **Update status** as processing progresses
+6. **Add notes** for communication and documentation
+7. **Mark as complete** when request is fulfilled

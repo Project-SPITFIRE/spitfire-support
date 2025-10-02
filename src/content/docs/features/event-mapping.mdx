@@ -1,0 +1,228 @@
+---
+title: Events Mapping
+description: Assign managers to events and coordinate operational coverage
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Events Mapping allows you to assign managers to specific events and manage their schedules. Select managers and view their event assignments through an intuitive calendar interface with role-based assignments.
+
+## What is Events Mapping?
+
+Events Mapping is a schedule management system that allows you to:
+
+- **Select managers** to view and manage their schedules
+- **Assign manager roles** using the succession planning hierarchy
+- **View event schedules** by month and year
+- **Manage event assignments** with detailed and compact views
+
+## Manager Selection Interface
+
+<Accordion>
+  <AccordionItem title="Manager Selection Panel" icon="tabler:user-search">
+    <p>Choose which managers to view and manage in the events mapping.</p>
+    <ul>
+      <li><strong>Multi-manager selection:</strong> Select up to multiple managers at once</li>
+      <li><strong>Manager search:</strong> Search for specific managers by name</li>
+      <li><strong>Select All option:</strong> Choose all managers (max 50) for overview</li>
+      <li><strong>Manager details:</strong> Shows manager name and email address</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Date and Time Controls" icon="tabler:calendar">
+    <p>Navigate through different time periods for event planning.</p>
+    <ul>
+      <li><strong>Month selector:</strong> Choose specific month to view</li>
+      <li><strong>Year selector:</strong> Navigate between years</li>
+      <li><strong>Current selection:</strong> Shows selected managers with removal options</li>
+      <li><strong>Real-time updates:</strong> Changes reflect immediately in the mapping panel</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Not Managed Toggle" icon="tabler:toggle-left">
+    <p>Filter to show managers who don't have scheduled events.</p>
+    <ul>
+      <li>Toggle on to see managers without current assignments</li>
+      <li>Helps identify available managers for new events</li>
+      <li>Useful for workload balancing</li>
+      <li>Shows gaps in event coverage</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Role Legend and Assignment Types
+
+<Accordion>
+  <AccordionItem title="Manager Hierarchy Roles" icon="tabler:hierarchy">
+    <p>Six levels of manager assignments based on succession planning.</p>
+    <ul>
+      <li><strong>1st Manager:</strong> Primary responsibility for events (Blue badge)</li>
+      <li><strong>2nd Manager:</strong> First backup coverage (Green badge)</li>
+      <li><strong>3rd Manager:</strong> Second backup coverage (Orange badge)</li>
+      <li><strong>4th Manager:</strong> Third backup coverage (Purple badge)</li>
+      <li><strong>5th Manager:</strong> Fourth backup coverage (Pink badge)</li>
+      <li><strong>6th Manager:</strong> Fifth backup coverage (Yellow badge)</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Specialized Role Types" icon="tabler:users-group">
+    <p>Additional assignment types for specific situations.</p>
+    <ul>
+      <li><strong>Day Rate:</strong> Temporary or contract-based assignments (Light blue badge)</li>
+      <li><strong>Shadower:</strong> Training or observation role (Gray badge)</li>
+      <li><strong>Support Manager:</strong> Additional assistance for complex events (Green badge)</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Color-Coded System" icon="tabler:palette">
+    <p>Visual indicators for quick role identification.</p>
+    <ul>
+      <li>Each role type has a distinct color badge</li>
+      <li>Easy visual scanning of manager assignments</li>
+      <li>Consistent color scheme across the system</li>
+      <li>Helps identify coverage gaps quickly</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Event Mapping Panel
+
+<Accordion>
+  <AccordionItem title="Calendar View Options" icon="tabler:layout-grid">
+    <p>Choose between detailed and compact views for different needs.</p>
+    <ul>
+      <li><strong>Event Map - Detailed View:</strong> Full information display with expanded details</li>
+      <li><strong>Event Map - Compact View:</strong> Condensed view for overview purposes</li>
+      <li><strong>Toggle between views:</strong> Switch based on task requirements</li>
+      <li><strong>Responsive layout:</strong> Adapts to different screen sizes</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Assignment Display" icon="tabler:calendar-event">
+    <p>View manager assignments and event details in the calendar.</p>
+    <ul>
+      <li><strong>Daily breakdown:</strong> Events organized by date</li>
+      <li><strong>Manager columns:</strong> Each selected manager gets their own column</li>
+      <li><strong>Event information:</strong> Event names and assignment details</li>
+      <li><strong>Status indicators:</strong> Shows assignment status and coverage levels</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="No Data State" icon="tabler:inbox">
+    <p>System guidance when no managers are selected.</p>
+    <ul>
+      <li><strong>Clear messaging:</strong> "No data yet. Please select a manager to view event mapping."</li>
+      <li><strong>Action guidance:</strong> Directs users to select managers first</li>
+      <li><strong>Visual placeholder:</strong> Graphic illustration while waiting for selection</li>
+      <li><strong>User-friendly interface:</strong> Helps new users understand the workflow</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Working with Event Assignments
+
+<Accordion>
+  <AccordionItem title="Selecting Managers to View" icon="tabler:user-plus">
+    <p>Choose specific managers to display in the event mapping.</p>
+    <ul>
+      <li>Click "Select Managers" dropdown to see available options</li>
+      <li>Search for managers by name using the search box</li>
+      <li>Select individual managers or use "Select All (max 50)"</li>
+      <li>Selected managers appear as removable tags</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Managing Event Schedules" icon="tabler:calendar-plus">
+    <p>Add and modify event assignments for selected managers.</p>
+    <ul>
+      <li><strong>Add Schedule:</strong> Click to add new events to specific dates</li>
+      <li><strong>Event Day status:</strong> See which days have scheduled events</li>
+      <li><strong>No status days:</strong> Available for new event assignments</li>
+      <li><strong>Role assignment:</strong> Assign managers to specific succession levels</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Schedule Coordination" icon="tabler:timeline">
+    <p>Coordinate multiple managers across different events.</p>
+    <ul>
+      <li>View multiple manager schedules simultaneously</li>
+      <li>Identify scheduling conflicts and overlaps</li>
+      <li>Balance workload across the team</li>
+      <li>Plan succession coverage for events</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Navigation and Workflow
+
+<Accordion>
+  <AccordionItem title="Monthly Navigation" icon="tabler:arrow-left-right">
+    <p>Move between different time periods for planning.</p>
+    <ul>
+      <li>Use month and year dropdowns to navigate</li>
+      <li>Plan events weeks or months in advance</li>
+      <li>Review historical event assignments</li>
+      <li>Coordinate with other planning cycles</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Search and Filter" icon="tabler:filter">
+    <p>Find specific managers quickly for assignment.</p>
+    <ul>
+      <li><strong>Search functionality:</strong> Type manager names to filter list</li>
+      <li><strong>Email display:</strong> Manager contact information shown</li>
+      <li><strong>Quick selection:</strong> Click to add managers to view</li>
+      <li><strong>Batch operations:</strong> Select multiple managers at once</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="View Management" icon="tabler:eye">
+    <p>Control what information is displayed on screen.</p>
+    <ul>
+      <li>Switch between detailed and compact views</li>
+      <li>Remove managers from current view as needed</li>
+      <li>Filter by managed/unmanaged status</li>
+      <li>Customize display for different tasks</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Integration Points
+
+:::note[Connected Features]
+Events Mapping integrates with:
+- **Succession Planning:** Uses the same role hierarchy (1st-6th Manager levels)
+- **Manager Schedules:** Shows individual manager availability and assignments
+- **Contract Allocation:** Events may be linked to specific operational contracts
+- **Team Management:** Manager selection based on team assignments
+:::
+
+## Best Practices
+
+:::tip[Event Mapping Guidelines]
+- **Start with manager selection:** Always select managers first to see their schedules
+- **Use role hierarchy:** Assign managers according to succession planning levels
+- **Plan ahead:** View future months to plan event coverage in advance
+- **Balance workload:** Use multiple manager view to distribute assignments fairly
+- **Check availability:** Use "Not Managed" filter to find available managers
+:::
+
+## Access Requirements
+
+<Badge text="Operations Manager" variant="success" /> Can view and manage event assignments for their teams
+
+<Badge text="Admin" variant="danger" /> Full access to all manager schedules and event mapping
+
+<Badge text="Operations Support" variant="caution" /> Can view event assignments and assist with scheduling coordination
+
+## Getting Started
+
+To begin using Events Mapping:
+
+1. **Select managers** from the dropdown list
+2. **Choose month and year** for planning
+3. **View the Event Mapping Panel** once managers are selected
+4. **Switch between views** (Detailed/Compact) as needed
+5. **Add or modify schedules** using the calendar interface
