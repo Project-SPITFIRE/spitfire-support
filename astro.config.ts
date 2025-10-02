@@ -20,7 +20,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [
-        starlightThemeGalaxy(), // change theme here..
+        //starlightThemeGalaxy(), // change theme here..
         viewTransitions(),
         starlightImageZoom(),
         starlightSidebarSwipe(),
