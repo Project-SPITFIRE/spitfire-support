@@ -1,0 +1,193 @@
+---
+title: Request Management
+description: Complete guide to submitting, tracking, and managing operational requests
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Submit and track requests for resources, changes, or approvals needed for operational activities.
+
+## Who can use this feature
+
+| Role | Submit | Update Own | Update Others | View All | Add Notes |
+|------|--------|------------|---------------|----------|-----------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Operations Manager | ✓ | ✓ | ✗ | Own only | ✗ |
+| Operations Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+{/* | COO | ✓ | ✓ | ✗ | Own only | ✗ |
+| Deputies | ✓ | ✓ | ✗ | Own only | ✗ |
+| HOO | ✓ | ✓ | ✗ | Own only | ✗ |
+| Logistics | ✓ | ✓ | ✗ | Own only | ✗ |
+| Resourcing | ✓ | ✓ | ✗ | Own only | ✗ |
+| Static Manager | ✓ | ✓ | ✗ | Own only | ✗ |  */}
+
+## What is a request?
+
+A request is a formal submission for operational needs such as:
+- Resource allocation (staff, equipment, budget)
+- Process improvements or changes
+- Schedule modifications
+- Cross-team coordination
+- Emergency operational needs
+
+## Request lifecycle
+
+<Accordion>
+  <AccordionItem title="1. Submission">
+    <p>
+      <Badge text="Draft" variant="note" /> → <Badge text="Submitted" variant="caution" /><br/>
+      User creates request with required details and submits for review
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2. Initial Review">
+    <p>
+      <Badge text="Submitted" variant="caution" /> → <Badge text="Under Review" variant="tip" /> or <Badge text="Missing Information" variant="danger" /><br/>
+      Operations Support reviews for completeness and clarity
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3. Processing">
+    <p>
+      <Badge text="Under Review" variant="tip" /> → <Badge text="In Progress" variant="caution" /><br/>
+      Approved requests move into active processing phase
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4. Completion">
+    <p>
+      <Badge text="In Progress" variant="caution" /> → <Badge text="Completed" variant="success" /> or <Badge text="Rejected" variant="danger" /><br/>
+      Final outcome based on processing results
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Request statuses
+
+### Active Statuses
+- <Badge text="Draft" variant="note" /> **Draft**: Work in progress, not yet submitted
+- <Badge text="Submitted" variant="caution" /> **Submitted**: Awaiting initial review
+- <Badge text="Under Review" variant="tip" /> **Under Review**: Being evaluated by Operations Support
+- <Badge text="Missing Information" variant="danger" /> **Missing Information**: Requires additional details
+- <Badge text="In Progress" variant="caution" /> **In Progress**: Actively being processed
+- <Badge text="On Hold" variant="note" /> **On Hold**: Temporarily paused pending external factors
+
+### Final Statuses
+- <Badge text="Completed" variant="success" /> **Completed**: Successfully fulfilled
+- <Badge text="Rejected" variant="danger" /> **Rejected**: Declined with reasons provided
+- <Badge text="Cancelled" variant="note" /> **Cancelled**: Withdrawn by submitter
+
+## Request types
+
+<Accordion>
+  <AccordionItem title="Resource Requests">
+    <p>
+      <strong>Purpose</strong>: Additional staff, equipment, or budget allocation<br/>
+      <strong>Examples</strong>: Extra managers for events, equipment purchases, budget approvals<br/>
+      <strong>Processing time</strong>: 3-5 business days
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Schedule Changes">
+    <p>
+      <strong>Purpose</strong>: Modifications to existing schedules or events<br/>
+      <strong>Examples</strong>: Event time changes, manager reassignments, schedule conflicts<br/>
+      <strong>Processing time</strong>: 1-2 business days
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Process Improvements">
+    <p>
+      <strong>Purpose</strong>: Changes to operational procedures or workflows<br/>
+      <strong>Examples</strong>: New approval processes, system enhancements, training needs<br/>
+      <strong>Processing time</strong>: 5-10 business days
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Emergency Requests">
+    <p>
+      <strong>Purpose</strong>: Urgent operational needs requiring immediate attention<br/>
+      <strong>Examples</strong>: Last-minute staffing, emergency equipment, critical deadlines<br/>
+      <strong>Processing time</strong>: Same day or next business day
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Required information
+
+All requests must include:
+
+**Basic Details**:
+- Clear, descriptive title
+- Detailed description of need
+- Business justification
+- Requested timeline
+
+**Specifics**:
+- Related contracts or events (if applicable)
+- Resource requirements
+- Impact if not fulfilled
+- Alternative solutions considered
+
+**Additional for Complex Requests**:
+- Budget implications
+- Cross-team dependencies
+- Risk assessment
+- Success criteria
+
+## Common workflows
+
+<Accordion>
+  <AccordionItem title="Standard Request Flow">
+    <p>
+      Submit → Operations Support reviews → Clarifications if needed → Processing → Completion
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Emergency Request Flow">
+    <p>
+      Submit with "Emergency" flag → Immediate Operations Support review → Fast-track processing → Rapid completion
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Complex Request Flow">
+    <p>
+      Submit → Initial review → Stakeholder consultation → Detailed planning → Phased implementation → Final review
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Best practices
+
+**For Submitters**:
+- Be specific and detailed in descriptions
+- Include all relevant context and background
+- Respond quickly to clarification requests
+- Update timeline if priorities change
+
+**For Reviewers**:
+- Review requests within 24 hours
+- Ask clarifying questions promptly
+- Provide clear status updates
+- Document decision rationale
+
+## Related guides
+
+- [Submit a Request →](../how-to-guides/submit-request)
+- [Update Request Information →](../how-to-guides/update-request)
+- [Handle Missing Information →](../how-to-guides/handle-missing-information)
+- [Process Incoming Requests →](../how-to-guides/process-requests)
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Request stuck in 'Submitted' status">
+    <p>
+      Check with Operations Support for review status. May need additional information or be in review queue.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Can't update my request">
+    <p>
+      Verify request is in editable status (Draft, Missing Information). Contact Operations Support if status is unclear.
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Urgent request not being processed quickly">
+    <p>
+      Ensure request is marked as emergency priority. Contact Operations Support directly if truly urgent.
+    </p>
+  </AccordionItem>
+</Accordion>

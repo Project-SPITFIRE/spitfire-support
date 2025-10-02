@@ -1,0 +1,132 @@
+---
+title: Glossary
+description: Key terms and definitions used throughout the Spitfire Rota Management System
+---
+
+import { Card } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+## Core System Terms
+
+<Accordion>
+  <AccordionItem title="Contract" icon="tabler:file-text">
+    <p>Agreement defining resource allocations and operational limits for specific services.</p>
+    <ul>
+      <li><strong>Purpose:</strong> Track resource usage against allocated capacity</li>
+      <li><strong>Examples:</strong> Security contracts, traffic management, venue services</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="EOS Task" icon="tabler:list-check">
+    <p>Structured work item broken into subtasks with assigned team members and deadlines.</p>
+    <ul>
+      <li><strong>Structure:</strong> Main task with multiple assigned subtasks</li>
+      <li><strong>Examples:</strong> Event preparation, compliance checks, issue resolution</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event" icon="tabler:calendar-event">
+    <p>Specific activity requiring manager coverage and coordination.</p>
+    <ul>
+      <li><strong>Assignment:</strong> Primary managers with backup succession planning</li>
+      <li><strong>Integration:</strong> Connected to contracts, schedules, and resources</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Operational Day" icon="tabler:clock">
+    <p>A scheduled work day counted against contract allocations.</p>
+    <ul>
+      <li><strong>Tracking:</strong> Monitored for contract compliance</li>
+      <li><strong>Types:</strong> Regular shifts, overtime, special events</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Request" icon="tabler:mail">
+    <p>Formal submission for operational needs like resource allocation or schedule changes.</p>
+    <ul>
+      <li><strong>Lifecycle:</strong> Draft → Submitted → Under Review → In Progress → Completed/Rejected</li>
+      <li><strong>Examples:</strong> Resource allocation, schedule changes, process improvements</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Rota" icon="tabler:calendar">
+    <p>Schedule showing when team members are available for work.</p>
+    <ul>
+      <li><strong>Types:</strong> Operational days, time off, holidays, non-operational periods</li>
+      <li><strong>Approval:</strong> Submitted preferences reviewed and approved by management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Schedule" icon="tabler:calendar-time">
+    <p>Individual team member's availability including operational days and time off.</p>
+    <ul>
+      <li><strong>Integration:</strong> Synchronizes with CIPHR for payroll</li>
+      <li><strong>Status:</strong> Draft → Approved → Synchronized</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## User Roles
+
+<Accordion>
+  <AccordionItem title="Admin" icon="tabler:shield-check">
+    <p>System administrator with full access to user management and configuration.</p>
+    <ul>
+      <li><strong>Permissions:</strong> Create users, manage teams, system configuration</li>
+      <li><strong>Access:</strong> All system features and administrative tools</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Operations Manager" icon="tabler:user-star">
+    <p>Team leader responsible for submitting requests and managing operational tasks.</p>
+    <ul>
+      <li><strong>Responsibilities:</strong> Submit requests, manage EOS tasks, coordinate teams</li>
+      <li><strong>Access:</strong> Team schedules, task management, request submission</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Operations Support" icon="tabler:headset">
+    <p>Coordinator who processes requests and manages workflows.</p>
+    <ul>
+      <li><strong>Responsibilities:</strong> Process requests, manage workflows, provide support</li>
+      <li><strong>Access:</strong> Request management, workflow coordination, system support</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## System Integration
+
+<Accordion>
+  <AccordionItem title="CIPHR" icon="tabler:database">
+    <p>External payroll system that synchronizes with approved schedules.</p>
+    <ul>
+      <li><strong>Function:</strong> Automatic data exchange for approved schedules</li>
+      <li><strong>Monitoring:</strong> Status tracking for successful synchronization</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Dashboard" icon="tabler:dashboard">
+    <p>Main overview screen showing key information and tasks.</p>
+    <ul>
+      <li><strong>Content:</strong> Recent activity, pending tasks, notifications</li>
+      <li><strong>Customization:</strong> Role-specific information display</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Succession Planning" icon="tabler:users">
+    <p>Assignment of backup managers for events and coverage.</p>
+    <ul>
+      <li><strong>Purpose:</strong> Ensure continuous coverage for critical events</li>
+      <li><strong>Structure:</strong> Primary and backup manager assignments</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Workflow" icon="tabler:git-branch">
+    <p>Multi-step process spanning roles and systems.</p>
+    <ul>
+      <li><strong>Examples:</strong> Request processing, schedule approval, task coordination</li>
+      <li><strong>Integration:</strong> Connects multiple roles and system components</li>
+    </ul>
+  </AccordionItem>
+</Accordion>

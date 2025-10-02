@@ -1,4 +1,4 @@
-@layer base, starlight, theme, components, utilities;
+@layer base, starlight,  theme, components, utilities;
 
 @import "@astrojs/starlight-tailwind";
 @import "tailwindcss/theme.css" layer(theme);
@@ -10,8 +10,6 @@
     --font-mono: "Fira Code", monospace;
     --sl-font: --font-sans;
     --sl-font-mono: --font-mono;
-    /* Your preferred code font. Starlight uses system monospace fonts by default. */
-    --font-mono: "IBM Plex Mono";
 	--sl-color-accent-low: #04273c;
 	--sl-color-accent: #0070a9;
 	--sl-color-accent-high: #a9ceea;
@@ -36,14 +34,8 @@
 	--sl-color-gray-6: #eeeeee;
 	--sl-color-gray-7: #f6f6f6;
 	--sl-color-black: #ffffff;
+	
+
+	
 }
 
-
-/* Dark mode colors. */
-:root {
-
-}
-/* Light mode colors. */
-:root[data-theme='light'] {
-
-}
