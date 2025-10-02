@@ -1,0 +1,346 @@
+---
+title: Contract Allocation
+description: Manage operational contracts and track resource allocation against capacity
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Contract Allocation helps you manage operational contracts by tracking event counts and operational days against allocated capacity. Create, edit, and monitor contracts with comprehensive event management and allocation tracking.
+
+## What is Contract Allocation?
+
+Contract Allocation is a comprehensive system for managing operational contracts that includes:
+
+- **Contract overview cards** showing events and operational day usage
+- **Multi-step contract creation** with succession plan duplication
+- **Event management** with detailed scheduling and manager assignments
+- **Capacity tracking** with visual indicators and conflict monitoring
+
+## Contract Management Overview
+
+<Accordion>
+  <AccordionItem title="Contract Cards Display" icon="tabler:cards">
+    <p>Visual overview of all contracts with key metrics and quick actions.</p>
+    <ul>
+      <li><strong>Contract Name:</strong> Clear identification of each contract</li>
+      <li><strong>Event Count:</strong> Shows number of events vs operational days (e.g., "0/1", "10/5", "12")</li>
+      <li><strong>Quick Actions:</strong> "Events" button for event management and "Edit Contract" option</li>
+      <li><strong>Card/Table Views:</strong> Toggle between visual cards and detailed table view</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search and Filter" icon="tabler:search">
+    <p>Find specific contracts quickly using search functionality.</p>
+    <ul>
+      <li>Search by contract name or keywords</li>
+      <li>Real-time filtering as you type</li>
+      <li>Quick navigation to specific contracts</li>
+      <li>Organized display for easy scanning</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Types" icon="tabler:category">
+    <p>Various contract categories for different operational needs.</p>
+    <ul>
+      <li><strong>Security & Stewarding:</strong> Event security and crowd management</li>
+      <li><strong>Traffic Management:</strong> Road and venue traffic coordination</li>
+      <li><strong>Shadow Tracker:</strong> Training and development contracts</li>
+      <li><strong>Sample Contracts:</strong> Template or testing contracts</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Creating New Contracts
+
+<Accordion>
+  <AccordionItem title="Multi-Step Creation Process" icon="tabler:step-into">
+    <p>Three-step process to create comprehensive contracts.</p>
+    <ul>
+      <li><strong>Step 1 - Contract Details:</strong> Basic contract information</li>
+      <li><strong>Step 2 - Manager Allocation:</strong> Assign succession planning</li>
+      <li><strong>Step 3 - Events & Conflicts:</strong> Optional event setup</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Details (Step 1)" icon="tabler:file-text">
+    <p>Essential contract information and capacity planning.</p>
+    <ul>
+      <li><strong>Contract Name:</strong> Required unique identifier</li>
+      <li><strong>Client/Department Code:</strong> Optional organizational reference</li>
+      <li><strong>Estimated Operational Days:</strong> Required capacity allocation</li>
+      <li><strong>Description:</strong> Additional contract details</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Succession Plan Duplication" icon="tabler:copy">
+    <p>Copy manager assignments from existing contracts.</p>
+    <ul>
+      <li><strong>Select Existing Plan:</strong> Choose from dropdown of available succession plans</li>
+      <li><strong>Quick Setup:</strong> Automatically copies all manager assignments</li>
+      <li><strong>Available Plans:</strong> Shows all contracts with established succession planning</li>
+      <li><strong>Time Saving:</strong> Avoid recreating similar manager structures</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Event Management
+
+<Accordion>
+  <AccordionItem title="Contract Event Overview" icon="tabler:calendar-event">
+    <p>Comprehensive event management within contracts.</p>
+    <ul>
+      <li><strong>Event Listing:</strong> Shows all events for the selected contract</li>
+      <li><strong>Event Details:</strong> Date, contract name, kick-off time, and location</li>
+      <li><strong>Manager Assignments:</strong> Color-coded badges for assigned managers</li>
+      <li><strong>Event Actions:</strong> Edit, cancel, or delete event options</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Information Display" icon="tabler:info-circle">
+    <p>Detailed event information and scheduling data.</p>
+    <ul>
+      <li><strong>Date Range:</strong> Event duration (e.g., "December 31, 2025 - December 31, 2025")</li>
+      <li><strong>Contract Assignment:</strong> Links events to specific contracts</li>
+      <li><strong>Timing:</strong> Kick-off times and schedule information</li>
+      <li><strong>Location:</strong> Venue details (e.g., "Emirates Stadium")</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Assignment System" icon="tabler:users">
+    <p>Visual representation of manager assignments for events.</p>
+    <ul>
+      <li><strong>Assigned Managers:</strong> Color-coded badges showing assigned personnel</li>
+      <li><strong>Support Managers:</strong> Shows "No Support Manager" when none assigned</li>
+      <li><strong>Shadowers:</strong> Displays "No Shadowers" when none assigned</li>
+      <li><strong>Role Identification:</strong> Each manager shows their assigned role level</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Actions" icon="tabler:settings">
+    <p>Management options for individual events.</p>
+    <ul>
+      <li><strong>Edit Event:</strong> Modify event details and assignments</li>
+      <li><strong>Cancel Event:</strong> Temporarily suspend the event</li>
+      <li><strong>Delete Event:</strong> Permanently remove the event</li>
+      <li><strong>Create New Event:</strong> Add events to the contract</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Summary and Analytics
+
+<Accordion>
+  <AccordionItem title="Contract Summary Dashboard" icon="tabler:dashboard">
+    <p>High-level overview of contract performance and status.</p>
+    <ul>
+      <li><strong>Total Events:</strong> Complete count of events in the contract</li>
+      <li><strong>Allocated Managers:</strong> Number of managers assigned</li>
+      <li><strong>Managed Events:</strong> Events with complete manager coverage</li>
+      <li><strong>Active Conflicts:</strong> Current scheduling or resource conflicts</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Information Panel" icon="tabler:clipboard">
+    <p>Detailed contract specifications and settings.</p>
+    <ul>
+      <li><strong>Contract Name:</strong> Full contract identifier</li>
+      <li><strong>Client/Department Code:</strong> Organizational reference</li>
+      <li><strong>Estimated Operational Days:</strong> Allocated capacity</li>
+      <li><strong>Description:</strong> Additional contract details and notes</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Allocation System Tabs">
+    <p>Multiple views for comprehensive contract management.</p>
+    <ul>
+      <li><strong>Contract Details:</strong> Basic contract information and settings</li>
+      <li><strong>Manager Allocation:</strong> Succession planning and manager assignments</li>
+      <li><strong>Ops Tracker:</strong> Operational tracking and performance metrics</li>
+      <li><strong>Shadow Tracker:</strong> Training and development tracking</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Capacity Management and Tracking
+
+<Accordion>
+  <AccordionItem title="Operational Day Tracking" icon="tabler:calendar-stats">
+    <p>Monitor operational day usage against allocated capacity.</p>
+    <ul>
+      <li><strong>Usage Display:</strong> Shows events vs. operational days (e.g., "3/20", "3/100")</li>
+      <li><strong>Capacity Indicators:</strong> Visual representation of allocation usage</li>
+      <li><strong>Planning Tool:</strong> Helps forecast future capacity needs</li>
+      <li><strong>Budget Tracking:</strong> Monitor resource allocation against contract limits</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Distribution" icon="tabler:chart-bar">
+    <p>Analyze how events are distributed across contracts.</p>
+    <ul>
+      <li>View event count per contract</li>
+      <li>Identify high-activity contracts</li>
+      <li>Balance workload across contracts</li>
+      <li>Plan for peak periods and capacity</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Conflict Detection" icon="tabler:alert-triangle">
+    <p>Identify and resolve scheduling or resource conflicts.</p>
+    <ul>
+      <li><strong>Active Conflicts:</strong> Real-time conflict monitoring</li>
+      <li><strong>Resource Conflicts:</strong> Manager double-booking detection</li>
+      <li><strong>Schedule Conflicts:</strong> Event timing overlap identification</li>
+      <li><strong>Resolution Tools:</strong> Options to resolve detected conflicts</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Advanced Contract Features
+
+<Accordion>
+  <AccordionItem title="Shadow Tracker System" icon="tabler:user-search">
+    <p>Monitor manager shadowing sessions across contracts and events.</p>
+    <ul>
+      <li><strong>Shadow Sessions Tracking:</strong> Track progress across all manager shadowing sessions</li>
+      <li><strong>Minimum Requirements:</strong> Set required number of sessions per manager</li>
+      <li><strong>Progress Monitoring:</strong> Visual progress bars showing completion status</li>
+      <li><strong>Manager Promotion:</strong> Promote managers when ready for higher roles</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Development Tracking" icon="tabler:progress">
+    <p>Comprehensive manager development and progression system.</p>
+    <ul>
+      <li><strong>Individual Progress:</strong> Track each manager's shadowing completion</li>
+      <li><strong>Role Assignments:</strong> Current manager roles and responsibilities</li>
+      <li><strong>Training Types:</strong> Client Onboarding, Quarterly Business Review, Leadership Training, etc.</li>
+      <li><strong>Session Requirements:</strong> Typically 3 sessions required per training type</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Promotion Management" icon="tabler:arrow-up">
+    <p>Promote managers based on completed training and shadowing.</p>
+    <ul>
+      <li><strong>Available Positions:</strong> Shows open manager roles (Manager 1-6)</li>
+      <li><strong>Position Status:</strong> Occupied or Available for each manager level</li>
+      <li><strong>Promotion Process:</strong> Select position and confirm promotion</li>
+      <li><strong>Training Verification:</strong> Ensure requirements met before promotion</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Ops Tracker Overview" icon="tabler:chart-line">
+    <p>Operational tracking with monthly event distribution analysis.</p>
+    <ul>
+      <li><strong>Monthly Breakdown:</strong> Event counts by month (Jan through Dec)</li>
+      <li><strong>Event Distribution:</strong> Shows when events are scheduled throughout the year</li>
+      <li><strong>Total Tracking:</strong> Annual totals and planning overview</li>
+      <li><strong>Capacity Planning:</strong> Visual representation of operational load</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract-Level Manager Assignment
+
+<Accordion>
+  <AccordionItem title="Contract-Level Succession Planning" icon="tabler:hierarchy-2">
+    <p>Assign managers directly at the contract level for comprehensive coverage.</p>
+    <ul>
+      <li><strong>Allocated Managers:</strong> Standard operational managers for the contract</li>
+      <li><strong>Day Rate Managers:</strong> Temporary or contract-based personnel</li>
+      <li><strong>Support Managers:</strong> Additional assistance for complex contracts</li>
+      <li><strong>Shadowers:</strong> Training and development assignments</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Categories" icon="tabler:users-group">
+    <p>Different types of manager assignments for various needs.</p>
+    <ul>
+      <li><strong>Add Manager:</strong> Primary operational managers</li>
+      <li><strong>Add Day Rate:</strong> Flexible, temporary coverage</li>
+      <li><strong>Add Support Manager:</strong> Specialized assistance roles</li>
+      <li><strong>Add Shadower:</strong> Training and observation positions</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Assignment Management" icon="tabler:settings">
+    <p>Flexible assignment system for different operational needs.</p>
+    <ul>
+      <li>Easy addition and removal of managers</li>
+      <li>Role-specific assignments based on contract requirements</li>
+      <li>Integration with succession planning hierarchy</li>
+      <li>Save and update contract assignments</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Categories and Examples
+
+<Accordion>
+  <AccordionItem title="Security & Stewarding Contracts" icon="tabler:shield">
+    <p>Event security and crowd management operations.</p>
+    <ul>
+      <li><strong>Arsenal FC - Security & Stewarding:</strong> 22 events with 3/20 operational days</li>
+      <li>Stadium and venue security coverage</li>
+      <li>Crowd control and public safety</li>
+      <li>Emergency response coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Traffic Management Contracts" icon="tabler:traffic-cone">
+    <p>Road and venue traffic coordination services.</p>
+    <ul>
+      <li><strong>Chelsea - Traffic Management:</strong> 12 events with 3/100 operational days</li>
+      <li><strong>Arsenal FC - Traffic Management:</strong> 22 events with 3/35 operational days</li>
+      <li>Vehicle flow management</li>
+      <li>Parking coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Training and Development" icon="tabler:school">
+    <p>Shadow tracking and skill development contracts.</p>
+    <ul>
+      <li><strong>Test Shadow Tracker 1:</strong> 0 events with 0/1 operational days</li>
+      <li>Manager training programs</li>
+      <li>Skill development tracking</li>
+      <li>Performance evaluation</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Contract Management Tips]
+- **Plan capacity carefully:** Set realistic operational day estimates based on contract requirements
+- **Use succession plan duplication:** Save time by copying manager structures from similar contracts
+- **Monitor conflicts regularly:** Check the dashboard for active conflicts and resolve promptly
+- **Track event distribution:** Ensure balanced allocation across operational periods
+- **Update contract details:** Keep client codes and descriptions current for accurate reporting
+:::
+
+:::note[Integration Points]
+Contract Allocation integrates with:
+- **Succession Planning:** Manager assignments feed from succession plans
+- **Event Management:** Events are linked to specific contracts for tracking
+- **Capacity Planning:** Operational day tracking affects resource allocation
+- **Reporting:** Contract data feeds into operational performance reports
+:::
+
+## Access Requirements
+
+<Badge text="Operations Manager" variant="success" /> Can create and manage contracts, assign events, and track allocations
+
+<Badge text="Admin" variant="danger" /> Full access to contract configuration, creation, and advanced settings
+
+<Badge text="Operations Support" variant="caution" /> Can view contract allocations and assist with event management
+
+## Getting Started
+
+To begin using Contract Allocation:
+
+1. **Create a new contract** using the multi-step creation wizard
+2. **Set operational day estimates** based on contract requirements
+3. **Assign or duplicate succession plans** for manager coverage
+4. **Add events** to the contract and assign managers
+5. **Monitor the dashboard** for capacity usage and conflicts

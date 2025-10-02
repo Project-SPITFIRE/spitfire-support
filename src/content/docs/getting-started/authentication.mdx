@@ -1,0 +1,189 @@
+---
+title: Authentication
+description: How to log in and manage your access to the Spitfire system
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+
+
+Learn how to access Spitfire, manage your account, and troubleshoot login issues.
+
+## Logging in
+
+### Access the system
+
+1. **Navigate to the CSP Rota Management System page:** [Login Page →](https://spitfire-staging.onrender.com/auth/login)
+2. **Enter your credentials** - username and password provided during account setup
+3. **Click "Sign-in"** to access the system
+4. **Complete any additional verification** if required by your organization
+
+### First-time login
+
+<Accordion>
+  <AccordionItem title="Account Setup">
+    <p>
+      If this is your first login, you may be prompted to:<br/>
+      • Update your password from the temporary one provided<br/>
+      • Complete your profile information<br/>
+      • Review and accept system usage policies<br/>
+      • Set up any additional security measures
+    </p>
+  </AccordionItem>
+  <AccordionItem title="System Orientation">
+    <p>
+      After successful login, you'll see:<br/>
+      • Your dashboard with role-specific information<br/>
+      • Navigation sidebar with available features<br/>
+      • Any pending tasks or notifications<br/>
+      • Quick access to common functions
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Account types
+
+Your access level depends on your assigned role:
+
+### Administrative Access
+- <Badge text="Admin" variant="danger" /> **Full system access** - User management, configuration, all data
+- <Badge text="Operations Support" variant="caution" /> **Operational coordination** - Request processing, task management, scheduling oversight
+
+### Management Access  
+- <Badge text="COO/HOO" variant="success" /> **Strategic oversight** - Team visibility, approval authority
+- <Badge text="Operations Manager" variant="caution" /> **Team management** - Schedule coordination, team oversight
+
+### Operational Access
+- <Badge text="Deputies/Logistics/Resourcing" variant="note" /> **Specialized functions** - Role-specific features and data access
+- <Badge text="Static Manager" variant="note" /> **Position management** - Schedule management, request submission
+
+## Security features
+
+<Accordion>
+  <AccordionItem title="Session Management">
+    <p>
+      <strong>Automatic logout</strong>: Sessions expire after period of inactivity<br/>
+      <strong>Secure connections</strong>: All data transmitted using encrypted connections<br/>
+      <strong>Session monitoring</strong>: Unusual activity triggers security alerts
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Password Requirements">
+    <p>
+      <strong>Complexity</strong>: Minimum length and character requirements<br/>
+      <strong>Regular updates</strong>: Periodic password changes required<br/>
+      <strong>Unique passwords</strong>: Cannot reuse recent passwords
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Access Controls">
+    <p>
+      <strong>Role-based permissions</strong>: Access limited to job-relevant features<br/>
+      <strong>Data segregation</strong>: Users see only data they're authorized to access<br/>
+      <strong>Audit logging</strong>: All system access and changes are logged
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Managing your account
+
+### Profile updates
+
+You can update certain profile information:
+
+- **Personal contact details** (if permitted by your role)
+- **Display preferences** such as time zones or language
+- **Notification settings** for emails and system alerts
+- **Dashboard customization** to prioritize relevant information
+
+### Password changes
+
+<Accordion>
+  <AccordionItem title="Regular Password Updates">
+    <p>
+      1. Navigate to your profile settings<br/>
+      2. Select "Change Password"<br/>
+      3. Enter current password for verification<br/>
+      4. Enter and confirm new password<br/>
+      5. Save changes and log in with new password
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Forgotten Password Recovery">
+    <p>
+      1. Click "Forgot Password" on login page<br/>
+      2. Enter your username or email address<br/>
+      3. Check email for password reset instructions<br/>
+      4. Follow the secure link to reset your password<br/>
+      5. Create new password and confirm access
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Troubleshooting login issues
+
+### Common problems and solutions
+
+<Accordion>
+  <AccordionItem title="Invalid username or password">
+    <p>
+      <strong>Check credentials</strong>: Verify username and password are entered correctly<br/>
+      <strong>Caps lock</strong>: Ensure caps lock is not accidentally enabled<br/>
+      <strong>Account status</strong>: Contact administrator if account may be disabled<br/>
+      <strong>Password reset</strong>: Use forgot password feature if needed
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Account locked or suspended">
+    <p>
+      <strong>Multiple failed attempts</strong>: Account may lock after repeated failed logins<br/>
+      <strong>Security hold</strong>: Contact administrator for account unlock<br/>
+      <strong>Policy violation</strong>: Review system usage policies and contact support<br/>
+      <strong>Temporary suspension</strong>: Wait for lockout period to expire
+    </p>
+  </AccordionItem>
+  <AccordionItem title="System access issues">
+    <p>
+      <strong>Browser compatibility</strong>: Ensure using supported browser version<br/>
+      <strong>Network connectivity</strong>: Check internet connection and firewall settings<br/>
+      <strong>System maintenance</strong>: Check for scheduled maintenance notifications<br/>
+      <strong>Cache/cookies</strong>: Clear browser cache and cookies if experiencing issues
+    </p>
+  </AccordionItem>
+</Accordion>
+
+### Getting help
+
+If you continue to experience login problems:
+
+1. **Check system status** - Look for maintenance notifications or system alerts
+2. **Contact your administrator** - They can verify account status and permissions
+3. **Document the issue** - Note exact error messages and steps that led to the problem
+4. **Try alternative access** - Use different browser or device if available
+
+## Security best practices
+
+### Protecting your account
+
+- **Never share your login credentials** with anyone
+- **Log out completely** when finished, especially on shared computers
+- **Use strong, unique passwords** that aren't used for other systems
+- **Report suspicious activity** immediately to system administrators
+- **Keep personal information current** so security communications reach you
+
+### Safe usage
+
+- **Be aware of your surroundings** when accessing sensitive information
+- **Lock your screen** when stepping away from your computer
+- **Use secure networks** and avoid public Wi-Fi for system access
+- **Keep your browser updated** with the latest security patches
+
+## Next steps
+
+Once you're successfully logged in:
+
+1. **Orient yourself** - [Learn your role-specific capabilities →](./first-steps)
+2. **Explore features** - [Review available system features →](/features/)
+3. **Get familiar** - Practice with non-critical functions before handling important tasks
+{/* 4. **Start with basics** - [Learn common tasks for your role →](/how-to-guides/) */}
+
+
+Your system access is designed to provide the tools you need while maintaining security and data integrity for the entire organization.

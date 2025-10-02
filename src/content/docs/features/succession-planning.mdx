@@ -1,0 +1,211 @@
+---
+title: Succession Planning
+description: Plan backup coverage and ensure operational continuity
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+Succession Planning ensures continuous operational coverage by establishing clear backup arrangements for contracts and events. Assign primary and backup managers across multiple succession levels to maintain operational continuity.
+
+## What is Succession Planning?
+
+Succession Planning creates structured manager assignments for contracts with multiple backup levels:
+
+- **Contract-based assignments** with up to 6 manager succession levels
+- **Primary and backup coverage** for operational continuity
+- **Manager rotation** and workload distribution
+- **Upload functionality** for bulk succession plan management
+
+## Succession Planning Interface
+
+<Accordion>
+  <AccordionItem title="Contract Overview Table" icon="tabler:table">
+    <p>Main table showing all contracts and their manager assignments.</p>
+    <ul>
+      <li><strong>Contract Name:</strong> Each operational contract listed</li>
+      <li><strong>Manager Levels:</strong> 1st through 6th Manager columns</li>
+      <li><strong>Assignment Status:</strong> Shows assigned managers or "---" for vacant positions</li>
+      <li><strong>Actions:</strong> Edit and Delete options for each contract</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Assignment Levels" icon="tabler:users">
+    <p>Six levels of manager succession for comprehensive coverage.</p>
+    <ul>
+      <li><strong>1st Manager:</strong> Primary manager responsible for the contract</li>
+      <li><strong>2nd Manager:</strong> First backup, steps in if primary unavailable</li>
+      <li><strong>3rd Manager:</strong> Second backup for extended coverage needs</li>
+      <li><strong>4th-6th Managers:</strong> Additional backup levels for critical contracts</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Search and Filter" icon="tabler:search">
+    <p>Find specific contracts and succession plans quickly.</p>
+    <ul>
+      <li>Search by contract name or manager name</li>
+      <li>Filter by assignment completeness</li>
+      <li>Sort by contract type or manager workload</li>
+      <li>View pagination for large contract lists</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Managing Succession Plans
+
+<Accordion>
+  <AccordionItem title="Add New Succession Plan" icon="tabler:plus">
+    <p>Create succession plans for new contracts.</p>
+    <ul>
+      <li><strong>Contract Name:</strong> Enter the contract identifier</li>
+      <li><strong>Allocated Managers:</strong> Add managers using the "Add Manager" button</li>
+      <li><strong>Shadowers (Optional):</strong> Assign managers in training roles</li>
+      <li><strong>Day Rate Managers (Optional):</strong> Assign temporary coverage managers</li>
+      <li><strong>Support Managers (Optional):</strong> Add additional support personnel</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Edit Existing Plans" icon="tabler:edit">
+    <p>Modify manager assignments for existing contracts.</p>
+    <ul>
+      <li>Click the "Edit" action for any contract row</li>
+      <li>Update manager assignments at any succession level</li>
+      <li>Add or remove managers as needed</li>
+      <li>Save changes to update the succession plan</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Upload Succession Plans" icon="tabler:upload">
+    <p>Import succession plans from spreadsheet files.</p>
+    <ul>
+      <li><strong>File Format:</strong> Supports XLSX spreadsheet format</li>
+      <li><strong>Bulk Import:</strong> Upload multiple succession plans at once</li>
+      <li><strong>Data Validation:</strong> System validates manager assignments</li>
+      <li><strong>Error Handling:</strong> Shows any issues with imported data</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Delete Succession Plans" icon="tabler:trash">
+    <p>Remove succession plans that are no longer needed.</p>
+    <ul>
+      <li>Click the "Delete" action for any contract</li>
+      <li>Confirm deletion to permanently remove the plan</li>
+      <li>Consider reassigning managers before deletion</li>
+      <li>Maintain records of deleted plans for audit purposes</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Manager Assignment Strategy
+
+<Accordion>
+  <AccordionItem title="Primary Coverage (1st-2nd Managers)" icon="tabler:user-star">
+    <p>Essential coverage for day-to-day operations.</p>
+    <ul>
+      <li><strong>1st Manager:</strong> Most experienced, primary responsibility</li>
+      <li><strong>2nd Manager:</strong> Ready backup with similar expertise</li>
+      <li><strong>Availability:</strong> Ensure both aren't unavailable simultaneously</li>
+      <li><strong>Communication:</strong> Regular coordination between primary and backup</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Extended Coverage (3rd-4th Managers)" icon="tabler:users-group">
+    <p>Additional backup for complex or critical contracts.</p>
+    <ul>
+      <li><strong>Skill Development:</strong> Opportunity for junior managers to gain experience</li>
+      <li><strong>Workload Distribution:</strong> Spread assignments across team</li>
+      <li><strong>Geographic Coverage:</strong> Consider location and travel requirements</li>
+      <li><strong>Specialization:</strong> Match manager skills to contract requirements</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Deep Backup (5th-6th Managers)" icon="tabler:shield">
+    <p>Comprehensive coverage for business-critical contracts.</p>
+    <ul>
+      <li><strong>Emergency Coverage:</strong> When multiple managers unavailable</li>
+      <li><strong>Training Opportunities:</strong> Exposure to different contract types</li>
+      <li><strong>Cross-Training:</strong> Build broader team capabilities</li>
+      <li><strong>Succession Development:</strong> Prepare future primary managers</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Succession Plan Types
+
+<Accordion>
+  <AccordionItem title="Standard Managers" icon="tabler:user">
+    <p>Regular operational managers assigned to succession levels.</p>
+    <ul>
+      <li>Assigned to specific succession positions (1st through 6th)</li>
+      <li>Expected to provide coverage when activated</li>
+      <li>Regular operational responsibilities and assignments</li>
+      <li>Performance tracked through succession activations</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Shadowers" icon="tabler:eye">
+    <p>Managers in training or observation roles.</p>
+    <ul>
+      <li><strong>Learning Role:</strong> Observe and learn from primary managers</li>
+      <li><strong>No Responsibility:</strong> Not counted as operational coverage</li>
+      <li><strong>Development Path:</strong> Preparation for future assignments</li>
+      <li><strong>Mentoring:</strong> Paired with experienced managers</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Day Rate Managers" icon="tabler:clock-hour-4">
+    <p>Temporary or contract-based coverage managers.</p>
+    <ul>
+      <li><strong>Flexible Coverage:</strong> Available for temporary assignments</li>
+      <li><strong>Specialized Skills:</strong> May have specific expertise</li>
+      <li><strong>Cost Management:</strong> Used when regular managers unavailable</li>
+      <li><strong>External Resources:</strong> May be contractors or consultants</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Support Managers" icon="tabler:headset">
+    <p>Additional assistance for complex contracts.</p>
+    <ul>
+      <li><strong>Supplementary Role:</strong> Assist primary managers</li>
+      <li><strong>Specialized Support:</strong> Technical or administrative expertise</li>
+      <li><strong>Capacity Management:</strong> Help manage high-volume contracts</li>
+      <li><strong>Knowledge Transfer:</strong> Share expertise across team</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[Succession Planning Best Practices]
+- **Complete Coverage:** Aim to fill at least the first 3 manager levels for all contracts
+- **Skill Matching:** Assign managers with appropriate experience and expertise
+- **Workload Balance:** Distribute assignments fairly across available managers
+- **Regular Review:** Update succession plans quarterly or when team changes occur
+- **Documentation:** Maintain clear records of why specific assignments were made
+:::
+
+:::note[Integration Points]
+Succession Planning integrates with:
+- **Contract Management:** Links to operational contracts and requirements
+- **Manager Scheduling:** Considers manager availability for assignments
+- **Event Mapping:** Succession managers may be assigned to specific events
+- **Performance Tracking:** Monitor succession plan effectiveness
+:::
+
+## Access Requirements
+
+<Badge text="Operations Manager" variant="success" /> Can view and edit succession plans for their contracts
+
+<Badge text="Admin" variant="danger" /> Full access to all succession planning features and configuration
+
+<Badge text="Operations Support" variant="caution" /> Can view succession plans and upload bulk updates
+
+## File Upload Requirements
+
+When uploading succession plans via XLSX file:
+
+- **Column Structure:** Contract Name, 1st Manager, 2nd Manager, etc.
+- **Manager Format:** Use manager names or IDs as they appear in the system
+- **Validation:** System will check for valid manager assignments
+- **Error Reporting:** Any issues with the upload will be clearly displayed

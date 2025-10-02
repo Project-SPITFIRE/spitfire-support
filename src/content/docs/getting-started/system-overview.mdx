@@ -1,0 +1,199 @@
+---
+title: System Overview
+description: Core concepts and architecture of the Spitfire Rota Management System
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+
+# System Overview
+
+Understand the core concepts, workflows, and architecture that power Spitfire's operational management capabilities.
+
+## Core concepts
+
+<Accordion>
+  <AccordionItem title="Requests">
+    <p>
+      <strong>Purpose</strong>: Formal submissions for operational needs<br/>
+      <strong>Examples</strong>: Resource allocation, schedule changes, process improvements<br/>
+      <strong>Lifecycle</strong>: Draft → Submitted → Under Review → In Progress → Completed/Rejected
+    </p>
+  </AccordionItem>
+  <AccordionItem title="EOS Tasks">
+    <p>
+      <strong>Purpose</strong>: Structured work items broken into manageable subtasks<br/>
+      <strong>Examples</strong>: Event preparation, compliance checks, issue resolution<br/>
+      <strong>Structure</strong>: Main task with multiple assigned subtasks and deadlines
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Schedules">
+    <p>
+      <strong>Purpose</strong>: Define when team members are available for work<br/>
+      <strong>Types</strong>: Operational days, time off, holidays, non-operational periods<br/>
+      <strong>Approval</strong>: Submitted preferences reviewed and approved by management
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Contracts">
+    <p>
+      <strong>Purpose</strong>: Agreements defining resource allocations and operational limits<br/>
+      <strong>Tracking</strong>: Monitor operational day usage against allocated capacity<br/>
+      <strong>Examples</strong>: Security contracts, traffic management, venue services
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Events">
+    <p>
+      <strong>Purpose</strong>: Specific activities requiring manager coverage and coordination<br/>
+      <strong>Assignment</strong>: Primary managers with backup succession planning<br/>
+      <strong>Integration</strong>: Connected to contracts, schedules, and resource allocation
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## System architecture
+
+### Role-based access control
+
+Spitfire uses role-based permissions to ensure users can access appropriate features:
+
+- **Administrative roles** have broad system access for management and configuration
+- **Management roles** focus on team oversight, planning, and approval workflows  
+- **Operational roles** concentrate on task execution and individual schedule management
+
+### Data integration
+
+<Accordion>
+  <AccordionItem title="CIPHR Integration">
+    <p>
+      <strong>Purpose</strong>: Synchronize schedule and payroll data<br/>
+      <strong>Function</strong>: Automatic data exchange for approved schedules<br/>
+      <strong>Monitoring</strong>: Status tracking for successful synchronization
+    </p>
+  </AccordionItem>
+  <AccordionItem title="Real-time Updates">
+    <p>
+      <strong>Notifications</strong>: Instant updates when assignments or statuses change<br/>
+      <strong>Collaboration</strong>: Multiple users can work on related items simultaneously<br/>
+      <strong>Consistency</strong>: Changes immediately visible across all relevant views
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## Key workflows
+
+### Request processing workflow
+
+<Accordion>
+  <AccordionItem title="1. Submission">
+    <p>
+      User identifies operational need → Creates request with detailed information → Submits for review
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2. Review & Clarification">
+    <p>
+      Operations Support reviews submission → Requests clarifications if needed → Validates requirements
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3. Processing">
+    <p>
+      Approved requests enter active processing → Resources allocated → Progress tracked
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4. Completion">
+    <p>
+      Requirements fulfilled → Outcomes documented → Request marked complete or rejected with reasons
+    </p>
+  </AccordionItem>
+</Accordion>
+
+### Schedule management workflow
+
+<Accordion>
+  <AccordionItem title="1. Preference Submission">
+    <p>
+      Team members submit availability preferences → Include constraints and time-off requests
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2. Coordination & Planning">
+    <p>
+      Operations teams review submissions → Coordinate across teams → Plan adequate coverage
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3. Approval & Finalization">
+    <p>
+      Management approves schedules → Final schedules published → CIPHR integration for payroll
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4. Ongoing Management">
+    <p>
+      Monitor for conflicts → Process change requests → Maintain operational coverage
+    </p>
+  </AccordionItem>
+</Accordion>
+
+### Task coordination workflow
+
+<Accordion>
+  <AccordionItem title="1. Task Creation">
+    <p>
+      Operations Support identifies coordination need → Creates structured task → Defines objectives and deadlines
+    </p>
+  </AccordionItem>
+  <AccordionItem title="2. Subtask Assignment">
+    <p>
+      Break down into actionable subtasks → Assign to appropriate team members → Set individual deadlines
+    </p>
+  </AccordionItem>
+  <AccordionItem title="3. Execution & Tracking">
+    <p>
+      Team members execute assigned subtasks → Update progress regularly → Coordinate dependencies
+    </p>
+  </AccordionItem>
+  <AccordionItem title="4. Completion & Review">
+    <p>
+      Verify all subtasks complete → Review outcomes → Document lessons learned
+    </p>
+  </AccordionItem>
+</Accordion>
+
+## System benefits
+
+### For individuals
+- **Clear visibility** into personal schedules and assignments
+- **Streamlined request** submission and tracking
+- **Transparent workflows** with real-time status updates
+- **Mobile-friendly access** for on-the-go updates
+
+### For teams  
+- **Coordinated planning** across multiple operational areas
+- **Balanced workload distribution** through intelligent scheduling
+- **Backup coverage planning** to ensure operational continuity
+- **Clear communication** of assignments and changes
+
+### For management
+- **Real-time operational oversight** across all teams and contracts
+- **Resource utilization tracking** to optimize capacity planning
+- **Compliance monitoring** through structured workflows
+- **Data-driven decision making** with comprehensive reporting
+
+## Integration ecosystem
+
+Spitfire connects with several external systems:
+
+- **CIPHR**: Payroll and HR data synchronization
+- **Calendar systems**: Schedule integration and notifications  
+- **Email notifications**: Automated updates and reminders
+- **Reporting tools**: Analytics and operational metrics
+
+## Next steps
+
+Now that you understand how Spitfire works:
+
+1. **Set up access** - [Learn about authentication →](../authentication)
+2. **Get role-specific guidance** - [Check your first steps →](../first-steps)
+3. **Explore features** - [Browse feature documentation →](/features/request-management)
+{/* 4. **Learn specific tasks** - [Review how-to guides →](../how-to-guides/) */}
+
+The system is designed to be intuitive, but this documentation will help you make the most of its powerful capabilities.

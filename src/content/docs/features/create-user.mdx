@@ -1,0 +1,302 @@
+---
+title: Create User Accounts
+description: Admin interface for adding new team members to the system
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+The Create User Accounts interface allows administrators to add new team members to the operational system. Set up user profiles, assign roles, and configure team memberships through a streamlined creation process.
+
+## Who can create user accounts
+
+<Badge text="Admin" variant="danger" /> Full access to create any type of user account
+
+<Badge text="Ops Support" variant="caution" /> Can create operational user accounts with approval
+
+<Badge text="All Others" variant="note" /> Cannot create user accounts
+
+## What is Create User Accounts?
+
+The user creation system provides:
+- **Profile Setup** - Basic user information and contact details
+- **Role Assignment** - System role selection based on job function
+- **Team Assignment** - Organization into functional teams
+- **Account Activation** - Immediate system access upon creation
+
+## User Creation Form
+
+<Accordion>
+  <AccordionItem title="Personal Information" icon="tabler:user">
+    <p>Basic user profile information required for account creation.</p>
+    <ul>
+      <li><strong>First Name:</strong> User's given name (required field)</li>
+      <li><strong>Last Name:</strong> User's surname (required field)</li>
+      <li><strong>Email:</strong> Contact email and system login credential (required)</li>
+      <li><strong>Full Name Display:</strong> Combination appears in user lists and assignments</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Role Selection" icon="tabler:shield">
+    <p>Assign appropriate system role based on user's job function.</p>
+    <ul>
+      <li><strong>Role Dropdown:</strong> "Select Role" from available system roles</li>
+      <li><strong>Permission Assignment:</strong> Role determines system access and capabilities</li>
+      <li><strong>Available Roles:</strong> Based on Configuration Centre role definitions</li>
+      <li><strong>Role Validation:</strong> Ensures appropriate permissions for user function</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Team Assignment" icon="tabler:users">
+    <p>Organize new user into appropriate functional team.</p>
+    <ul>
+      <li><strong>Team Dropdown:</strong> "Select Team" from available organizational teams</li>
+      <li><strong>Team Structure:</strong> Aligns with operational organization</li>
+      <li><strong>Reporting Lines:</strong> Establishes management relationships</li>
+      <li><strong>Collaboration:</strong> Enables team-based scheduling and assignments</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Account Creation Process
+
+<Accordion>
+  <AccordionItem title="Step 1: Enter Personal Details" icon="tabler:user">
+    <p>Complete required personal information fields.</p>
+    <ul>
+      <li>Enter first name in the "First Name" field</li>
+      <li>Enter last name in the "Last Name" field</li>
+      <li>Provide valid email address for system access</li>
+      <li>Verify all information is accurate before proceeding</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Step 2: Select Role and Team" icon="tabler:settings">
+    <p>Configure organizational assignments and permissions.</p>
+    <ul>
+      <li><strong>Role Selection:</strong> Choose from available system roles</li>
+      <li><strong>Team Assignment:</strong> Select appropriate team for the user</li>
+      <li><strong>Permission Verification:</strong> Ensure role matches user's responsibilities</li>
+      <li><strong>Organizational Fit:</strong> Confirm team assignment aligns with structure</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Step 3: Create Account" icon="tabler:check">
+    <p>Complete the account creation process.</p>
+    <ul>
+      <li>Click "Create Account" to finalize user creation</li>
+      <li>System validates all required information</li>
+      <li>Account appears in Account Management with "Active" status</li>
+      <li>User receives system access based on assigned role</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Role Options Available
+
+<Accordion>
+  <AccordionItem title="Operational Roles" icon="tabler:user-circle">
+    <p>Entry-level and specialist operational positions.</p>
+    <ul>
+      <li><strong>Static Manager:</strong> Position management and static assignments</li>
+      <li><strong>Resourcing:</strong> Resource allocation and planning</li>
+      <li><strong>Logistics:</strong> Operational logistics coordination</li>
+      <li><strong>Finance:</strong> Financial oversight and budget management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Roles" icon="tabler:crown">
+    <p>Leadership and supervisory positions.</p>
+    <ul>
+      <li><strong>Ops Manager:</strong> Team management and operational oversight</li>
+      <li><strong>Assistant Ops Manager:</strong> Assistant management responsibilities</li>
+      <li><strong>Deputy Head of Operations:</strong> Senior operational leadership</li>
+      <li><strong>Head of Operations:</strong> Executive operational leadership</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Administrative Roles" icon="tabler:shield-star">
+    <p>System administration and support roles.</p>
+    <ul>
+      <li><strong>Ops Support:</strong> Operational support and system assistance</li>
+      <li><strong>Admin:</strong> Full system administration and configuration</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Team Assignment Options
+
+<Accordion>
+  <AccordionItem title="Operational Teams" icon="tabler:users-group">
+    <p>Core operational teams for day-to-day activities.</p>
+    <ul>
+      <li><strong>Security & Stewarding:</strong> Event security and crowd management</li>
+      <li><strong>Traffic Management:</strong> Transportation and logistics</li>
+      <li><strong>Static Management:</strong> Fixed position coordination</li>
+      <li><strong>Resource Coordination:</strong> Resource planning and allocation</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Support Teams" icon="tabler:headset">
+    <p>Administrative and support functions.</p>
+    <ul>
+      <li><strong>Operations Support:</strong> System support and assistance</li>
+      <li><strong>Administration:</strong> System management and configuration</li>
+      <li><strong>Finance Team:</strong> Budget and financial oversight</li>
+      <li><strong>Logistics Team:</strong> Supply chain and coordination</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Teams" icon="tabler:building">
+    <p>Leadership and strategic teams.</p>
+    <ul>
+      <li><strong>Senior Management:</strong> Executive leadership team</li>
+      <li><strong>Operations Management:</strong> Operational leadership</li>
+      <li><strong>Department Heads:</strong> Functional area leadership</li>
+      <li><strong>Project Teams:</strong> Specific project coordination</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Validation and Requirements
+
+<Accordion>
+  <AccordionItem title="Required Information" icon="tabler:asterisk">
+    <p>Essential fields that must be completed for account creation.</p>
+    <ul>
+      <li><strong>First Name:</strong> Cannot be empty, used for system identification</li>
+      <li><strong>Last Name:</strong> Cannot be empty, completes user identification</li>
+      <li><strong>Email Address:</strong> Must be valid format, used for login and communications</li>
+      <li><strong>Role Selection:</strong> Must select a role for system permissions</li>
+      <li><strong>Team Assignment:</strong> Required for organizational structure</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Email Validation" icon="tabler:mail">
+    <p>Email address requirements and validation rules.</p>
+    <ul>
+      <li><strong>Format Validation:</strong> Must be valid email format (user@domain.com)</li>
+      <li><strong>Uniqueness:</strong> Email must not already exist in the system</li>
+      <li><strong>Domain Requirements:</strong> May need to match organizational domain</li>
+      <li><strong>Login Credential:</strong> Email serves as primary login identifier</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Role and Team Validation" icon="tabler:checklist">
+    <p>Organizational assignment validation and requirements.</p>
+    <ul>
+      <li><strong>Role Availability:</strong> Selected role must be available for assignment</li>
+      <li><strong>Team Capacity:</strong> Team must have capacity for new members</li>
+      <li><strong>Permission Alignment:</strong> Role permissions must match intended function</li>
+      <li><strong>Organizational Structure:</strong> Assignment must fit organizational hierarchy</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Post-Creation Process
+
+<Accordion>
+  <AccordionItem title="Immediate Account Setup" icon="tabler:clock">
+    <p>What happens immediately after account creation.</p>
+    <ul>
+      <li><strong>Account Activation:</strong> User account is immediately active</li>
+      <li><strong>Permission Assignment:</strong> Role-based permissions are applied</li>
+      <li><strong>System Access:</strong> User can log in with assigned email</li>
+      <li><strong>Directory Listing:</strong> User appears in Account Management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="User Onboarding" icon="tabler:user-plus">
+    <p>Next steps for new user integration.</p>
+    <ul>
+      <li><strong>Login Credentials:</strong> Provide login information to new user</li>
+      <li><strong>System Training:</strong> Arrange training on relevant system features</li>
+      <li><strong>Team Introduction:</strong> Introduce to team members and managers</li>
+      <li><strong>Role Clarification:</strong> Explain role responsibilities and expectations</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Account Verification" icon="tabler:shield-check">
+    <p>Verify account setup and access after creation.</p>
+    <ul>
+      <li><strong>Login Test:</strong> Verify user can successfully log in</li>
+      <li><strong>Permission Check:</strong> Confirm user can access expected features</li>
+      <li><strong>Team Visibility:</strong> Ensure user appears in team lists</li>
+      <li><strong>Profile Completion:</strong> Additional profile setup if needed</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[User Creation Best Practices]
+- **Verify Information:** Double-check all personal details before creating account
+- **Appropriate Role Assignment:** Match role to actual job responsibilities
+- **Team Alignment:** Ensure team assignment matches organizational structure
+- **Immediate Communication:** Contact new user with login details promptly
+- **Follow-up:** Check that new user can access system and required features
+:::
+
+:::note[Integration Points]
+Create User Accounts integrates with:
+- **Account Management:** New users appear in the main user table
+- **Configuration Centre:** Role permissions are applied from role definitions
+- **Team Management:** Team assignments affect user visibility and access
+- **All System Features:** Role-based access controls user's system experience
+:::
+
+## Common Issues and Solutions
+
+<Accordion>
+  <AccordionItem title="Email Already Exists Error" icon="tabler:alert-circle">
+    <p>Resolve duplicate email address issues.</p>
+    <ul>
+      <li><strong>Check Existing Users:</strong> Search Account Management for existing user</li>
+      <li><strong>Alternative Email:</strong> Use different email address if appropriate</li>
+      <li><strong>Account Recovery:</strong> Reactivate existing account if it's the same person</li>
+      <li><strong>Domain Variation:</strong> Consider different email domain if organization allows</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Role Selection Issues" icon="tabler:user-question">
+    <p>Resolve role assignment and permission problems.</p>
+    <ul>
+      <li><strong>Role Availability:</strong> Verify role exists in Configuration Centre</li>
+      <li><strong>Permission Requirements:</strong> Ensure role has appropriate permissions</li>
+      <li><strong>Organizational Approval:</strong> Confirm role assignment is approved</li>
+      <li><strong>Role Documentation:</strong> Review role descriptions for proper fit</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Team Assignment Problems" icon="tabler:users">
+    <p>Resolve team organization and assignment issues.</p>
+    <ul>
+      <li><strong>Team Existence:</strong> Verify team exists in Team Management</li>
+      <li><strong>Team Capacity:</strong> Check if team can accommodate new members</li>
+      <li><strong>Organizational Structure:</strong> Confirm team assignment makes sense</li>
+      <li><strong>Manager Approval:</strong> Ensure team lead approves new member</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Security Considerations
+
+:::warning[Security Best Practices]
+- **Role Verification:** Ensure new users receive only necessary permissions
+- **Email Validation:** Verify email addresses belong to legitimate users
+- **Access Reviews:** Regularly review new user access and permissions
+- **Documentation:** Keep records of who created accounts and when
+:::
+
+## Getting Started
+
+To create a new user account:
+
+1. **Access the form** via Admin menu > Create User Accounts
+2. **Enter personal details** - First Name, Last Name, and Email
+3. **Select appropriate role** from the Role dropdown
+4. **Choose team assignment** from the Team dropdown
+5. **Click "Create Account"** to complete the process
+6. **Verify account creation** in Account Management
+7. **Provide login details** to the new user

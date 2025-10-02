@@ -1,0 +1,260 @@
+---
+title: Roles & Permissions Overview
+description: Complete guide to system roles, permissions, and access levels across all features
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import AccordionItem from '../../../components/AccordionItem.astro';
+
+This page provides a comprehensive overview of all system roles, their permissions, and access levels across different features and modules.
+
+## Role Hierarchy
+
+The system follows a hierarchical structure with increasing levels of access and responsibility:
+
+<Accordion>
+  <AccordionItem title="Administrative Level" icon="tabler:shield-star">
+    <p>Highest level system access and configuration control.</p>
+    <ul>
+      <li><Badge text="Admin" variant="danger" /> **Admin** - Full system access and configuration</li>
+      <li><Badge text="Ops Support" variant="caution" /> **Ops Support** - Operational support and user management</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Level" icon="tabler:crown">
+    <p>Operational leadership and team management roles.</p>
+    <ul>
+      <li><Badge text="Ops Manager" variant="success" /> **Ops Manager** - Team and operational management</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Detailed Role Permissions
+
+### Administrative Roles
+
+<Accordion>
+  <AccordionItem title="Admin" icon="tabler:shield-star">
+    <p><Badge text="Admin" variant="danger" /> Full system administration and configuration access.</p>
+    
+    **Overview Permissions:**
+    - ✓ Dashboard
+    - ✓ Operational Tracker
+    - ✓ CIPHR Integration
+    - ✓ Lieu & Holidays
+
+    **Scheduling Permissions:**
+    - ✓ Rota Management
+    - ✓ Submit Request
+    - ✓ Submitted Schedules
+    - ✓ Schedules
+
+    **Management Permissions:**
+    - ✓ EOS Actions
+    - ✓ Manage Request
+    - ✓ Account Management
+    - ✓ Create User Accounts
+    - ✓ Team Management
+    - ✓ Configuration Centre
+
+    **Key Capabilities:**
+    - Create and manage all user accounts
+    - Configure system roles and permissions
+    - Full access to all operational features
+    - System configuration and maintenance
+  </AccordionItem>
+
+  <AccordionItem title="Ops Support" icon="tabler:headset">
+    <p><Badge text="Ops Support" variant="caution" /> Comprehensive operational support with user management capabilities.</p>
+    
+    **Overview Permissions:**
+    - ✓ Dashboard
+    - ✓ Operational Tracker
+    - ✓ CIPHR Integration
+    - ✓ Lieu & Holidays
+
+    **Scheduling Permissions:**
+    - ✓ Rota Management
+    - ✓ Submit Request
+    - ✓ Submitted Schedules
+    - ✓ Schedules
+
+    **Management Permissions:**
+    - ✓ EOS Actions
+    - ✓ Manage Request
+    - ✓ Account Management
+    - ✓ Create User Accounts
+    - ✓ Team Management
+    - ✓ Configuration Centre
+
+    **Key Capabilities:**
+    - Support all operational users
+    - Manage user accounts and requests
+    - Create EOS tasks and assignments
+    - Access to most system features for support
+  </AccordionItem>
+</Accordion>
+
+### Management Roles
+
+<Accordion>
+  <AccordionItem title="Ops Manager" icon="tabler:users">
+    <p><Badge text="Ops Manager" variant="success" /> Direct team management and operational coordination.</p>
+    
+    **Overview Permissions:**
+    - ✓ Dashboard
+
+    **Scheduling Permissions:**
+    - ✓ Rota Management
+    - ✓ Submit Request
+    - ✓ Schedules
+
+    **Management Permissions:**
+    - ✓ Allocated Contracts
+    - ✓ Assigned Events
+    - ✓ EOS Actions
+
+    **Key Capabilities:**
+    - Direct team management
+    - Contract allocation and management
+    - Event coordination and assignment
+    - Day-to-day operational oversight
+  </AccordionItem>
+</Accordion>
+
+## Feature Access Matrix
+
+| Feature | Admin | Ops Support | Ops Manager |
+|---------|-------|-------------|-------------|
+| **Dashboard** | ✓ | ✓ | ✓ |
+| **Operational Tracker** | ✓ | ✓ | ✗ |
+| **CIPHR Integration** | ✓ | ✓ | ✗ |
+| **Lieu & Holidays** | ✓ | ✓ | ✗ |
+| **Rota Management** | ✓ | ✓ | ✓ |
+| **Submit Request** | ✓ | ✓ | ✓ |
+| **Submitted Schedules** | ✓ | ✓ | ✗ |
+| **Schedules** | ✓ | ✓ | ✓ |
+| **EOS Actions** | ✓ | ✓ | ✓ |
+| **Manage Request** | ✓ | ✓ | ✗ |
+| **Account Management** | ✓ | ✓ | ✗ |
+| **Create User Accounts** | ✓ | ✓ | ✗ |
+| **Team Management** | ✓ | ✓ | ✗ |
+| **Configuration Centre** | ✓ | ✓ | ✗ |
+| **Allocated Contracts** | ✓ | ✓ | ✓ |
+| **Assigned Events** | ✓ | ✓ | ✓ |
+
+## Permission Levels Explained
+
+<Accordion>
+  <AccordionItem title="Full Access (✓)" icon="tabler:check">
+    <p>Complete access to feature with all capabilities.</p>
+    <ul>
+      <li>Can view, create, edit, and delete</li>
+      <li>Access to all sub-features and options</li>
+      <li>Can manage other users' data in the feature</li>
+      <li>Full administrative control within the feature</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Limited Access (◐)" icon="tabler:eye">
+    <p>Restricted access with specific limitations.</p>
+    <ul>
+      <li>Can view own data and team data</li>
+      <li>Can edit own submissions and assignments</li>
+      <li>Cannot modify other users' data</li>
+      <li>May have read-only access to some areas</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="No Access (✗)" icon="tabler:x">
+    <p>Feature is not available to this role.</p>
+    <ul>
+      <li>Cannot view, access, or interact with feature</li>
+      <li>Feature does not appear in navigation</li>
+      <li>No permissions within the feature area</li>
+      <li>Must request access through appropriate channels</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Role Assignment Guidelines
+
+<Accordion>
+  <AccordionItem title="Administrative Roles" icon="tabler:shield">
+    <p>Guidelines for assigning administrative access.</p>
+    <ul>
+      <li><strong>Admin:</strong> Reserved for system administrators and IT personnel</li>
+      <li><strong>Ops Support:</strong> For dedicated operational support team members</li>
+      <li><strong>Limit Assignment:</strong> Keep administrative roles to minimum necessary</li>
+      <li><strong>Regular Review:</strong> Audit administrative access quarterly</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Roles" icon="tabler:users">
+    <p>Guidelines for operational leadership assignments.</p>
+    <ul>
+      <li><strong>Hierarchy Alignment:</strong> Match system roles to organizational structure</li>
+      <li><strong>Responsibility Scope:</strong> Ensure role permissions match job responsibilities</li>
+      <li><strong>Team Leadership:</strong> Management roles should align with team leadership</li>
+      <li><strong>Succession Planning:</strong> Plan for role transitions and coverage</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Security Considerations
+
+:::warning[Security Best Practices]
+- **Principle of Least Privilege:** Grant minimum necessary permissions for job function
+- **Regular Access Reviews:** Audit user permissions quarterly and remove unused access
+- **Role Documentation:** Maintain clear documentation of role purposes and responsibilities
+- **Change Management:** Require approval for role changes and permission modifications
+- **Monitoring:** Track role assignments and access patterns for security compliance
+:::
+
+## Common Role Scenarios
+
+<Accordion>
+  <AccordionItem title="New Employee Onboarding" icon="tabler:user-plus">
+    <p>Standard role assignment for new team members.</p>
+    <ul>
+      <li><strong>Start Basic:</strong> Begin with Ops Manager role for management personnel</li>
+      <li><strong>Training Period:</strong> Provide limited access during initial training</li>
+      <li><strong>Gradual Expansion:</strong> Increase permissions as competency grows</li>
+      <li><strong>Mentorship:</strong> Pair with experienced team members</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Promotion and Role Changes" icon="tabler:arrow-up">
+    <p>Managing role transitions and promotions.</p>
+    <ul>
+      <li><strong>Gradual Transition:</strong> Phase in new permissions over time</li>
+      <li><strong>Training Requirements:</strong> Ensure training before granting access</li>
+      <li><strong>Old Role Cleanup:</strong> Remove previous role permissions appropriately</li>
+      <li><strong>Documentation:</strong> Update role documentation and team structures</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Temporary Coverage" icon="tabler:clock">
+    <p>Handling temporary role assignments and coverage.</p>
+    <ul>
+      <li><strong>Temporary Access:</strong> Grant time-limited permissions for coverage</li>
+      <li><strong>Clear Duration:</strong> Set specific start and end dates for temporary roles</li>
+      <li><strong>Documentation:</strong> Record reason and duration of temporary access</li>
+      <li><strong>Automatic Cleanup:</strong> Remove temporary permissions when period ends</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Help
+
+If you need assistance with roles and permissions:
+
+1. **Check this guide** for standard role capabilities and access levels
+2. **Contact Ops Support** for permission-related questions and issues
+3. **Request role changes** through your manager and HR processes
+4. **Report access issues** to Admin team for technical resolution
+
+:::note[Role Updates]
+Role permissions may be updated as system features evolve. Check this page regularly for the most current information about role capabilities and access levels.
+:::
