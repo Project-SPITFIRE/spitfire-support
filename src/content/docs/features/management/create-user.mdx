@@ -4,8 +4,9 @@ description: Admin interface for adding new team members to the system
 ---
 
 import { Badge } from '@astrojs/starlight/components';
-import Accordion from '../../../components/Accordion.astro';
-import AccordionItem from '../../../components/AccordionItem.astro';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
+
 
 The Create User Accounts interface allows administrators to add new team members to the operational system. Set up user profiles, assign roles, and configure team memberships through a streamlined creation process.
 
@@ -282,7 +283,7 @@ Create User Accounts integrates with:
 
 ## Security Considerations
 
-:::warning[Security Best Practices]
+:::caution[Security Best Practices]
 - **Role Verification:** Ensure new users receive only necessary permissions
 - **Email Validation:** Verify email addresses belong to legitimate users
 - **Access Reviews:** Regularly review new user access and permissions

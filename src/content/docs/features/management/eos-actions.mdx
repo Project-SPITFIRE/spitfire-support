@@ -4,8 +4,8 @@ description: Complete guide to managing EOS tasks and subtasks for operational c
 ---
 
 import { Badge } from '@astrojs/starlight/components';
-import Accordion from '../../../components/Accordion.astro';
-import AccordionItem from '../../../components/AccordionItem.astro';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
 
 Manage operational tasks with subtask assignments, progress tracking, and team coordination through the EOS Actions interface.
 
@@ -17,9 +17,9 @@ Manage operational tasks with subtask assignments, progress tracking, and team c
 | Operations Manager | ✗ | ✗ | ✓ | ✗ | Assigned only |
 | Operations Support | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## What is an EOS task?
+## What is an EOS Action?
 
-EOS (Event Operations Support) tasks are structured work items that break down complex operational activities into manageable subtasks. They ensure coordinated execution across multiple team members with comprehensive tracking and progress monitoring.
+EO tasks are structured work items that break down complex operational activities into manageable subtasks. They ensure coordinated execution across multiple team members with comprehensive tracking and progress monitoring.
 
 ## EOS Actions Interface
 
@@ -268,7 +268,7 @@ EOS (Event Operations Support) tasks are structured work items that break down c
 
 ## Integration Points
 
-:::note[EOS Actions Integration]
+:::tip[EOS Actions Integration]
 EOS Actions integrates with:
 - **Weekly Meetings:** Tasks created from weekly meeting action items
 - **Team Management:** Assignee information from user management

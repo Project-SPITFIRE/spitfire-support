@@ -1,0 +1,142 @@
+---
+title: Features Overview
+description: Complete guide to all system features organized by category
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+
+Explore all available features organized by operational category to find the tools you need for effective workforce management.
+
+## Feature Categories
+
+<CardGrid>
+  <Card title="Tracking & Monitoring" icon="tabler:chart-line">
+    Monitor operational performance, track metrics, and manage data integration.
+    
+    <LinkCard 
+      title="Explore Tracking Features →" 
+      href="/features/tracking"
+      description="Dashboard, operational tracking, CIPHR integration, and holiday management"
+    />
+  </Card>
+
+  <Card title="Scheduling" icon="tabler:calendar">
+    Manage schedules, coordinate rotas, and plan operational activities.
+    
+    <LinkCard 
+      title="Explore Scheduling Features →" 
+      href="/features/scheduling/rota-management"
+      description="Rota management, schedules, event mapping, and contract allocation"
+    />
+  </Card>
+
+  <Card title="Management" icon="tabler:settings">
+    Administrative tools for user management, requests, and system configuration.
+    
+    <div class="grid grid-cols-1 gap-2 mt-4">
+      <LinkCard title="Request Management" href="/features/management/request-management" />
+      <LinkCard title="EOS Actions" href="/features/management/eos-actions" />
+      <LinkCard title="User Management" href="/features/management/user-team-management" />
+    </div>
+  </Card>
+</CardGrid>
+
+## Quick Access by Function
+
+<CardGrid>
+  <LinkCard 
+    title="Dashboard" 
+    href="/features/tracking/dashboard"
+    description="Central operational overview with key metrics and summaries"
+    icon="dashboard"
+  />
+  <LinkCard 
+    title="Rota Management" 
+    href="/features/scheduling/rota-management"
+    description="Complete rota planning and workforce coordination"
+    icon="calendar"
+  />
+  <LinkCard 
+    title="Request Management" 
+    href="/features/management/request-management"
+    description="Submit and manage operational requests"
+    icon="mail"
+  />
+  <LinkCard 
+    title="User Management" 
+    href="/features/management/user-team-management"
+    description="Manage users, teams, and access permissions"
+    icon="users"
+  />
+</CardGrid>
+
+## All Available Features
+
+### Tracking & Monitoring
+- **Dashboard** - Central operational overview
+- **Operational Tracker** - Monitor operational days and performance
+- **CIPHR Integration** - Process holiday data and resolve conflicts
+- **Lieu & Holidays** - Track holiday requests and lieu time
+
+### Scheduling
+- **Rota Management** - Complete workforce planning system
+  - Event Mapping - Coordinate events with resources
+  - Contract Allocation - Assign contracts to teams
+  - Succession Planning - Plan for role transitions
+- **Schedules** - Manage individual and team schedules
+
+### Management
+- **Request Management** - Submit and process operational requests
+- **EOS Actions** - Manage operational tasks and workflows
+- **Allocated Contracts** - View and manage contract assignments
+- **Assigned Events** - Coordinate event assignments
+- **Create User Accounts** - Add new system users
+- **User & Team Management** - Organize teams and permissions
+- **Configuration Centre** - System settings and configuration
+
+## Role-Based Feature Access
+
+| Feature Category | Admin | Ops Support | Ops Manager |
+|------------------|-------|-------------|-------------|
+| **Tracking** | Full Access | Full Access | Limited |
+| **Scheduling** | Full Access | Full Access | Team Only |
+| **Management** | Full Access | Most Features | Limited |
+
+## Getting Started
+
+Choose your starting point based on your role and immediate needs:
+
+<CardGrid>
+  <Card>
+    <div class="flex items-center gap-2 mb-3">
+      <Badge text="New User" variant="success" />
+    </div>
+    <p class="mb-3">Start with the Dashboard for an operational overview, then explore features based on your role.</p>
+    <LinkCard title="View Dashboard" href="/features/tracking/dashboard" />
+  </Card>
+
+  <Card>
+    <div class="flex items-center gap-2 mb-3">
+      <Badge text="Manager" variant="caution" />
+    </div>
+    <p class="mb-3">Focus on Rota Management and Request Management for day-to-day operations.</p>
+    <LinkCard title="Rota Management" href="/features/scheduling/rota-management" />
+  </Card>
+
+  <Card>
+    <div class="flex items-center gap-2 mb-3">
+      <Badge text="Admin" variant="danger" />
+    </div>
+    <p class="mb-3">Start with User Management and Configuration Centre for system setup.</p>
+    <LinkCard title="User Management" href="/features/management/user-team-management" />
+  </Card>
+</CardGrid>
+
+:::tip[Feature Integration]
+Features work together to provide comprehensive operational management. For example, Dashboard displays data from Operational Tracker, while Rota Management coordinates with Request Management for schedule changes.
+:::
+
+:::note[Need Help?]
+Each feature has detailed documentation with step-by-step guides. Use the search function or browse by category to find specific information.
+:::
