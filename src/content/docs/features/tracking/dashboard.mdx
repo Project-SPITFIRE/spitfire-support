@@ -1,0 +1,128 @@
+---
+title: Dashboard
+description: Central operational overview with key metrics, manager summaries, and event schedules
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
+
+
+Central hub for operational metrics, task progress, manager summaries, and upcoming event schedules.
+
+## Who can use this feature
+
+| Role | View Dashboard | View All Metrics | Export Data |
+|------|----------------|------------------|-------------|
+| Admin | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ |
+| Ops Manager | ✓ | Own data only | ✓ |
+
+## Key Metrics Overview
+
+<Accordion>
+  <AccordionItem title="Operational Statistics" icon="tabler:chart-bar">
+    <ul>
+      <li><strong>Total Events This Month:</strong> 1 (assigned)</li>
+      <li><strong>Sum of Active Seats:</strong> 7</li>
+      <li><strong>Pending CIPHR:</strong> 0 conflicts</li>
+      <li><strong>EOS Tasks:</strong> 1 in progress</li>
+      <li><strong>Outstanding Venue Marketing Reviews:</strong> 5 completed this week</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Charts and Analytics" icon="tabler:chart-line">
+    <ul>
+      <li><strong>Operational Days Per Contract:</strong> Bar chart showing contract activity levels</li>
+      <li><strong>EOS Task Progress:</strong> Donut chart showing task completion status</li>
+      <li><strong>Progress Indicators:</strong> Completed, In Progress, Not Started/Overdue</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Manager Load Summary
+
+<Accordion>
+  <AccordionItem title="Manager Overview Table" icon="tabler:users">
+    <ul>
+      <li><strong>Manager Name:</strong> Individual manager identification</li>
+      <li><strong>Role:</strong> Position (e.g., Ops Manager)</li>
+      <li><strong>Consecutive Work Days:</strong> Color-coded workload indicators</li>
+      <li><strong>Search Function:</strong> Filter managers by name</li>
+      <li><strong>Role Filter:</strong> Filter by specific roles</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Current Manager Status" icon="tabler:traffic-lights">
+    <p>Manager workload indicators:</p>
+    <ul>
+      <li><Badge text="1 Day" variant="success" /> Light workload</li>
+      <li><Badge text="2 Days" variant="success" /> Moderate workload</li>
+      <li><Badge text="5 Days" variant="danger" /> Heavy workload</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## October Event Schedule
+
+<Accordion>
+  <AccordionItem title="Calendar View" icon="tabler:calendar">
+    <ul>
+      <li><strong>Monthly Layout:</strong> Full month view with daily event details</li>
+      <li><strong>Event Types:</strong> Different colored events (TM 2 Champions League, Olympic League)</li>
+      <li><strong>Multi-day Events:</strong> Events spanning multiple days clearly indicated</li>
+      <li><strong>Quick Overview:</strong> Easy identification of busy periods</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Event Categories" icon="tabler:tags">
+    <ul>
+      <li><strong>TM 2 Champions League:</strong> Green events (Oct 2-4, 22-25)</li>
+      <li><strong>Olympic League:</strong> Various scheduled events</li>
+      <li><strong>Premier League:</strong> Red event (Oct 26)</li>
+      <li><strong>Multiple Events:</strong> Some days have multiple concurrent events</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Using the Dashboard
+
+<Accordion>
+  <AccordionItem title="Navigation and Filtering" icon="tabler:filter">
+    <ul>
+      <li><strong>Manager Search:</strong> Use search box to find specific managers</li>
+      <li><strong>Role Filtering:</strong> Filter manager list by role type</li>
+      <li><strong>Calendar Navigation:</strong> View different months and time periods</li>
+      <li><strong>Metric Refresh:</strong> Metrics update automatically throughout the day</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Current Operational Status
+
+| Metric | Value | Status |
+|--------|-------|--------|
+| Total Events This Month | 1 | Normal |
+| Active Seats | 7 | Operational |
+| Pending CIPHR | 0 | Clear |
+| EOS Tasks | 1 | In Progress |
+| Marketing Reviews | 5 | Completed |
+
+## Best Practices
+
+:::tip[Dashboard Usage Tips]
+- **Daily Check:** Review dashboard daily for operational overview
+- **Manager Monitoring:** Check manager workload for balanced distribution
+- **Event Planning:** Use calendar view for operational planning
+- **Metric Tracking:** Monitor key metrics for operational health
+:::
+
+## Integration Points
+
+:::note[Dashboard Integration]
+Dashboard pulls data from:
+- **EOS Tasks:** Task progress and completion status
+- **Operational Tracker:** Contract and manager activity data
+- **Event Management:** Upcoming events and schedules
+- **CIPHR Integration:** Holiday conflicts and processing status
+:::

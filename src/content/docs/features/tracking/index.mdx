@@ -1,0 +1,99 @@
+---
+title: Tracking & Monitoring
+description: Overview of tracking and monitoring features for operational oversight and data management
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+
+Monitor operational activities, track performance metrics, and manage data integration with comprehensive tracking tools.
+
+## Available Tracking Features
+
+<CardGrid>
+  <Card title="Dashboard" icon="tabler:dashboard">
+    Central operational overview with key metrics, manager summaries, and event schedules.
+    
+    <LinkCard 
+      title="View Dashboard" 
+      href="/features/tracking/dashboard"
+      description="Access operational metrics and summaries"
+    />
+  </Card>
+
+  <Card title="Operational Tracker" icon="tabler:chart-line">
+    Monitor operational days across managers, contracts, and sites with detailed analytics.
+    
+    <LinkCard 
+      title="View Operational Tracker" 
+      href="/features/tracking/operational-tracker"
+      description="Track operational performance and trends"
+    />
+  </Card>
+
+  <Card title="CIPHR Integration" icon="tabler:file-upload">
+    Upload and process CIPHR holiday data files with conflict resolution and status tracking.
+    
+    <LinkCard 
+      title="Manage CIPHR Data" 
+      href="/features/tracking/ciphr-integration"
+      description="Process holiday data and resolve conflicts"
+    />
+  </Card>
+
+  <Card title="Lieu & Holidays" icon="tabler:calendar-time">
+    Track and manage employee holiday requests and lieu time allocations.
+    
+    <LinkCard 
+      title="Manage Holidays" 
+      href="/features/tracking/lieu-holidays"
+      description="Monitor holiday and lieu time usage"
+    />
+  </Card>
+</CardGrid>
+
+## Who can access Tracking features
+
+| Feature | Admin | Ops Support | Ops Manager |
+|---------|-------|-------------|-------------|
+| Dashboard | ✓ | ✓ | ✓ |
+| Operational Tracker | ✓ | ✓ | Limited |
+| CIPHR Integration | ✓ | ✓ | ✓ |
+| Lieu & Holidays | ✓ | ✓ | Limited |
+
+## Common Tasks
+
+<CardGrid>
+  <LinkCard 
+    title="Review Daily Metrics" 
+    href="/features/tracking/dashboard"
+    description="Check operational status and key performance indicators"
+    icon="chart-bar"
+  />
+  <LinkCard 
+    title="Monitor Manager Workload" 
+    href="/features/tracking/operational-tracker"
+    description="Track operational days and manager assignments"
+    icon="users"
+  />
+  <LinkCard 
+    title="Process Holiday Data" 
+    href="/features/tracking/ciphr-integration"
+    description="Upload and review CIPHR holiday information"
+    icon="upload"
+  />
+  <LinkCard 
+    title="Check Holiday Status" 
+    href="/features/tracking/lieu-holidays"
+    description="Review holiday requests and lieu time"
+    icon="calendar"
+  />
+</CardGrid>
+
+:::tip[Getting Started with Tracking]
+Start with the **Dashboard** for an overall operational view, then use specific tracking tools based on your role and responsibilities.
+:::
+
+:::note[Data Integration]
+Tracking features work together to provide comprehensive operational oversight. Data flows between systems to ensure accurate monitoring and reporting.
+:::

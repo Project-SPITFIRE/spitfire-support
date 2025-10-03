@@ -19,9 +19,13 @@ import starlightThemeObsidian from "starlight-theme-obsidian";
 import starlightThemeGalaxy from "starlight-theme-galaxy";
 import starlightThemeNova from "starlight-theme-nova";
 import { ion } from "starlight-ion-theme";
+import starlightLinksValidator from 'starlight-links-validator'
+
+// const baseURL = process.env.PUBLIC_BASE_PATH || '/learning-materials';
 
 //https://astro.build/config
 export default defineConfig({
+  // base: baseURL,
   integrations: [
     icon(),
     starlight({
@@ -30,6 +34,7 @@ export default defineConfig({
         // viewTransitions(),
         starlightImageZoom(),
         starlightSidebarSwipe(),
+        starlightLinksValidator(),
         starlightContextualMenu({
           actions: ["copy", "view"],
         }),
@@ -44,10 +49,7 @@ export default defineConfig({
           label: "Getting Started",
           items: [
             { label: "Introduction", slug: "getting-started/introduction" },
-            {
-              label: "System Overview",
-              slug: "getting-started/system-overview",
-            },
+            { label: "System Overview", slug: "getting-started/system-overview" },
             { label: "Authentication", slug: "getting-started/authentication" },
             { label: "First Steps", slug: "getting-started/first-steps" },
           ],
@@ -65,34 +67,44 @@ export default defineConfig({
           label: "Features",
           items: [
             {
-              label: "Request Management",
-              slug: "features/request-management",
+              label: "Overview", slug: "features/overview"
             },
-            { label: "EOS Tasks", slug: "features/eos-tasks" },
-            { label: "Schedules", slug: "features/schedules" },
-            { label: "Rota Management", slug: "features/rota-management" },
-            {
-              label: "Contract Allocation",
-              slug: "features/contract-allocation",
-            },
-            {
-              label: "Allocated Contracts",
-              slug: "features/allocated-contracts",
-            },
-            { label: "Assigned Events", slug: "features/assigned-events" },
-            { label: "Event Mapping", slug: "features/event-mapping" },
-            {
-              label: "Succession Planning",
-              slug: "features/succession-planning",
-            },
-            { label: "Create User Accounts", slug: "features/create-user" },
-            {
-              label: "User & Team Management",
-              slug: "features/user-team-management",
+            { 
+              label: "Tracking",
+              items: [
+                { label: "Dashboard", slug: "features/tracking/dashboard" },
+                { label: "Operational Tracker", slug: "features/tracking/ciphr-integration"},
+                { label: "CIPHR Integration", slug: "features/tracking/operational-tracker"},
+                { label: "Lieu & Holidays" , slug: "features/tracking/lieu-holidays"},
+              ],
             },
             {
-              label: "Configuration Centre",
-              slug: "features/configuration-centre",
+              label: "Scheduling",
+              items: [
+                {
+                  label: "Rota Management",
+                  items: [
+                    { label: "Overview", slug: "features/scheduling/rota-management"},
+                    { label: "Event Mapping", slug: "features/scheduling/rota-management/event-mapping"},
+                    { label: "Contract Allocation", slug: "features/scheduling/rota-management/contract-allocation"},
+                    { label: "Succession Planning", slug: "features/scheduling/rota-management/succession-planning"},
+                  ],
+                },
+
+                {label: "Schedules", slug: "features/scheduling/schedules"},
+              ],
+            },
+            {
+              label: "Management",
+              items: [
+                {label: "Allocated Contracts", slug: "features/management/allocated-contracts"},
+                {label: "Assigned Events", slug: "features/management/assigned-events"},
+                {label: "EOS Actions", slug: "features/management/eos-actions"},
+                {label: "Request Management", slug: "features/management/request-management" },
+                {label: "Create User Accounts", slug: "features/management/create-user"},
+                {label: "User & Team Management", slug: "features/management/user-team-management"},
+                {label: "Configuration Centre", slug: "features/management/configuration-centre" },
+              ],
             },
           ],
         },

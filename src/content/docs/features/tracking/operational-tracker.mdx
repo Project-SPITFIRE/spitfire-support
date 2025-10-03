@@ -1,0 +1,303 @@
+---
+title: Operational Tracker
+description: Monitor operational days across managers, contracts, and sites with comprehensive tracking and analytics
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
+
+Track and monitor operational activities across managers, contracts, and sites with detailed monthly breakdowns and performance analytics.
+
+## Who can use this feature
+
+| Role | View All Data | View Reports | Filter by Manager | Export Data | Analyze Trends |
+|------|---------------|--------------|-------------------|-------------|----------------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Operations Manager | Own data only | ✓ | Own only | ✓ | ✓ |
+
+
+## What is the Operational Tracker?
+
+The Operational Tracker provides comprehensive monitoring of operational activities with dual view modes:
+- **Manager-focused tracking** - Monitor operational days by individual managers
+- **Contract-focused tracking** - Track operational days by specific contracts
+- **Monthly breakdowns** - Detailed month-by-month operational data
+- **Performance analytics** - Total operational days and estimated projections
+
+## Tracker Interface Overview
+
+<Accordion>
+  <AccordionItem title="Tracker Purpose" icon="tabler:chart-line">
+    <p>Comprehensive operational monitoring and performance tracking.</p>
+    <ul>
+      <li><strong>Activity Monitoring:</strong> "Monitor operational days across managers, contracts, and sites"</li>
+      <li><strong>Performance Tracking:</strong> Track operational efficiency and workload distribution</li>
+      <li><strong>Resource Planning:</strong> Use data for operational planning and resource allocation</li>
+      <li><strong>Trend Analysis:</strong> Identify patterns and trends in operational activities</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Dual View Modes" icon="tabler:layout-grid">
+    <p>Switch between manager-focused and contract-focused tracking views.</p>
+    <ul>
+      <li><strong>Operational Days Per Contract:</strong> Track operational activity by specific contracts</li>
+      <li><strong>Operational Tracker:</strong> Monitor operational days by individual managers</li>
+      <li><strong>Flexible Filtering:</strong> "All Managers" and "All Contracts" dropdown filters</li>
+      <li><strong>Seamless Switching:</strong> Easy toggle between different tracking perspectives</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Data Structure" icon="tabler:table">
+    <p>Comprehensive monthly tracking with totals and projections.</p>
+    <ul>
+      <li><strong>Monthly Columns:</strong> Jan through Dec for complete yearly view</li>
+      <li><strong>Total Column:</strong> Sum of all operational days for the year</li>
+      <li><strong>Est. Operational Days:</strong> Projected operational days (contracts view)</li>
+      <li><strong>Pagination:</strong> Handle large datasets with "Showing 1 to 5 of X results"</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Manager Tracking View
+
+<Accordion>
+  <AccordionItem title="Manager Performance Overview" icon="tabler:users">
+    <p>Track operational days and performance by individual managers.</p>
+    <ul>
+      <li><strong>George Davies:</strong> 71 total operational days (Sep: 46, Oct: 13, Nov: 6, Dec: 6)</li>
+      <li><strong>Isla Morgan:</strong> 51 total operational days (Sep: 25, Oct: 14, Nov: 6, Dec: 6)</li>
+      <li><strong>Freya Turner:</strong> 11 total operational days (Oct: 5, Nov: 6)</li>
+      <li><strong>Poppy Reed:</strong> 11 total operational days (Sep: 1, Oct: 1, Nov: 4, Dec: 5)</li>
+      <li><strong>Andres Bosa:</strong> 9 total operational days (Oct: 9)</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Activity Patterns" icon="tabler:activity">
+    <p>Analyze operational activity patterns across managers.</p>
+    <ul>
+      <li><strong>Seasonal Variations:</strong> Higher activity in Sep-Oct, maintaining levels in Nov-Dec</li>
+      <li><strong>Manager Workload:</strong> George Davies leading with 71 total days</li>
+      <li><strong>Distribution Analysis:</strong> Workload spread across multiple managers</li>
+      <li><strong>Consistency Tracking:</strong> Some managers with consistent monthly activity</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Contract Tracking View
+
+<Accordion>
+  <AccordionItem title="Contract Performance Overview" icon="tabler:file-text">
+    <p>Monitor operational days and projections by specific contracts.</p>
+    <ul>
+      <li><strong>Arsenal FC - Traffic Management:</strong> 0 operational days, 35 estimated days</li>
+      <li><strong>Arsenal FC - Security & Stewarding:</strong> 0 operational days, 20 estimated days</li>
+      <li><strong>Chelsea - Traffic Management:</strong> 30 operational days, 100 estimated days</li>
+      <li><strong>Sample Contract 1:</strong> 18 operational days, 5 estimated days</li>
+      <li><strong>Test Shadow Tracker 1:</strong> 4 operational days, 1 estimated day</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Analysis" icon="tabler:chart-bar">
+    <p>Analyze contract performance and projections.</p>
+    <ul>
+      <li><strong>Active Contracts:</strong> Chelsea Traffic Management with 30 current operational days</li>
+      <li><strong>Projected Workload:</strong> Arsenal contracts with significant estimated operational days</li>
+      <li><strong>Performance vs. Estimates:</strong> Sample Contract 1 exceeding estimates (18 vs 5)</li>
+      <li><strong>Test Contracts:</strong> Shadow Tracker showing minimal activity</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Activity Timeline" icon="tabler:timeline">
+    <p>Monthly breakdown of contract operational activities.</p>
+    <ul>
+      <li><strong>Chelsea Traffic Management:</strong> Sep: 3 days, Oct: 27 days, Nov: 0 days</li>
+      <li><strong>Sample Contract 1:</strong> Jan: 1 day, Feb: 5 days, Oct: 3 days, Nov: 4 days, Dec: 5 days</li>
+      <li><strong>Test Shadow Tracker 1:</strong> Nov: 4 days (concentrated activity)</li>
+      <li><strong>Future Planning:</strong> Arsenal contracts showing 0 current but high estimated days</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Understanding the Data
+
+<Accordion>
+  <AccordionItem title="Operational Days Definition" icon="tabler:calendar">
+    <p>What constitutes an operational day in the tracking system.</p>
+    <ul>
+      <li><strong>Active Work Days:</strong> Days when operational activities are performed</li>
+      <li><strong>Contract Activities:</strong> Days of active contract execution</li>
+      <li><strong>Manager Engagement:</strong> Days when managers are actively overseeing operations</li>
+      <li><strong>Site Operations:</strong> Days when operational activities occur at specific sites</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Estimated Operational Days" icon="tabler:target">
+    <p>Understanding projections and planning estimates.</p>
+    <ul>
+      <li><strong>Contract Projections:</strong> Expected operational days for contract duration</li>
+      <li><strong>Planning Baseline:</strong> Estimates used for resource planning and scheduling</li>
+      <li><strong>Performance Comparison:</strong> Actual vs. estimated operational days</li>
+      <li><strong>Future Planning:</strong> Projected workload for upcoming periods</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Monthly Tracking" icon="tabler:calendar-month">
+    <p>Understanding monthly operational data patterns.</p>
+    <ul>
+      <li><strong>Seasonal Trends:</strong> Identify busy and quiet operational periods</li>
+      <li><strong>Resource Allocation:</strong> Plan staffing based on monthly patterns</li>
+      <li><strong>Contract Scheduling:</strong> Align contract activities with operational capacity</li>
+      <li><strong>Performance Monitoring:</strong> Track month-over-month operational changes</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Using the Operational Tracker
+
+<Accordion>
+  <AccordionItem title="Switching Between Views" icon="tabler:refresh">
+    <p>Navigate between manager and contract tracking views.</p>
+    <ul>
+      <li><strong>Manager View:</strong> Click "Operational Tracker" to view manager-focused data</li>
+      <li><strong>Contract View:</strong> Click "Operational Days Per Contract" to view contract-focused data</li>
+      <li><strong>Filter Options:</strong> Use "All Managers" or "All Contracts" dropdowns</li>
+      <li><strong>Data Comparison:</strong> Compare performance across different perspectives</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Filtering and Analysis" icon="tabler:filter">
+    <p>Focus on specific managers or contracts for detailed analysis.</p>
+    <ul>
+      <li><strong>Manager Filtering:</strong> Select specific managers from "All Managers" dropdown</li>
+      <li><strong>Contract Filtering:</strong> Choose specific contracts from "All Contracts" dropdown</li>
+      <li><strong>Focused Analysis:</strong> Drill down into individual performance</li>
+      <li><strong>Comparative Review:</strong> Compare different managers or contracts</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Performance Monitoring" icon="tabler:chart-dots">
+    <p>Monitor and analyze operational performance trends.</p>
+    <ul>
+      <li><strong>Total Tracking:</strong> Review total operational days for comprehensive performance</li>
+      <li><strong>Monthly Analysis:</strong> Identify patterns in monthly operational activity</li>
+      <li><strong>Trend Identification:</strong> Spot increasing or decreasing operational trends</li>
+      <li><strong>Planning Support:</strong> Use data for future operational planning</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Operational Insights
+
+<Accordion>
+  <AccordionItem title="Manager Performance Insights" icon="tabler:user-star">
+    <p>Key insights from manager operational tracking.</p>
+    <ul>
+      <li><strong>Top Performers:</strong> George Davies (71 days) and Isla Morgan (51 days) leading operational activity</li>
+      <li><strong>Activity Distribution:</strong> Operational workload spread across multiple managers</li>
+      <li><strong>Seasonal Patterns:</strong> Higher activity in September and October periods</li>
+      <li><strong>Consistency Levels:</strong> Some managers maintaining steady monthly activity</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Contract Performance Insights" icon="tabler:building">
+    <p>Key insights from contract operational tracking.</p>
+    <ul>
+      <li><strong>Active Contracts:</strong> Chelsea Traffic Management showing highest current activity (30 days)</li>
+      <li><strong>Future Workload:</strong> Arsenal contracts with significant projected operational days</li>
+      <li><strong>Performance Variance:</strong> Some contracts exceeding estimates (Sample Contract 1)</li>
+      <li><strong>Planning Accuracy:</strong> Compare actual vs. estimated operational days</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Operational Planning" icon="tabler:calendar-plus">
+    <p>Use tracker data for operational planning and resource allocation.</p>
+    <ul>
+      <li><strong>Resource Planning:</strong> Allocate managers based on operational day patterns</li>
+      <li><strong>Contract Scheduling:</strong> Plan contract activities based on capacity</li>
+      <li><strong>Workload Balancing:</strong> Distribute operational days across managers</li>
+      <li><strong>Future Projections:</strong> Plan for estimated operational day requirements</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Integration Points
+
+:::note[System Integration]
+Operational Tracker integrates with:
+- **Allocated Contracts:** Contract operational day tracking
+- **Assigned Events:** Event-related operational activities
+- **Team Management:** Manager assignment and operational coordination
+- **Rota Management:** Schedule planning based on operational requirements
+:::
+
+## Best Practices
+
+:::tip[Operational Tracking Best Practices]
+- **Regular Monitoring:** Check operational tracker weekly for performance trends
+- **Comparative Analysis:** Use both manager and contract views for comprehensive insights
+- **Resource Planning:** Use operational day data for staffing and resource decisions
+- **Performance Review:** Regular review of actual vs. estimated operational days
+- **Trend Analysis:** Identify seasonal patterns for better operational planning
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Data not showing for specific periods" icon="tabler:alert-triangle">
+    <p>Resolve issues with missing operational data.</p>
+    <ul>
+      <li>Check if operational activities were properly recorded for those periods</li>
+      <li>Verify manager assignments and contract allocations</li>
+      <li>Ensure data synchronization is up to date</li>
+      <li>Contact Ops Support if data appears to be missing</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Filter not showing expected results" icon="tabler:filter-off">
+    <p>Fix issues with manager or contract filtering.</p>
+    <ul>
+      <li>Check spelling and selection in dropdown filters</li>
+      <li>Verify the manager or contract has operational data for the period</li>
+      <li>Clear filters and reselect to refresh results</li>
+      <li>Ensure you have access to view the specific manager or contract data</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Discrepancies between actual and estimated days" icon="tabler:math">
+    <p>Understand and resolve operational day estimate variances.</p>
+    <ul>
+      <li>Review contract scope changes that might affect estimates</li>
+      <li>Check for additional operational activities not included in estimates</li>
+      <li>Verify accuracy of original operational day estimates</li>
+      <li>Update estimates based on actual operational patterns</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="View switching not working" icon="tabler:refresh-off">
+    <p>Resolve issues with switching between tracking views.</p>
+    <ul>
+      <li>Refresh the page and try switching views again</li>
+      <li>Check browser compatibility and clear cache if needed</li>
+      <li>Verify you have access to both manager and contract tracking views</li>
+      <li>Contact admin if view switching consistently fails</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Getting Started
+
+To effectively use the Operational Tracker:
+
+1. **Access the feature** via Overview → Operational Tracker
+2. **Choose your view** between manager tracking and contract tracking
+3. **Use filters** to focus on specific managers or contracts
+4. **Review monthly data** to understand operational patterns
+5. **Analyze totals** for overall performance assessment
+6. **Compare estimates** with actual operational days (contracts view)
+7. **Use insights** for operational planning and resource allocation
+
+:::warning[Data Accuracy]
+Operational tracking data should be reviewed regularly for accuracy. Ensure operational activities are properly recorded and assigned to maintain reliable tracking and planning information.
+:::
