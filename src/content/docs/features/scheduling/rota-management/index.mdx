@@ -1,0 +1,250 @@
+---
+title: Rota Management
+description: Complete guide to operational rota management, scheduling coordination, and workforce planning
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
+
+Comprehensive rota management system for coordinating operational schedules, allocating contracts, mapping events, and planning workforce succession.
+
+## Who can use this feature
+
+| Role | View Rotas | Create Rotas | Edit Rotas | Approve | Manage Contracts | Plan Succession |
+|------|------------|--------------|------------|---------|------------------|-----------------|
+| Admin | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Ops Manager | Team only | ✓ | ✓ | ✗ | Limited | ✗ |
+
+## What is Rota Management?
+
+Rota Management is the central system for coordinating operational schedules across all levels of the organization. It integrates multiple components to ensure optimal workforce allocation, contract fulfillment, and operational continuity.
+
+## Core Components
+
+<CardGrid>
+  <Card title="Event Mapping" icon="tabler:map-pin">
+    Strategic alignment of operational events with available resources and personnel.
+    
+    <LinkCard 
+      title="Event Mapping →" 
+      href="/features/scheduling/rota-management/event-mapping"
+      description="Map events to resources and personnel"
+    />
+  </Card>
+
+  <Card title="Contract Allocation" icon="tabler:file-text">
+    Systematic assignment of contracts to qualified managers and operational teams.
+    
+    <LinkCard 
+      title="Contract Allocation →" 
+      href="/features/scheduling/rota-management/contract-allocation"
+      description="Allocate contracts to teams and managers"
+    />
+  </Card>
+
+  <Card title="Succession Planning" icon="tabler:users">
+    Strategic planning for workforce continuity and role transitions.
+    
+    <LinkCard 
+      title="Succession Planning →" 
+      href="/features/scheduling/rota-management/succession-planning"
+      description="Plan for role transitions and coverage"
+    />
+  </Card>
+</CardGrid>
+
+## System Architecture
+
+<Accordion>
+  <AccordionItem title="Rota Management Hierarchy" icon="tabler:hierarchy">
+    <p>The rota management system operates on multiple interconnected levels:</p>
+    <ul>
+      <li><strong>Strategic Level:</strong> Long-term planning and succession management</li>
+      <li><strong>Operational Level:</strong> Contract allocation and event coordination</li>
+      <li><strong>Tactical Level:</strong> Daily scheduling and resource assignment</li>
+      <li><strong>Administrative Level:</strong> Data management and system integration</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Feature Integration Map" icon="tabler:network">
+    <p>How rota management components work together:</p>
+    <ul>
+      <li><strong>Event Mapping ↔ Contract Allocation:</strong> Events drive contract requirements</li>
+      <li><strong>Contract Allocation ↔ Succession Planning:</strong> Contracts inform succession needs</li>
+      <li><strong>Succession Planning ↔ Event Mapping:</strong> Future capabilities shape event planning</li>
+      <li><strong>All Components ↔ Dashboard:</strong> Real-time monitoring and oversight</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Rota Management Workflow
+
+<Accordion>
+  <AccordionItem title="1. Strategic Planning Phase" >
+    <p><strong>Succession Planning leads the strategic direction:</strong></p>
+    <ul>
+      <li>Identify long-term operational requirements</li>
+      <li>Assess current workforce capabilities and gaps</li>
+      <li>Develop succession plans for key roles</li>
+      <li>Create training and development pathways</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="2. Contract Planning Phase" icon="tabler:clipboard-list">
+    <p><strong>Contract Allocation translates strategy into operations:</strong></p>
+    <ul>
+      <li>Review upcoming contracts and requirements</li>
+      <li>Allocate contracts based on team capabilities</li>
+      <li>Ensure adequate coverage for all contract obligations</li>
+      <li>Coordinate with succession planning for future needs</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="3. Event Coordination Phase" icon="tabler:calendar-event">
+    <p><strong>Event Mapping ensures operational delivery:</strong></p>
+    <ul>
+      <li>Map specific events to allocated contracts</li>
+      <li>Assign personnel based on contract allocations</li>
+      <li>Coordinate resources and logistics</li>
+      <li>Monitor event execution and performance</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="4. Monitoring & Adjustment Phase" icon="tabler:adjustments">
+    <p><strong>Continuous optimization across all components:</strong></p>
+    <ul>
+      <li>Track performance against planned rotas</li>
+      <li>Identify areas for improvement</li>
+      <li>Adjust allocations based on operational feedback</li>
+      <li>Update succession plans based on performance data</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Integration with Other Systems
+
+<Accordion>
+  <AccordionItem title="Dashboard Integration" icon="tabler:dashboard">
+    <p>Real-time monitoring and oversight capabilities:</p>
+    <ul>
+      <li><strong>Operational Metrics:</strong> Track rota performance and utilization</li>
+      <li><strong>Manager Workload:</strong> Monitor allocation balance across teams</li>
+      <li><strong>Contract Status:</strong> View contract fulfillment and upcoming requirements</li>
+      <li><strong>Event Timeline:</strong> Visualize upcoming events and resource allocation</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Tracking Systems" icon="tabler:chart-line">
+    <p>Data flow between rota management and tracking systems:</p>
+    <ul>
+      <li><strong>Operational Tracker:</strong> Rota performance feeds into operational day tracking</li>
+      <li><strong>CIPHR Integration:</strong> Rota data synchronizes with HR systems</li>
+      <li><strong>Lieu & Holidays:</strong> Leave management impacts rota availability</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Management Systems" icon="tabler:settings">
+    <p>Administrative integration for comprehensive management:</p>
+    <ul>
+      <li><strong>EOS Actions:</strong> Rota requirements generate operational tasks</li>
+      <li><strong>Request Management:</strong> Rota changes flow through request system</li>
+      <li><strong>Team Management:</strong> Team structure determines rota capabilities</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Key Benefits
+
+<Accordion>
+  <AccordionItem title="Operational Excellence" icon="tabler:target">
+    <ul>
+      <li><strong>Optimized Resource Allocation:</strong> Right people, right place, right time</li>
+      <li><strong>Contract Fulfillment:</strong> Consistent delivery of contractual obligations</li>
+      <li><strong>Reduced Conflicts:</strong> Systematic approach minimizes scheduling conflicts</li>
+      <li><strong>Performance Tracking:</strong> Data-driven insights for continuous improvement</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Strategic Advantages" icon="tabler:trophy">
+    <ul>
+      <li><strong>Workforce Continuity:</strong> Succession planning ensures operational stability</li>
+      <li><strong>Scalability:</strong> System grows with organizational needs</li>
+      <li><strong>Risk Mitigation:</strong> Proactive planning reduces operational risks</li>
+      <li><strong>Competitive Edge:</strong> Efficient operations support business growth</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Common Workflows
+
+<Accordion>
+  <AccordionItem title="New Contract Onboarding" icon="tabler:file-plus">
+    <ol>
+      <li><strong>Contract Assessment:</strong> Review requirements and scope</li>
+      <li><strong>Capability Mapping:</strong> Assess team capabilities against requirements</li>
+      <li><strong>Resource Allocation:</strong> Assign managers and teams to contract</li>
+      <li><strong>Event Planning:</strong> Map contract events to operational calendar</li>
+      <li><strong>Succession Planning:</strong> Identify development needs for contract delivery</li>
+    </ol>
+  </AccordionItem>
+
+  <AccordionItem title="Manager Transition" icon="tabler:user-check">
+    <ol>
+      <li><strong>Succession Review:</strong> Identify replacement candidates</li>
+      <li><strong>Contract Transfer:</strong> Reassign contract responsibilities</li>
+      <li><strong>Event Remapping:</strong> Update event assignments</li>
+      <li><strong>Training Delivery:</strong> Execute knowledge transfer</li>
+      <li><strong>Performance Monitoring:</strong> Track transition success</li>
+    </ol>
+  </AccordionItem>
+
+  <AccordionItem title="Operational Scaling" icon="tabler:trending-up">
+    <ol>
+      <li><strong>Demand Analysis:</strong> Assess increased operational requirements</li>
+      <li><strong>Capacity Planning:</strong> Determine additional resource needs</li>
+      <li><strong>Recruitment Strategy:</strong> Plan for workforce expansion</li>
+      <li><strong>Contract Expansion:</strong> Scale existing contracts or add new ones</li>
+      <li><strong>System Optimization:</strong> Adjust processes for increased scale</li>
+    </ol>
+  </AccordionItem>
+</Accordion>
+
+## Getting Started
+
+<CardGrid>
+  <LinkCard 
+    title="Plan Contract Allocation" 
+    href="/features/scheduling/rota-management/contract-allocation"
+    description="Start by allocating contracts to build your operational foundation"
+    icon="file-text"
+  />
+  <LinkCard 
+    title="Map Upcoming Events" 
+    href="/features/scheduling/rota-management/event-mapping"
+    description="Coordinate events with your contract allocations"
+    icon="map-pin"
+  />
+  <LinkCard 
+    title="Develop Succession Plans" 
+    href="/features/scheduling/rota-management/succession-planning"
+    description="Ensure long-term operational continuity"
+    icon="users"
+  />
+</CardGrid>
+
+## Best Practices
+
+:::tip[Rota Management Success]
+- **Start with Strategy:** Begin with succession planning to understand long-term needs
+- **Align Resources:** Ensure contract allocations match team capabilities
+- **Coordinate Events:** Map events systematically to avoid conflicts
+- **Monitor Performance:** Use tracking data to optimize rota effectiveness
+- **Plan Transitions:** Proactive succession planning prevents operational disruption
+:::
+
+:::note[System Integration]
+Rota Management works best when integrated with other operational systems. Ensure data flows between tracking, management, and scheduling systems for optimal performance.
+:::

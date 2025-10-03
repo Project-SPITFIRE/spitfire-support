@@ -4,8 +4,8 @@ description: Admin interface for managing system roles, permissions, and access 
 ---
 
 import { Badge } from '@astrojs/starlight/components';
-import Accordion from '../../../components/Accordion.astro';
-import AccordionItem from '../../../components/AccordionItem.astro';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
 
 The Configuration Centre provides administrators with comprehensive control over system roles, permissions, and access management. Create custom roles, manage existing permissions, and configure system-wide access controls.
 
@@ -262,7 +262,7 @@ The Configuration Centre is the central hub for:
 - **Backup Configurations:** Keep records of role configurations for reference
 :::
 
-:::warning[Security Considerations]
+:::caution[Security Considerations]
 - Never grant more permissions than necessary for a role
 - Regularly review high-privilege roles like Admin and Ops Support
 - Monitor permission changes through system logs

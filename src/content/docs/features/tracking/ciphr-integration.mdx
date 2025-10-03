@@ -1,0 +1,120 @@
+---
+title: CIPHR Integration
+description: Upload and process CIPHR holiday data files with conflict resolution and status tracking
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
+
+
+Upload CIPHR holiday data files and review processed data with automated conflict detection and status tracking.
+
+## Who can use this feature
+
+| Role | Upload Files | Review Data | Resolve Conflicts | Export Data |
+|------|--------------|-------------|-------------------|-------------|
+| Admin | ✓ | ✓ | ✓ | ✓ |
+| Ops Support | ✓ | ✓ | ✓ | ✓ |
+| Ops Manager | ✓ | ✓ | ✓ | ✓ |
+
+## File Upload
+
+<Accordion>
+  <AccordionItem title="Supported File Types" icon="tabler:file">
+    <ul>
+      <li><strong>File formats:</strong> .xlsx files up to 10MB</li>
+      <li><strong>Upload method:</strong> Drag and drop or click to browse</li>
+      <li><strong>Processing:</strong> Files are automatically processed after upload</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Upload Process" icon="tabler:upload">
+    <ol>
+      <li>Drag file to upload area or click "Drop your file here, or click to browse"</li>
+      <li>Select .xlsx file (max 10MB)</li>
+      <li>Click "Upload" button</li>
+      <li>System processes file and displays results in CIPHR Data Review section</li>
+    </ol>
+  </AccordionItem>
+</Accordion>
+
+## CIPHR Data Review
+
+<Accordion>
+  <AccordionItem title="Data Table Columns" icon="tabler:table">
+    <ul>
+      <li><strong>Employee Name:</strong> Staff member name from CIPHR data</li>
+      <li><strong>Absence Type:</strong> Type of absence (e.g., "Absence")</li>
+      <li><strong>Start Date:</strong> Absence start date</li>
+      <li><strong>End Date:</strong> Absence end date</li>
+      <li><strong>CIPHR Status:</strong> Processing status with color coding</li>
+      <li><strong>Schedule Status:</strong> Conflict status with existing schedules</li>
+      <li><strong>Line Manager:</strong> Assigned manager for the employee</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Status Indicators" icon="tabler:traffic-lights">
+    <p><strong>CIPHR Status:</strong></p>
+    <ul>
+      <li><Badge text="Pending" variant="caution" /> Awaiting processing</li>
+      <li><Badge text="Approved" variant="success" /> Successfully processed</li>
+    </ul>
+    
+    <p><strong>Schedule Status:</strong></p>
+    <ul>
+      <li><Badge text="Conflict" variant="danger" /> Conflicts with existing schedule</li>
+      <li><strong>Verified by CIPHR:</strong> No scheduling conflicts detected</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Current Data Examples
+
+| Employee | Dates | CIPHR Status | Schedule Status | Manager |
+|----------|-------|--------------|-----------------|---------|
+| George Davies | Aug 12-26, 2026 | Pending | Conflict | Freya Turner |
+| Grace Mason | Nov 18, 2025 | Approved | Verified | Oliver Bennett |
+| George Davies | Oct 22-26, 2025 | Approved | Verified | Freya Turner |
+
+## Conflict Resolution
+
+<Accordion>
+  <AccordionItem title="Handling Conflicts" icon="tabler:alert-triangle">
+    <ul>
+      <li><strong>Conflict Detection:</strong> System automatically identifies scheduling conflicts</li>
+      <li><strong>Status Filtering:</strong> Use "Filter by CIPHR status" to focus on conflicts</li>
+      <li><strong>Manual Review:</strong> Review conflicted entries and resolve manually</li>
+      <li><strong>Manager Coordination:</strong> Contact line managers for conflict resolution</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+## Best Practices
+
+:::tip[CIPHR Integration Tips]
+- **File Format:** Ensure CIPHR exports are in .xlsx format
+- **Regular Uploads:** Process CIPHR data regularly to minimize conflicts
+- **Conflict Resolution:** Address conflicts promptly to maintain schedule accuracy
+- **Manager Communication:** Coordinate with line managers on scheduling conflicts
+:::
+
+## Troubleshooting
+
+<Accordion>
+  <AccordionItem title="Upload Issues" icon="tabler:upload">
+    <ul>
+      <li>Check file is .xlsx format and under 10MB</li>
+      <li>Ensure stable internet connection</li>
+      <li>Try refreshing page and uploading again</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Data Not Appearing" icon="tabler:table">
+    <ul>
+      <li>Wait for file processing to complete</li>
+      <li>Check if file contains valid CIPHR data</li>
+      <li>Refresh page to see updated results</li>
+    </ul>
+  </AccordionItem>
+</Accordion>

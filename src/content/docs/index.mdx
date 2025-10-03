@@ -59,22 +59,22 @@ import { Badge } from '@astrojs/starlight/components';
     <div class="space-y-2 mt-4">
       <LinkCard
         title="Request Management"
-        href="/features/request-management"
+        href="/features/management/request-management"
         description="Submit, track, and manage operational requests"
       />
       <LinkCard
         title="EOS Tasks"
-        href="/features/eos-tasks"
+        href="/features/management/eos-actions"
         description="Coordinate operational tasks and subtasks"
       />
       <LinkCard
         title="Schedules & Rota"
-        href="/features/schedules"
+        href="/features/scheduling/schedules"
         description="Manage team schedules and shift planning"
       />
       <LinkCard
         title="User & Team Management"
-        href="/features/user-team-management"
+        href="/features/management/user-team-management"
         description="Organize teams and manage user access"
       />
     </div>
@@ -94,9 +94,9 @@ import { Badge } from '@astrojs/starlight/components';
       Manage users, teams, and system configuration
     </p>
     <div class="space-y-1">
-      <LinkCard title="Create User Accounts" href="/features/create-user" />
-      <LinkCard title="User & Team Management" href="/features/user-team-management" />
-      <LinkCard title="Configuration Centre" href="/features/configuration-centre" />
+      <LinkCard title="Create User Accounts" href="/features/management/create-user" />
+      <LinkCard title="User & Team Management" href="/features/management/user-team-management" />
+      <LinkCard title="Configuration Centre" href="/features/management/configuration-centre" />
     </div>
   </Card>
 
@@ -109,9 +109,9 @@ import { Badge } from '@astrojs/starlight/components';
       Submit requests, manage EOS tasks, and coordinate teams
     </p>
     <div class="space-y-1">
-      <LinkCard title="Request Management" href="/features/request-management" />
-      <LinkCard title="EOS Tasks" href="/features/eos-tasks" />
-      <LinkCard title="Rota Management" href="/features/rota-management" />
+      <LinkCard title="Request Management" href="/features/management/request-management" />
+      <LinkCard title="EOS Tasks" href="/features/management/eos-actions" />
+      <LinkCard title="Rota Management" href="/features/scheduling/rota-management" />
     </div>
   </Card>
 
@@ -124,9 +124,9 @@ import { Badge } from '@astrojs/starlight/components';
       Process requests, manage workflows, and provide operational support
     </p>
     <div class="space-y-1">
-      <LinkCard title="Request Management" href="/features/request-management" />
-      <LinkCard title="EOS Tasks" href="/features/eos-tasks" />
-      <LinkCard title="Schedules" href="/features/schedules" />
+      <LinkCard title="Request Management" href="/features/management/request-management" />
+      <LinkCard title="EOS Tasks" href="/features/management/eos-actions" />
+      <LinkCard title="Schedules" href="/features/scheduling/schedules" />
     </div>
   </Card>
 </CardGrid>
@@ -136,25 +136,25 @@ import { Badge } from '@astrojs/starlight/components';
 <CardGrid>
   <LinkCard
     title="Submit a Request"
-    href="/features/request-management"
+    href="/features/scheduling/rota-management"
     description="Start here to request resources, support, or operational changes"
     icon="document"
   />
   <LinkCard
     title="Manage EOS Tasks"
-    href="/features/eos-tasks"
+href="/features/management/eos-actions"
     description="View and update operational tasks assigned to you"
     icon="list-format"
   />
   <LinkCard
     title="Create User Account"
-    href="/features/create-user"
+    href="/features/management/create-user"
     description="Add new team members to the system (Admin only)"
     icon="add-document"
   />
   <LinkCard
     title="Manage Teams"
-    href="/features/user-team-management"
+href="/features/management/user-team-management"
     description="Organize teams and manage user access"
     icon="setting"
   />

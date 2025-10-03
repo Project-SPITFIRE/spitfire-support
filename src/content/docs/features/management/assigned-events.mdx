@@ -4,8 +4,8 @@ description: View and manage events assigned to your operational management with
 ---
 
 import { Badge } from '@astrojs/starlight/components';
-import Accordion from '../../../components/Accordion.astro';
-import AccordionItem from '../../../components/AccordionItem.astro';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
 
 Track and manage operational events assigned to your management oversight with detailed history, succession planning, and location coordination.
 
@@ -16,9 +16,8 @@ Track and manage operational events assigned to your management oversight with d
 | Admin | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ops Support | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ops Manager | ✓ | ✓ | Limited | ✓ | ✓ |
-{/* | Assistant Ops Manager | ✓ | ✓ | View only | ✓ | View only |
-| Head Of Operations | ✓ | ✓ | ✓ | ✓ | ✓ |
-| All Others | ✗ | ✗ | ✗ | ✗ | ✗ | */}
+{/* | Head Of Operations | ✓ | ✓ | ✓ | ✓ | ✓ |
+| All Others | ✗ | ✗ | ✗ | ✗ | ✗ | */} 
 
 ## What are Assigned Events?
 
@@ -344,6 +343,7 @@ To effectively use Assigned Events:
 6. **Check event locations** for coordination planning
 7. **Plan resources** based on event schedules and requirements
 
-:::warning[Event Management Responsibility]
-As an assigned event manager, you are responsible for ensuring successful event execution. Coordinate with succession managers and teams to deliver high-quality operational support for all assigned events.
+:::tip[Event Management Responsibility]
+As an assigned event manager, you are responsible for ensuring successful event execution. 
+Coordinate with succession managers and teams to deliver high-quality operational support for all assigned events.
 :::
