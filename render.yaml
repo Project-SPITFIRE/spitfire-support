@@ -3,7 +3,7 @@ services:
     name: spitfire-docs-staging
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npx serve dist -s -p $PORT
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
