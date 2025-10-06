@@ -22,10 +22,9 @@ import starlightThemeNova from "starlight-theme-nova";
 import { ion } from "starlight-ion-theme";
 import starlightLinksValidator from "starlight-links-validator";
 
-const baseURL = process.env.PUBLIC_BASE_PATH || "/learning-materials";
-
 //https://astro.build/config
 export default defineConfig({
+  base: "learning-materials/",
   integrations: [
     UnoCSS(),
     icon(),
@@ -56,23 +55,22 @@ export default defineConfig({
               {
                 icon: "i-ph:hand-waving",
                 label: "Introduction",
-                slug: "learning-materials/getting-started/introduction",
+                slug: "getting-started/introduction",
               },
-
               {
                 icon: "i-ph:cube",
                 label: "System Overview",
-                slug: "learning-materials/getting-started/system-overview",
+                slug: "getting-started/system-overview",
               },
               {
                 icon: "i-ph:lock-key-open-thin",
                 label: "Authentication",
-                slug: "learning-materials/getting-started/authentication",
+                slug: "getting-started/authentication",
               },
               {
                 icon: "i-ph:lightbulb-light",
                 label: "First Steps",
-                slug: "learning-materials/getting-started/first-steps",
+                slug: "getting-started/first-steps",
               },
             ],
           },
@@ -81,16 +79,16 @@ export default defineConfig({
             items: [
               {
                 label: "Role Overview",
-                slug: "learning-materials/roles/overview",
+                slug: "roles/overview",
               },
-              { label: "Admin", slug: "learning-materials/roles/admin" },
+              { label: "Admin", slug: "roles/admin" },
               {
                 label: "Operations Manager",
-                slug: "learning-materials/roles/ops-manager",
+                slug: "roles/ops-manager",
               },
               {
                 label: "Operations Support",
-                slug: "learning-materials/roles/ops-support",
+                slug: "roles/ops-support",
               },
             ],
           },
@@ -99,26 +97,26 @@ export default defineConfig({
             items: [
               {
                 label: "Overview",
-                slug: "learning-materials/features/overview",
+                slug: "features/overview",
               },
               {
                 label: "Tracking",
                 items: [
                   {
                     label: "Dashboard",
-                    slug: "learning-materials/features/tracking/dashboard",
+                    slug: "features/tracking/dashboard",
                   },
                   {
                     label: "Operational Tracker",
-                    slug: "learning-materials/features/tracking/ciphr-integration",
+                    slug: "features/tracking/ciphr-integration",
                   },
                   {
                     label: "CIPHR Integration",
-                    slug: "learning-materials/features/tracking/operational-tracker",
+                    slug: "features/tracking/operational-tracker",
                   },
                   {
                     label: "Lieu & Holidays",
-                    slug: "learning-materials/features/tracking/lieu-holidays",
+                    slug: "features/tracking/lieu-holidays",
                   },
                 ],
               },
@@ -130,26 +128,25 @@ export default defineConfig({
                     items: [
                       {
                         label: "Overview",
-                        slug: "learning-materials/features/scheduling/rota-management",
+                        slug: "features/scheduling/rota-management",
                       },
                       {
                         label: "Event Mapping",
-                        slug: "learning-materials/features/scheduling/rota-management/event-mapping",
+                        slug: "features/scheduling/rota-management/event-mapping",
                       },
                       {
                         label: "Contract Allocation",
-                        slug: "learning-materials/features/scheduling/rota-management/contract-allocation",
+                        slug: "features/scheduling/rota-management/contract-allocation",
                       },
                       {
                         label: "Succession Planning",
-                        slug: "learning-materials/features/scheduling/rota-management/succession-planning",
+                        slug: "features/scheduling/rota-management/succession-planning",
                       },
                     ],
                   },
-
                   {
                     label: "Schedules",
-                    slug: "learning-materials/features/scheduling/schedules",
+                    slug: "features/scheduling/schedules",
                   },
                 ],
               },
@@ -158,31 +155,31 @@ export default defineConfig({
                 items: [
                   {
                     label: "Allocated Contracts",
-                    slug: "learning-materials/features/management/allocated-contracts",
+                    slug: "features/management/allocated-contracts",
                   },
                   {
                     label: "Assigned Events",
-                    slug: "learning-materials/features/management/assigned-events",
+                    slug: "features/management/assigned-events",
                   },
                   {
                     label: "EOS Actions",
-                    slug: "learning-materials/features/management/eos-actions",
+                    slug: "features/management/eos-actions",
                   },
                   {
                     label: "Request Management",
-                    slug: "learning-materials/features/management/request-management",
+                    slug: "features/management/request-management",
                   },
                   {
                     label: "Create User Accounts",
-                    slug: "learning-materials/features/management/create-user",
+                    slug: "features/management/create-user",
                   },
                   {
                     label: "User & Team Management",
-                    slug: "learning-materials/features/management/user-team-management",
+                    slug: "features/management/user-team-management",
                   },
                   {
                     label: "Configuration Centre",
-                    slug: "learning-materials/features/management/configuration-centre",
+                    slug: "features/management/configuration-centre",
                   },
                 ],
               },
@@ -193,15 +190,15 @@ export default defineConfig({
             items: [
               {
                 label: "Glossary",
-                slug: "learning-materials/references/glossary",
+                slug: "references/glossary",
               },
               {
                 label: "Status Definitions",
-                slug: "learning-materials/references/status-definitions",
+                slug: "references/status-definitions",
               },
               {
                 label: "Troubleshooting",
-                slug: "learning-materials/references/troubleshooting",
+                slug: "references/troubleshooting",
               },
             ],
           },
