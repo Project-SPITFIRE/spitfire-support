@@ -33,6 +33,7 @@
     "starlight-image-zoom": "^0.13.0",
     "starlight-ion-theme": "^2.3.1",
     "starlight-links-validator": "^0.18.0",
+    "starlight-plugin-icons": "^1.1.3",
     "starlight-showcases": "^0.3.0",
     "starlight-sidebar-swipe": "^0.1.0",
     "starlight-sidebar-topics": "^0.6.1",
@@ -45,6 +46,10 @@
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "husky": "^9.1.7"
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/solar": "^1.2.4",
+    "@unocss/astro": "^66.5.2",
+    "husky": "^9.1.7",
+    "unocss": "^66.5.2"
   }
 }
