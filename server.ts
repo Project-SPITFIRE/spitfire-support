@@ -31,22 +31,26 @@ app.use(
 );
 
 // Handle SPA routing - serve index.html for HTML routes only
+// Use Express parameter syntax instead of wildcard
 app.get(
-  "/learning-materials/*",
+  "/learning-materials/:path(*)",
   (req: Request, res: Response, next: NextFunction) => {
+    const requestPath = req.path;
+
     // Skip serving index.html for asset requests
     if (
-      req.path.includes("/_astro/") ||
-      req.path.includes(".css") ||
-      req.path.includes(".js") ||
-      req.path.includes(".svg") ||
-      req.path.includes(".png") ||
-      req.path.includes(".jpg") ||
-      req.path.includes(".ico") ||
-      req.path.includes(".woff")
+      requestPath.includes("/_astro/") ||
+      requestPath.includes(".css") ||
+      requestPath.includes(".js") ||
+      requestPath.includes(".svg") ||
+      requestPath.includes(".png") ||
+      requestPath.includes(".jpg") ||
+      requestPath.includes(".ico") ||
+      requestPath.includes(".woff")
     ) {
       return next(); // Let express.static handle it
     }
+
     res.sendFile(join(__dirname, "dist", "index.html"));
   },
 );
