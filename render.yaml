@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: spitfire-docs-staging
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve dist -s -p $PORT
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PUBLIC_BASE_PATH
+        value: /learning-materials
+    routes:
+      - type: rewrite
+        source: /learning-materials/*
+        destination: /learning-materials/index.html
+      - type: rewrite
+        source: /learning-materials
+        destination: /learning-materials/index.html
+      - type: redirect
+        source: /
+        destination: /learning-materials
