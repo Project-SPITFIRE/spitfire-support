@@ -9,8 +9,8 @@ import starlightImageZoom from "starlight-image-zoom";
 import starlightThemeRapide from "starlight-theme-rapide";
 
 export default defineConfig({
-  base: "/learning-materials",
-  trailingSlash: "always",
+  base: "/learning-materials/",
+  trailingSlash: "never",
   integrations: [
     icon(),
     starlight({
