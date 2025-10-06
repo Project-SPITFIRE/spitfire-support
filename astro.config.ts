@@ -25,7 +25,7 @@ import starlightLinksValidator from "starlight-links-validator";
 //https://astro.build/config
 export default defineConfig({
   base: "learning-materials/",
-  trailingSlash: "always",
+  trailingSlash: "never",
   integrations: [
     UnoCSS(),
     icon(),
