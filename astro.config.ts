@@ -83,7 +83,7 @@ export default defineConfig({
                 label: "Role Overview",
                 slug: "learning-materials/roles/overview",
               },
-              { label: "Admin", slug: "roles/admin" },
+              { label: "Admin", slug: "learning-materials/roles/admin" },
               {
                 label: "Operations Manager",
                 slug: "learning-materials/roles/ops-manager",
