@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 
 // Starlight plugins:
@@ -185,4 +186,8 @@ export default defineConfig({
       ],
     }),
   ],
+  vite: {
+    // @ts-expect-error
+    plugins: [tailwindcss()],
+  },
 });
