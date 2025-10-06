@@ -31,9 +31,9 @@ app.use(
 );
 
 // Handle SPA routing - serve index.html for HTML routes only
-// Use Express parameter syntax instead of wildcard
+// Use regex pattern for wildcard matching
 app.get(
-  "/learning-materials/:path(*)",
+  /^\/learning-materials\/.*/,
   (req: Request, res: Response, next: NextFunction) => {
     const requestPath = req.path;
 
