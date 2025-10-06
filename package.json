@@ -38,8 +38,6 @@
     "starlight-plugin-icons": "^1.1.3",
     "starlight-showcases": "^0.3.0",
     "starlight-sidebar-swipe": "^0.1.0",
-    "starlight-sidebar-topics": "^0.6.1",
-    "starlight-sidebar-topics-dropdown": "^0.5.1",
     "starlight-theme-flexoki": "^0.2.0",
     "starlight-theme-galaxy": "^0.5.1",
     "starlight-theme-nova": "^0.9.5",
@@ -51,9 +49,7 @@
   "devDependencies": {
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/solar": "^1.2.4",
-    "@unocss/astro": "^66.5.2",
     "husky": "^9.1.7",
-    "serve": "^14.2.5",
-    "unocss": "^66.5.2"
+    "serve": "^14.2.5"
   }
 }
