@@ -45,7 +45,7 @@ export default defineConfig({
             actions: ["copy", "view"],
           }),
         ],
-        title: "Standard CSP Rota - Learning Materials",
+        title: "CSP Rota - Learning Materials",
         logo: {
           src: "@/assets/csp-logo.svg",
           alt: "Spitfire Logo",
