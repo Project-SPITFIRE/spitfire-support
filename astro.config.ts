@@ -40,7 +40,7 @@ export default defineConfig({
           // viewTransitions(),
           starlightImageZoom(),
           starlightSidebarSwipe(),
-          starlightLinksValidator(),
+          //starlightLinksValidator(),
           starlightContextualMenu({
             actions: ["copy", "view"],
           }),
