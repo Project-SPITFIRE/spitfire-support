@@ -3,13 +3,13 @@ name: Documentation Validation
 on:
   pull_request:
     paths:
-      - "src/content/docs/**"
+      - "src/content/docs/learning-materials/**"
       - "*.md"
       - "*.mdx"
   push:
     branches: [main]
     paths:
-      - "src/content/docs/**"
+      - "src/content/docs/learning-materials/**"
       - "*.md"
       - "*.mdx"
 

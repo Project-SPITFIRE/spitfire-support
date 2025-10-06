@@ -41,15 +41,16 @@ rota-docs/
 ├── public/                 # Static assets (images, icons, etc.)
 ├── src/
 │   ├── content/
-│   │   └── docs/          # All documentation content
-│   │       ├── index.mdx  # Homepage content
-│   │       ├── roles/     # Role-specific guides
-│   │       ├── features/  # Feature documentation
-│   │       ├── workflows/ # Process workflows
-│   │       ├── guides/    # User guides and tutorials
-│   │       └── policies/  # Internal policies
-│   └── assets/            # Images and other assets
-├── astro.config.mjs       # Astro configuration
+│   │   └── docs/
+│   │       └── learning-materials/  # All documentation content
+│   │           ├── index.mdx        # Homepage content
+│   │           ├── roles/           # Role-specific guides
+│   │           ├── features/        # Feature documentation
+│   │           ├── workflows/       # Process workflows
+│   │           ├── guides/          # User guides and tutorials
+│   │           └── policies/        # Internal policies
+│   └── assets/                      # Images and other assets
+├── astro.config.mjs                 # Astro configuration
 ├── package.json
 └── README.md
 ```
@@ -158,7 +159,7 @@ Each role should have:
 
 1. **Create a new Markdown file**
    ```bash
-   touch src/content/docs/section/new-page.md
+   touch src/content/docs/learning-materials/section/new-page.md
    ```
 
 2. **Add frontmatter**
@@ -310,7 +311,7 @@ For questions about:
 ## 📚 Resources
 
 - [Astro Starlight Documentation](https://starlight.astro.build/)
-- [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/)
+- [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/)
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Astro Documentation](https://docs.astro.build/)
 
