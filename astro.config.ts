@@ -1,81 +1,111 @@
-// Starlight Default Imports:
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
+import icon from "astro-icon";
 
-// Utilities:
+// Starlight plugins:
 import starlightContextualMenu from "starlight-contextual-menu";
 import starlightSidebarSwipe from "starlight-sidebar-swipe";
 import starlightImageZoom from "starlight-image-zoom";
-import icon from "astro-icon";
-
-import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
-import starlightUtils from "@lorenzo_lewis/starlight-utils";
-import astroD2 from "astro-d2";
-
-// Themes:
 import starlightThemeRapide from "starlight-theme-rapide";
-import starlightThemeObsidian from "starlight-theme-obsidian";
-import starlightThemeGalaxy from "starlight-theme-galaxy";
-import starlightThemeNova from "starlight-theme-nova";
-import { ion } from "starlight-ion-theme";
-import starlightLinksValidator from 'starlight-links-validator'
 
-// const baseURL = process.env.PUBLIC_BASE_PATH || '/learning-materials';
-
-//https://astro.build/config
 export default defineConfig({
-  // base: baseURL,
+  base: "/learning-materials",
+  outDir: "./dist/learning-materials/",
+  site: "https://rota.gotocsp.com/",
   integrations: [
     icon(),
     starlight({
       plugins: [
-        starlightThemeRapide(), // change theme here..
-        // viewTransitions(),
+        starlightThemeRapide(),
         starlightImageZoom(),
         starlightSidebarSwipe(),
-        starlightLinksValidator(),
         starlightContextualMenu({
           actions: ["copy", "view"],
         }),
       ],
-      title: "Standard CSP Rota - Learning Materials",
+      title: "CSP Rota - Learning Materials",
       logo: {
-        src: "@/assets/csp-logo.svg",
-        alt: "Spitfire Logo",
+        src: "./src/assets/csp-logo.svg",
+        alt: "CSP Logo",
       },
+      favicon: "/favicon.svg",
+      head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            href: "/learning-materials/favicon.svg",
+            type: "image/svg+xml",
+          },
+        },
+      ],
       sidebar: [
         {
           label: "Getting Started",
           items: [
-            { label: "Introduction", slug: "getting-started/introduction" },
-            { label: "System Overview", slug: "getting-started/system-overview" },
-            { label: "Authentication", slug: "getting-started/authentication" },
-            { label: "First Steps", slug: "getting-started/first-steps" },
+            {
+              label: "Introduction",
+              slug: "getting-started/introduction",
+            },
+            {
+              label: "System Overview",
+              slug: "getting-started/system-overview",
+            },
+            {
+              label: "Authentication",
+              slug: "getting-started/authentication",
+            },
+            {
+              label: "First Steps",
+              slug: "getting-started/first-steps",
+            },
           ],
         },
         {
           label: "Roles",
           items: [
-            { label: "Role Overview", slug: "roles/overview" },
+            {
+              label: "Role Overview",
+              slug: "roles/overview",
+            },
             { label: "Admin", slug: "roles/admin" },
-            { label: "Operations Manager", slug: "roles/ops-manager" },
-            { label: "Operations Support", slug: "roles/ops-support" },
+            {
+              label: "Operations Manager",
+              slug: "roles/ops-manager",
+            },
+            {
+              label: "Operations Support",
+              slug: "roles/ops-support",
+            },
           ],
         },
         {
           label: "Features",
           items: [
             {
-              label: "Overview", slug: "features/overview"
+              label: "Overview",
+              slug: "features/overview",
             },
-            { 
+            {
               label: "Tracking",
               items: [
-                { label: "Dashboard", slug: "features/tracking/dashboard" },
-                { label: "Operational Tracker", slug: "features/tracking/ciphr-integration"},
-                { label: "CIPHR Integration", slug: "features/tracking/operational-tracker"},
-                { label: "Lieu & Holidays" , slug: "features/tracking/lieu-holidays"},
+                {
+                  label: "Dashboard",
+                  slug: "features/tracking/dashboard",
+                },
+                {
+                  label: "Operational Tracker",
+                  slug: "features/tracking/operational-tracker",
+                },
+                {
+                  label: "CIPHR Integration",
+                  slug: "features/tracking/ciphr-integration",
+                },
+                {
+                  label: "Lieu & Holidays",
+                  slug: "features/tracking/lieu-holidays",
+                },
               ],
             },
             {
@@ -84,26 +114,61 @@ export default defineConfig({
                 {
                   label: "Rota Management",
                   items: [
-                    { label: "Overview", slug: "features/scheduling/rota-management"},
-                    { label: "Event Mapping", slug: "features/scheduling/rota-management/event-mapping"},
-                    { label: "Contract Allocation", slug: "features/scheduling/rota-management/contract-allocation"},
-                    { label: "Succession Planning", slug: "features/scheduling/rota-management/succession-planning"},
+                    {
+                      label: "Overview",
+                      slug: "features/scheduling/rota-management",
+                    },
+                    {
+                      label: "Event Mapping",
+                      slug: "features/scheduling/rota-management/event-mapping",
+                    },
+                    {
+                      label: "Contract Allocation",
+                      slug: "features/scheduling/rota-management/contract-allocation",
+                    },
+                    {
+                      label: "Succession Planning",
+                      slug: "features/scheduling/rota-management/succession-planning",
+                    },
                   ],
                 },
-
-                {label: "Schedules", slug: "features/scheduling/schedules"},
+                {
+                  label: "Schedules",
+                  slug: "features/scheduling/schedules",
+                },
               ],
             },
             {
               label: "Management",
               items: [
-                {label: "Allocated Contracts", slug: "features/management/allocated-contracts"},
-                {label: "Assigned Events", slug: "features/management/assigned-events"},
-                {label: "EOS Actions", slug: "features/management/eos-actions"},
-                {label: "Request Management", slug: "features/management/request-management" },
-                {label: "Create User Accounts", slug: "features/management/create-user"},
-                {label: "User & Team Management", slug: "features/management/user-team-management"},
-                {label: "Configuration Centre", slug: "features/management/configuration-centre" },
+                {
+                  label: "Allocated Contracts",
+                  slug: "features/management/allocated-contracts",
+                },
+                {
+                  label: "Assigned Events",
+                  slug: "features/management/assigned-events",
+                },
+                {
+                  label: "EOS Actions",
+                  slug: "features/management/eos-actions",
+                },
+                {
+                  label: "Request Management",
+                  slug: "features/management/request-management",
+                },
+                {
+                  label: "Create User Accounts",
+                  slug: "features/management/create-user",
+                },
+                {
+                  label: "User & Team Management",
+                  slug: "features/management/user-team-management",
+                },
+                {
+                  label: "Configuration Centre",
+                  slug: "features/management/configuration-centre",
+                },
               ],
             },
           ],
@@ -111,12 +176,18 @@ export default defineConfig({
         {
           label: "References",
           items: [
-            { label: "Glossary", slug: "references/glossary" },
+            {
+              label: "Glossary",
+              slug: "references/glossary",
+            },
             {
               label: "Status Definitions",
               slug: "references/status-definitions",
             },
-            { label: "Troubleshooting", slug: "references/troubleshooting" },
+            {
+              label: "Troubleshooting",
+              slug: "references/troubleshooting",
+            },
           ],
         },
       ],

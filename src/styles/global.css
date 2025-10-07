@@ -1,4 +1,4 @@
-@layer base, starlight, rapide, theme,  components, utilities;
+@layer base, starlight, rapide, theme, components, utilities;
 
 @import "@astrojs/starlight-tailwind";
 @import "tailwindcss/theme.css" layer(theme);
@@ -10,60 +10,40 @@
     --font-mono: "Fira Code", monospace;
     --sl-font: --font-sans;
     --sl-font-mono: --font-mono;
-    --sl-color-accent-low: #04273c;
-    --sl-color-accent: #0070a9;
-    --sl-color-accent-high: #a9ceea;
-    --sl-color-white: #ffffff;
-    --sl-color-gray-1: #eeeeee;
-    --sl-color-gray-2: #c8c8c8;
-    --sl-color-gray-3: #a4a4a4;
-    --sl-color-gray-4: #585858;
-    --sl-color-gray-5: #383838;
-    --sl-color-gray-6: #272727;
-    --sl-color-black: #181818;
-
-    --sl-color-accent-low: #c0dbf0;
-    --sl-color-accent: #00537f;
-    --sl-color-accent-high: #003654;
-    --sl-color-white: #181818;
-    --sl-color-gray-1: #272727;
-    --sl-color-gray-2: #383838;
-    --sl-color-gray-3: #585858;
-    --sl-color-gray-4: #8b8b8b;
-    --sl-color-gray-5: #c2c2c2;
-    --sl-color-gray-6: #eeeeee;
-    --sl-color-gray-7: #f6f6f6;
-    --sl-color-black: #ffffff;
+    /* Generated accent color palettes. */
+    --color-accent-200: #87dcc4;
+    --color-accent-600: #005343;
+    --color-accent-900: #003c30;
+    --color-accent-950: #002b22;
+    /* Generated gray color palettes. */
+    --color-gray-100: #f5f6f8;
+    --color-gray-200: #eceef2;
+    --color-gray-300: #c0c2c7;
+    --color-gray-400: #888b96;
+    --color-gray-500: #545861;
+    --color-gray-700: #353841;
+    --color-gray-800: #24272f;
+    --color-gray-900: #17181c;
 }
 
-@nova {
+@rapide {
     /* Your preferred text font. Starlight uses a system font stack by default. */
     --font-sans: "Atkinson Hyperlegible Next Variable", sans-serif;
     --font-mono: "Fira Code", monospace;
     --sl-font: --font-sans;
     --sl-font-mono: --font-mono;
-    --sl-color-accent-low: #04273c;
-    --sl-color-accent: #0070a9;
-    --sl-color-accent-high: #a9ceea;
-    --sl-color-white: #ffffff;
-    --sl-color-gray-1: #eeeeee;
-    --sl-color-gray-2: #c8c8c8;
-    --sl-color-gray-3: #a4a4a4;
-    --sl-color-gray-4: #585858;
-    --sl-color-gray-5: #383838;
-    --sl-color-gray-6: #272727;
-    --sl-color-black: #181818;
-
-    --sl-color-accent-low: #c0dbf0;
-    --sl-color-accent: #00537f;
-    --sl-color-accent-high: #003654;
-    --sl-color-white: #181818;
-    --sl-color-gray-1: #272727;
-    --sl-color-gray-2: #383838;
-    --sl-color-gray-3: #585858;
-    --sl-color-gray-4: #8b8b8b;
-    --sl-color-gray-5: #c2c2c2;
-    --sl-color-gray-6: #eeeeee;
-    --sl-color-gray-7: #f6f6f6;
-    --sl-color-black: #ffffff;
+    /* Generated accent color palettes. */
+    --color-accent-200: #87dcc4;
+    --color-accent-600: #005343;
+    --color-accent-900: #003c30;
+    --color-accent-950: #002b22;
+    /* Generated gray color palettes. */
+    --color-gray-100: #f5f6f8;
+    --color-gray-200: #eceef2;
+    --color-gray-300: #c0c2c7;
+    --color-gray-400: #888b96;
+    --color-gray-500: #545861;
+    --color-gray-700: #353841;
+    --color-gray-800: #24272f;
+    --color-gray-900: #17181c;
 }

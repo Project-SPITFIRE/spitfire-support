@@ -4,8 +4,8 @@ description: Complete guide to system roles, permissions, and access levels acro
 ---
 
 import { Badge } from '@astrojs/starlight/components';
-import Accordion from '../../../components/Accordion.astro';
-import AccordionItem from '../../../components/AccordionItem.astro';
+import Accordion from '@/components/Accordion.astro';
+import AccordionItem from '@/components/AccordionItem.astro';
 
 This page provides a comprehensive overview of all system roles, their permissions, and access levels across different features and modules.
 
@@ -37,7 +37,7 @@ The system follows a hierarchical structure with increasing levels of access and
 <Accordion>
   <AccordionItem title="Admin" icon="tabler:shield-star">
     <p><Badge text="Admin" variant="danger" /> Full system administration and configuration access.</p>
-    
+
     **Overview Permissions:**
     - ✓ Dashboard
     - ✓ Operational Tracker
@@ -67,7 +67,7 @@ The system follows a hierarchical structure with increasing levels of access and
 
   <AccordionItem title="Ops Support" icon="tabler:headset">
     <p><Badge text="Ops Support" variant="caution" /> Comprehensive operational support with user management capabilities.</p>
-    
+
     **Overview Permissions:**
     - ✓ Dashboard
     - ✓ Operational Tracker
@@ -101,7 +101,7 @@ The system follows a hierarchical structure with increasing levels of access and
 <Accordion>
   <AccordionItem title="Ops Manager" icon="tabler:users">
     <p><Badge text="Ops Manager" variant="success" /> Direct team management and operational coordination.</p>
-    
+
     **Overview Permissions:**
     - ✓ Dashboard
 

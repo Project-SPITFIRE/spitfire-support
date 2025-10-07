@@ -15,14 +15,15 @@ hero:
     Learning Materials
   tagline: Master operational coordination and workforce planning with comprehensive guides for every role and feature.
   image:
-    file: "@/assets/houston.webp"
+    file: "@/assets/csp-logo.svg"
+
   actions:
     - text: Get Started
-      link: /getting-started/introduction
+      link: getting-started/introduction
       icon: right-arrow
       variant: primary
     - text: Find Your Role
-      link: /roles/overview
+      link: roles/overview
       icon: open-book
       variant: secondary
 ---
@@ -38,7 +39,7 @@ import { Badge } from '@astrojs/starlight/components';
 
     <LinkCard
       title="Introduction & Setup"
-      href="/getting-started/introduction"
+      href="/learning-materials/getting-started/introduction"
       description="System overview, authentication, and getting oriented"
     />
   </Card>
@@ -47,9 +48,9 @@ import { Badge } from '@astrojs/starlight/components';
     Find documentation specific to your role and responsibilities.
 
     <div class="grid grid-cols-1 gap-2 mt-4">
-      <LinkCard title="Admin" href="/roles/admin" />
-      <LinkCard title="Operations Manager" href="/roles/ops-manager" />
-      <LinkCard title="Operations Support" href="/roles/ops-support" />
+      <LinkCard title="Admin" href="/learning-materials/roles/admin" />
+      <LinkCard title="Operations Manager" href="/learning-materials/roles/ops-manager" />
+      <LinkCard title="Operations Support" href="/learning-materials/roles/ops-support" />
     </div>
   </Card>
 
@@ -59,22 +60,22 @@ import { Badge } from '@astrojs/starlight/components';
     <div class="space-y-2 mt-4">
       <LinkCard
         title="Request Management"
-        href="/features/management/request-management"
+        href="/learning-materials/features/management/request-management"
         description="Submit, track, and manage operational requests"
       />
       <LinkCard
         title="EOS Tasks"
-        href="/features/management/eos-actions"
+        href="/learning-materials/features/management/eos-actions"
         description="Coordinate operational tasks and subtasks"
       />
       <LinkCard
         title="Schedules & Rota"
-        href="/features/scheduling/schedules"
+        href="/learning-materials/features/scheduling/schedules"
         description="Manage team schedules and shift planning"
       />
       <LinkCard
         title="User & Team Management"
-        href="/features/management/user-team-management"
+        href="/learning-materials/features/management/user-team-management"
         description="Organize teams and manage user access"
       />
     </div>
@@ -94,9 +95,9 @@ import { Badge } from '@astrojs/starlight/components';
       Manage users, teams, and system configuration
     </p>
     <div class="space-y-1">
-      <LinkCard title="Create User Accounts" href="/features/management/create-user" />
-      <LinkCard title="User & Team Management" href="/features/management/user-team-management" />
-      <LinkCard title="Configuration Centre" href="/features/management/configuration-centre" />
+      <LinkCard title="Create User Accounts" href="/learning-materials/features/management/create-user" />
+      <LinkCard title="User & Team Management" href="/learning-materials/features/management/user-team-management" />
+      <LinkCard title="Configuration Centre" href="/learning-materials/features/management/configuration-centre" />
     </div>
   </Card>
 
@@ -109,9 +110,9 @@ import { Badge } from '@astrojs/starlight/components';
       Submit requests, manage EOS tasks, and coordinate teams
     </p>
     <div class="space-y-1">
-      <LinkCard title="Request Management" href="/features/management/request-management" />
-      <LinkCard title="EOS Tasks" href="/features/management/eos-actions" />
-      <LinkCard title="Rota Management" href="/features/scheduling/rota-management" />
+      <LinkCard title="Request Management" href="/learning-materials/features/management/request-management" />
+      <LinkCard title="EOS Tasks" href="features/management/eos-actions" />
+      <LinkCard title="Rota Management" href="/learning-materials/features/scheduling/rota-management" />
     </div>
   </Card>
 
@@ -124,9 +125,9 @@ import { Badge } from '@astrojs/starlight/components';
       Process requests, manage workflows, and provide operational support
     </p>
     <div class="space-y-1">
-      <LinkCard title="Request Management" href="/features/management/request-management" />
-      <LinkCard title="EOS Tasks" href="/features/management/eos-actions" />
-      <LinkCard title="Schedules" href="/features/scheduling/schedules" />
+      <LinkCard title="Request Management" href="/learning-materials/features/management/request-management" />
+      <LinkCard title="EOS Tasks" href="/learning-materials/features/management/eos-actions" />
+      <LinkCard title="Schedules" href="/learning-materials/features/scheduling/schedules" />
     </div>
   </Card>
 </CardGrid>
@@ -136,32 +137,32 @@ import { Badge } from '@astrojs/starlight/components';
 <CardGrid>
   <LinkCard
     title="Submit a Request"
-    href="/features/scheduling/rota-management"
+    href="/learning-materials/features/scheduling/rota-management"
     description="Start here to request resources, support, or operational changes"
     icon="document"
   />
   <LinkCard
     title="Manage EOS Tasks"
-href="/features/management/eos-actions"
+    href="/learning-materials/features/management/eos-actions"
     description="View and update operational tasks assigned to you"
     icon="list-format"
   />
   <LinkCard
     title="Create User Account"
-    href="/features/management/create-user"
+    href="/learning-materials/features/management/create-user"
     description="Add new team members to the system (Admin only)"
     icon="add-document"
   />
   <LinkCard
     title="Manage Teams"
-href="/features/management/user-team-management"
+    href="/learning-materials/features/management/user-team-management"
     description="Organize teams and manage user access"
     icon="setting"
   />
 </CardGrid>
 
 :::tip[New User?]
-Start with the [**Introduction**](/getting-started/introduction) to understand the system, then find your role guide for personalized guidance.
+Start with the [**Introduction**](/learning-materials/getting-started/introduction) to understand the system, then find your role guide for personalized guidance.
 :::
 
 :::note[Need Help?]
