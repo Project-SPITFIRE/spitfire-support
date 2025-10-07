@@ -12,6 +12,7 @@ import starlightThemeRapide from "starlight-theme-rapide";
 export default defineConfig({
   base: "/learning-materials",
   outDir: "./dist/learning-materials/",
+  site: "https://rota.gotocsp.com/",
   integrations: [
     icon(),
     starlight({
