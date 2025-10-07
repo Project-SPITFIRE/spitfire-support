@@ -11,7 +11,7 @@ import starlightThemeRapide from "starlight-theme-rapide";
 
 export default defineConfig({
   base: "/learning-materials",
-  trailingSlash: "never",
+  outDir: "./dist/learning-materials/",
   integrations: [
     icon(),
     starlight({
