@@ -28,6 +28,17 @@ export default defineConfig({
         src: "./src/assets/csp-logo.svg",
         alt: "CSP Logo",
       },
+      favicon: "/favicon.svg",
+      head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            href: "/learning-materials/favicon.svg",
+            type: "image/svg+xml",
+          },
+        },
+      ],
       sidebar: [
         {
           label: "Getting Started",
